@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{Kuk15}
   \providebibliographyfont{name}{}%
   \providebibliographyfont{lastname}{}%
   \providebibliographyfont{title}{\emph}%
@@ -13,13 +13,7 @@
   \expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
 
 \expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
-\bibitem {esimerkki}
-\btxnamefont {\btxlastnamefont {Diestel}, Reinhard}\btxauthorcolon\
-  \btxtitlefont {Graph Theory}.
-\newblock \btxpublisherfont {Springer}, Berliini, \btxeditionnumlong {3.}{},
-  2005.
-
-\bibitem {toinen}
+\bibitem [{Kuk15}]{toinen}
 \btxnamefont {\btxlastnamefont {Kukkuluuruu}}\btxauthorcolon\ \btxtitlefont
   {Mitä tämä on}.
 \newblock \btxpublisherfont {Springer kustantamo}, Suomi, \btxeditionnumlong
