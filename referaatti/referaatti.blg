@@ -16,11 +16,6 @@ You're missing a field name---line 50 of file references-fi.bib
  : % author = {Ma, Yu-Seung and Harrold, Mary Jean and Kwon, Yong-Rae},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Warning--to sort, need author or key in mutaatiotestausevaluaatio
 Warning--empty language in jiaharmananalyysi
 Warning--can't use both author and editor fields in marianitest
-Warning--empty author in mutaatiotestausevaluaatio
-Warning--empty title in mutaatiotestausevaluaatio
-Warning--empty booktitle in mutaatiotestausevaluaatio
-Warning--empty year in mutaatiotestausevaluaatio
 (There were 3 error messages)
