@@ -1,5 +1,21 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: referaatti.aux
 The style file: babalpha-lf.bst
-I found no \citation commands---while reading file referaatti.aux
 Database file #1: references-fi.bib
-(There was 1 error message)
+You're missing a field name---line 2 of file references-fi.bib
+ : 
+ : %  title = {Graph Theory},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 11 of file references-fi.bib
+ : 
+ : %  title = {Mitä tämä on},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 50 of file references-fi.bib
+ : 
+ : % author = {Ma, Yu-Seung and Harrold, Mary Jean and Kwon, Yong-Rae},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--empty language in jiaharmananalyysi
+Warning--can't use both author and editor fields in marianitest
+(There were 3 error messages)

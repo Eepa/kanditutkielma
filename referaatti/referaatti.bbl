@@ -1,4 +1,4 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{MP08}
   \providebibliographyfont{name}{}%
   \providebibliographyfont{lastname}{}%
   \providebibliographyfont{title}{\emph}%
@@ -11,5 +11,23 @@
   \providebibliographyfont{url}{\url}%
   \providebibliographyfont{numeral}{}%
   \expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
+
+\expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
+\bibitem [{JH11}]{jiaharmananalyysi}
+\btxnamefont {\btxlastnamefont {Jia}, Yue} \btxandlong {}\ \btxnamefont
+  {\btxlastnamefont {Harman}, Mark}\btxauthorcolon\ \btxjtitlefont
+  {\btxifchangecase {An analysis and survey of the development of mutation
+  testing}{An Analysis and Survey of the Development of Mutation Testing}}.
+\newblock \btxjournalfont {IEEE Trans. Softw. Eng.}, 37(5):649--678,
+  \btxprintmonthyear{.}{9}{2011}{long}\ifbtxprintISSN {,
+  \mbox{\btxISSN~\btxISSNfont {0098-5589}}}.
+\newblock {\latintext \btxurlfont{http://dx.doi.org/10.1109/TSE.2010.62}}.
+
+\bibitem [{MP08}]{marianitest}
+\btxnamefont {\btxlastnamefont {Mariani}, Leonardo} \btxandlong {}\
+  \btxnamefont {\btxlastnamefont {Pezze}, Mauro}\btxauthorcolon\ \btxtitlefont
+  {Testing Object-Oriented Software}, \btxchapterlong {}\ Emerging Methods,
+  Technologies and Process Management in Software Engineering.
+\newblock \btxpublisherfont {Wiley-IEEE Computer Society Press}, 2008.
 
 \end{thebibliography}
