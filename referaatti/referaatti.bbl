@@ -1,4 +1,4 @@
-\begin{thebibliography}{Kuk15}
+\begin{thebibliography}{}
   \providebibliographyfont{name}{}%
   \providebibliographyfont{lastname}{}%
   \providebibliographyfont{title}{\emph}%
@@ -11,12 +11,5 @@
   \providebibliographyfont{url}{\url}%
   \providebibliographyfont{numeral}{}%
   \expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
-
-\expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
-\bibitem [{Kuk15}]{toinen}
-\btxnamefont {\btxlastnamefont {Kukkuluuruu}}\btxauthorcolon\ \btxtitlefont
-  {Mitä tämä on}.
-\newblock \btxpublisherfont {Springer kustantamo}, Suomi, \btxeditionnumlong
-  {5.}{}, 2015.
 
 \end{thebibliography}
