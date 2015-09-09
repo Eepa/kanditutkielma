@@ -1,0 +1,46 @@
+\begin{thebibliography}{MHK06}
+  \providebibliographyfont{name}{}%
+  \providebibliographyfont{lastname}{}%
+  \providebibliographyfont{title}{\emph}%
+  \providebibliographyfont{jtitle}{\btxtitlefont}%
+  \providebibliographyfont{etal}{\emph}%
+  \providebibliographyfont{journal}{}%
+  \providebibliographyfont{volume}{}%
+  \providebibliographyfont{ISBN}{\MakeUppercase}%
+  \providebibliographyfont{ISSN}{\MakeUppercase}%
+  \providebibliographyfont{url}{\url}%
+  \providebibliographyfont{numeral}{}%
+  \expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
+
+\expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
+\bibitem [{JH11}]{jiaharmananalyysi}
+\btxnamefont {\btxlastnamefont {Jia}, Yue} \btxandlong {}\ \btxnamefont
+  {\btxlastnamefont {Harman}, Mark}\btxauthorcolon\ \btxjtitlefont
+  {\btxifchangecase {An analysis and survey of the development of mutation
+  testing}{An Analysis and Survey of the Development of Mutation Testing}}.
+\newblock \btxjournalfont {IEEE Trans. Softw. Eng.}, 37(5):649--678,
+  \btxprintmonthyear{.}{9}{2011}{long}\ifbtxprintISSN {,
+  \mbox{\btxISSN~\btxISSNfont {0098-5589}}}.
+\newblock {\latintext \btxurlfont{http://dx.doi.org/10.1109/TSE.2010.62}}.
+
+\bibitem [{MHK06}]{mutaatiotestausevaluaatio}
+\btxnamefont {\btxlastnamefont {Ma}, Yu\btxfnamespacelong Seung}, \btxnamefont
+  {\btxlastnamefont {Harrold}, Mary\btxfnamespacelong Jean}\btxandcomma {}
+  \btxandlong {}\ \btxnamefont {\btxlastnamefont {Kwon}, Yong\btxfnamespacelong
+  Rae}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {Evaluation of mutation
+  testing for object-oriented programs}{Evaluation of Mutation Testing for
+  Object-oriented Programs}}.
+\newblock \Btxinlong {}\ \btxtitlefont {Proceedings of the 28th International
+  Conference on Software Engineering}, ICSE '06, \btxpageslong {}\ 869--872,
+  New York, NY, USA, 2006. \btxpublisherfont {ACM}\ifbtxprintISBN {,
+  \mbox{\btxISBN~\btxISBNfont {1-59593-375-1}}}.
+\newblock {\latintext \btxurlfont{http://doi.acm.org/10.1145/1134285.1134437}}.
+
+\bibitem [{MP08}]{marianitest}
+\btxnamefont {\btxlastnamefont {Mariani}, Leonardo} \btxandlong {}\
+  \btxnamefont {\btxlastnamefont {Pezze}, Mauro}\btxauthorcolon\ \btxtitlefont
+  {Testing Object-Oriented Software}, \btxchapterlong {}\ Emerging Methods,
+  Technologies and Process Management in Software Engineering.
+\newblock \btxpublisherfont {Wiley-IEEE Computer Society Press}, 2008.
+
+\end{thebibliography}
