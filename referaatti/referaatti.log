@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.9.8)  9 SEP 2015 23:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.9.8)  16 SEP 2015 00:48
 entering extended mode
 **referaatti.tex
 (referaatti.tex
@@ -87,9 +87,6 @@ File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \abovecaptionskip=\skip44
 \belowcaptionskip=\skip45
 \bibindent=\dimen113
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\setspace\setspace.sty"
-Package: setspace 2011/12/19 v6.7a set line spacing
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
 Package: inputenc 2015/03/17 v1.2c Input encoding file
@@ -791,15 +788,23 @@ Package babel Info: Redefining finnish shorthand "|
 
 {C:/Users/Eveliina/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 Package hyperref Info: Option `pageanchor' set `true' on input line 122.
-Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 153.
-Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 153.
 
+
+LaTeX Warning: Citation `jokulähde' on page 1 undefined on input line 137.
+
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 148.
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 148.
 [1
 
 
-] (referaatti.bbl
+]
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 162.
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 162.
+ [2] (referaatti.bbl
 Package babel Info: Redefining finnish shorthand "|
 (babel)             in language  on input line 1.
 
@@ -814,7 +819,7 @@ babelbib: Using the BibTeX style's default font for `ISBN'.
 babelbib: Using the BibTeX style's default font for `ISSN'.
 babelbib: Using the BibTeX style's default font for `url'.
 babelbib: Using the BibTeX style's default font for `numeral'.
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 24.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 41.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -822,35 +827,35 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 24.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 41.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd"
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 24.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 41.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omllmm.fd"
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 24.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 41.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omslmsy.fd"
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 24.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 41.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omxlmex.fd"
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 24.
+(Font)              <10.95> on input line 41.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 24.
+(Font)              <8> on input line 41.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 24.
-LaTeX Font Info:    Try loading font information for U+msa on input line 24.
+(Font)              <6> on input line 41.
+LaTeX Font Info:    Try loading font information for U+msa on input line 41.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -858,7 +863,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ("C:\Program Files\MiKTeX 2.9\tex\latex\microtype\mt-msa.cfg"
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 24.
+LaTeX Font Info:    Try loading font information for U+msb on input line 41.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -866,37 +871,42 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ("C:\Program Files\MiKTeX 2.9\tex\latex\microtype\mt-msb.cfg"
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 ))
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 171.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 180.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 171.
+(babel)             in language  on input line 180.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 171.
- [2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 171.
+(babel)             in language  on input line 180.
+ [3]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 180.
 
 (referaatti.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 171.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 171.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 180.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 180.
 Package rerunfilecheck Info: File `referaatti.out' has not changed.
 (rerunfilecheck)             Checksum: 28114DB937B40005BC09037D5CBDAEF1;47.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 171.
+
+
+LaTeX Warning: There were undefined references.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 180.
  ) 
 Here is how much of TeX's memory you used:
- 9689 strings out of 493673
- 143623 string characters out of 3143952
- 276784 words of memory out of 3000000
- 12815 multiletter control sequences out of 15000+200000
- 35350 words of font info for 58 fonts, out of 3000000 for 9000
+ 9697 strings out of 493673
+ 143597 string characters out of 3143952
+ 277628 words of memory out of 3000000
+ 12798 multiletter control sequences out of 15000+200000
+ 39576 words of font info for 71 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 31i,5n,35p,918b,524s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 31i,5n,35p,901b,524s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}<C:/Program Files/M
-iKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/public/lm/lmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr
-12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Progra
-m Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb>
-Output written on referaatti.pdf (3 pages, 135208 bytes).
+iKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lm
+r10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Program Files/MiKTeX 2.
+9/fonts/type1/public/lm/lmtt10.pfb>
+Output written on referaatti.pdf (4 pages, 165479 bytes).
 PDF statistics:
- 49 PDF objects out of 1000 (max. 8388607)
- 6 named destinations out of 1000 (max. 500000)
- 10761 words of extra memory for PDF output out of 12000 (max. 10000000)
+ 71 PDF objects out of 1000 (max. 8388607)
+ 10 named destinations out of 1000 (max. 500000)
+ 11273 words of extra memory for PDF output out of 12000 (max. 10000000)
 

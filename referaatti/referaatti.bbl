@@ -1,4 +1,4 @@
-\begin{thebibliography}{MP08}
+\begin{thebibliography}{MHK06}
   \providebibliographyfont{name}{}%
   \providebibliographyfont{lastname}{}%
   \providebibliographyfont{title}{\emph}%
@@ -13,7 +13,24 @@
   \expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
 
 \expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
-\bibitem [{JH11}]{jiaharmananalyysi}
+\bibitem [{Bin99}]{Binder:1999}
+\btxnamefont {\btxlastnamefont {Binder}, Robert\btxfnamespacelong
+  V.}\btxauthorcolon\ \btxtitlefont {Testing Object-oriented Systems: Models,
+  Patterns, and Tools}.
+\newblock \btxpublisherfont {Addison-Wesley Longman Publishing Co., Inc.},
+  Boston, MA, USA, 1999\ifbtxprintISBN {, \mbox{\btxISBN~\btxISBNfont
+  {0-201-80938-9}}}.
+
+\bibitem [{DDH72}]{Dahl:Dijkstra:Hoare:1972}
+\btxnamefont {\btxlastnamefont {Dahl}, O.\btxfnamespacelong J.}, \btxnamefont
+  {\btxlastnamefont {Dijkstra}, E.\btxfnamespacelong W.}\btxandcomma {}
+  \btxandlong {}\ \btxnamefont {\btxlastnamefont {Hoare}, C.\btxfnamespacelong
+  A.\btxfnamespacelong R.}\ (\btxeditorslong {})\btxauthorcolon\ \btxtitlefont
+  {Structured Programming}.
+\newblock \btxpublisherfont {Academic Press Ltd.}, London, UK, UK,
+  1972\ifbtxprintISBN {, \mbox{\btxISBN~\btxISBNfont {0-12-200550-3}}}.
+
+\bibitem [{JH11}]{Jia:Harman:2011}
 \btxnamefont {\btxlastnamefont {Jia}, Yue} \btxandlong {}\ \btxnamefont
   {\btxlastnamefont {Harman}, Mark}\btxauthorcolon\ \btxjtitlefont
   {\btxifchangecase {An analysis and survey of the development of mutation
@@ -23,7 +40,20 @@
   \mbox{\btxISSN~\btxISSNfont {0098-5589}}}.
 \newblock {\latintext \btxurlfont{http://dx.doi.org/10.1109/TSE.2010.62}}.
 
-\bibitem [{MP08}]{marianitest}
+\bibitem [{MHK06}]{Ma:Harrold:Kwon:2006}
+\btxnamefont {\btxlastnamefont {Ma}, Yu\btxfnamespacelong Seung}, \btxnamefont
+  {\btxlastnamefont {Harrold}, Mary\btxfnamespacelong Jean}\btxandcomma {}
+  \btxandlong {}\ \btxnamefont {\btxlastnamefont {Kwon}, Yong\btxfnamespacelong
+  Rae}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {Evaluation of mutation
+  testing for object-oriented programs}{Evaluation of Mutation Testing for
+  Object-oriented Programs}}.
+\newblock \Btxinlong {}\ \btxtitlefont {Proceedings of the 28th International
+  Conference on Software Engineering}, ICSE '06, \btxpageslong {}\ 869--872,
+  New York, NY, USA, 2006. \btxpublisherfont {ACM}\ifbtxprintISBN {,
+  \mbox{\btxISBN~\btxISBNfont {1-59593-375-1}}}.
+\newblock {\latintext \btxurlfont{http://doi.acm.org/10.1145/1134285.1134437}}.
+
+\bibitem [{MP08}]{Mariani:Pezze:2008}
 \btxnamefont {\btxlastnamefont {Mariani}, Leonardo} \btxandlong {}\
   \btxnamefont {\btxlastnamefont {Pezze}, Mauro}\btxauthorcolon\ \btxtitlefont
   {Testing Object-Oriented Software}, \btxchapterlong {}\ Emerging Methods,

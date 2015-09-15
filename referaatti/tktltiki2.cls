@@ -37,8 +37,11 @@
 \LoadClass[titlepage,a4paper,11pt]{article}
 
 % Riviväli
-\usepackage{setspace}
-\onehalfspacing
+%\usepackage{setspace}
+%\onehalfspacing
+%\setstretch{1,5}
+
+\linespread{1.3}
 
 % -- Setup for string commands --
 

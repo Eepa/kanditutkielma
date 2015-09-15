@@ -11,11 +11,7 @@ You're missing a field name---line 11 of file references-fi.bib
  : %  title = {Mitä tämä on},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 50 of file references-fi.bib
- : 
- : % author = {Ma, Yu-Seung and Harrold, Mary Jean and Kwon, Yong-Rae},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-Warning--empty language in jiaharmananalyysi
-Warning--can't use both author and editor fields in marianitest
-(There were 3 error messages)
+Warning--I didn't find a database entry for "jokul�hde"
+Warning--empty language in Binder:1999
+Warning--can't use both author and editor fields in Mariani:Pezze:2008
+(There were 2 error messages)
