@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.9.8)  16 SEP 2015 10:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.9.8)  16 SEP 2015 11:36
 entering extended mode
 **referaatti.tex
 (referaatti.tex
@@ -800,11 +800,23 @@ Package babel Info: Redefining finnish shorthand "|
 
 
 ]
+
+LaTeX Warning: Citation `JOTAKINTÄHÄN' on page 2 undefined on input line 149.
+
+
+LaTeX Warning: Citation `tähänalkuperäinenlähdemutaatiotestaukselle' on page 2 
+undefined on input line 151.
+
 Package babel Info: Redefining finnish shorthand "|
 (babel)             in language  on input line 162.
 Package babel Info: Redefining finnish shorthand "|
 (babel)             in language  on input line 162.
- [2] (referaatti.bbl
+[2]
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 162.
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 162.
+ [3] (referaatti.bbl
 Package babel Info: Redefining finnish shorthand "|
 (babel)             in language  on input line 1.
 
@@ -876,7 +888,7 @@ Package babel Info: Redefining finnish shorthand "|
 (babel)             in language  on input line 180.
 Package babel Info: Redefining finnish shorthand "|
 (babel)             in language  on input line 180.
- [3]
+ [4]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 180.
 
 (referaatti.aux)
@@ -891,22 +903,22 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 180.
  ) 
 Here is how much of TeX's memory you used:
- 9709 strings out of 493673
- 143729 string characters out of 3143952
- 277628 words of memory out of 3000000
- 12798 multiletter control sequences out of 15000+200000
- 40074 words of font info for 77 fonts, out of 3000000 for 9000
+ 9714 strings out of 493673
+ 143842 string characters out of 3143952
+ 277673 words of memory out of 3000000
+ 12801 multiletter control sequences out of 15000+200000
+ 40121 words of font info for 77 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 31i,5n,35p,958b,524s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 31i,5n,35p,903b,524s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}<C:/Program Files/M
 iKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
 ype1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lm
 r10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Progra
 m Files/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Program Files/MiKTeX 2.
 9/fonts/type1/public/lm/lmtt10.pfb>
-Output written on referaatti.pdf (4 pages, 167070 bytes).
+Output written on referaatti.pdf (5 pages, 169740 bytes).
 PDF statistics:
- 73 PDF objects out of 1000 (max. 8388607)
- 10 named destinations out of 1000 (max. 500000)
+ 81 PDF objects out of 1000 (max. 8388607)
+ 12 named destinations out of 1000 (max. 500000)
  11273 words of extra memory for PDF output out of 12000 (max. 10000000)
 

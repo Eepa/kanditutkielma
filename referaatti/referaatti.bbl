@@ -60,4 +60,13 @@
   Technologies and Process Management in Software Engineering.
 \newblock \btxpublisherfont {Wiley-IEEE Computer Society Press}, 2008.
 
+\bibitem [{MW78}]{Manna:Waldinger:1978}
+\btxnamefont {\btxlastnamefont {Manna}, Zohar} \btxandlong {}\ \btxnamefont
+  {\btxlastnamefont {Waldinger}, Richard\btxfnamespacelong J.}\btxauthorcolon\
+  \btxjtitlefont {\btxifchangecase {The logic of computer programming}{The
+  Logic of Computer Programming}}.
+\newblock \btxjournalfont {{IEEE} Trans. Software Eng.}, 4(3):199--229, 1978.
+\newblock {\latintext
+  \btxurlfont{http://doi.ieeecomputersociety.org/10.1109/TSE.1978.231499}}.
+
 \end{thebibliography}
