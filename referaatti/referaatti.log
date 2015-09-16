@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.9.8)  16 SEP 2015 00:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.9.8)  16 SEP 2015 10:25
 entering extended mode
 **referaatti.tex
 (referaatti.tex
@@ -793,9 +793,9 @@ Package hyperref Info: Option `pageanchor' set `true' on input line 122.
 LaTeX Warning: Citation `jokulähde' on page 1 undefined on input line 137.
 
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 148.
+(babel)             in language  on input line 146.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 148.
+(babel)             in language  on input line 146.
 [1
 
 
@@ -891,22 +891,22 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 180.
  ) 
 Here is how much of TeX's memory you used:
- 9697 strings out of 493673
- 143597 string characters out of 3143952
+ 9709 strings out of 493673
+ 143729 string characters out of 3143952
  277628 words of memory out of 3000000
  12798 multiletter control sequences out of 15000+200000
- 39576 words of font info for 71 fonts, out of 3000000 for 9000
+ 40074 words of font info for 77 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 31i,5n,35p,901b,524s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 31i,5n,35p,958b,524s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}<C:/Program Files/M
 iKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
 ype1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lm
 r10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Progra
 m Files/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Program Files/MiKTeX 2.
 9/fonts/type1/public/lm/lmtt10.pfb>
-Output written on referaatti.pdf (4 pages, 165479 bytes).
+Output written on referaatti.pdf (4 pages, 167070 bytes).
 PDF statistics:
- 71 PDF objects out of 1000 (max. 8388607)
+ 73 PDF objects out of 1000 (max. 8388607)
  10 named destinations out of 1000 (max. 500000)
  11273 words of extra memory for PDF output out of 12000 (max. 10000000)
 
