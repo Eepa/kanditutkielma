@@ -1,0 +1,84 @@
+\begin{thebibliography}{MHK06}
+  \providebibliographyfont{name}{}%
+  \providebibliographyfont{lastname}{}%
+  \providebibliographyfont{title}{\emph}%
+  \providebibliographyfont{jtitle}{\btxtitlefont}%
+  \providebibliographyfont{etal}{\emph}%
+  \providebibliographyfont{journal}{}%
+  \providebibliographyfont{volume}{}%
+  \providebibliographyfont{ISBN}{\MakeUppercase}%
+  \providebibliographyfont{ISSN}{\MakeUppercase}%
+  \providebibliographyfont{url}{\url}%
+  \providebibliographyfont{numeral}{}%
+  \expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
+
+\expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
+\bibitem [{Bin99}]{Binder:1999}
+\btxnamefont {\btxlastnamefont {Binder}, Robert\btxfnamespacelong
+  V.}\btxauthorcolon\ \btxtitlefont {Testing Object-oriented Systems: Models,
+  Patterns, and Tools}.
+\newblock \btxpublisherfont {Addison-Wesley Longman Publishing Co., Inc.},
+  Boston, MA, USA, 1999\ifbtxprintISBN {, \mbox{\btxISBN~\btxISBNfont
+  {0-201-80938-9}}}.
+
+\bibitem [{DDH72}]{Dahl:Dijkstra:Hoare:1972}
+\btxnamefont {\btxlastnamefont {Dahl}, O.\btxfnamespacelong J.}, \btxnamefont
+  {\btxlastnamefont {Dijkstra}, E.\btxfnamespacelong W.}\btxandcomma {}
+  \btxandlong {}\ \btxnamefont {\btxlastnamefont {Hoare}, C.\btxfnamespacelong
+  A.\btxfnamespacelong R.}\ (\btxeditorslong {})\btxauthorcolon\ \btxtitlefont
+  {Structured Programming}.
+\newblock \btxpublisherfont {Academic Press Ltd.}, London, UK, UK,
+  1972\ifbtxprintISBN {, \mbox{\btxISBN~\btxISBNfont {0-12-200550-3}}}.
+
+\bibitem [{JH11}]{Jia:Harman:2011}
+\btxnamefont {\btxlastnamefont {Jia}, Yue} \btxandlong {}\ \btxnamefont
+  {\btxlastnamefont {Harman}, Mark}\btxauthorcolon\ \btxjtitlefont
+  {\btxifchangecase {An analysis and survey of the development of mutation
+  testing}{An Analysis and Survey of the Development of Mutation Testing}}.
+\newblock \btxjournalfont {IEEE Trans. Softw. Eng.}, 37(5):649--678,
+  \btxprintmonthyear{.}{9}{2011}{long}\ifbtxprintISSN {,
+  \mbox{\btxISSN~\btxISSNfont {0098-5589}}}.
+\newblock {\latintext \btxurlfont{http://dx.doi.org/10.1109/TSE.2010.62}}.
+
+\bibitem [{KCM00}]{Kim:Clark:McDermid:2000}
+\btxnamefont {\btxlastnamefont {Kim}, Sunwoo}, \btxnamefont {\btxlastnamefont
+  {Clark}, John\btxfnamespacelong A.}\btxandcomma {} \btxandlong {}\
+  \btxnamefont {\btxlastnamefont {McDermid}, John\btxfnamespacelong
+  A.}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {Class mutation: Mutation
+  testing for object-oriented programs}{Class Mutation: Mutation Testing for
+  Object-oriented Programs}}.
+\newblock \Btxinlong {}\ \btxtitlefont {Proceedings of the Net.ObjectDays
+  Conference on Object-Oriented Software Systems}, \btxpageslong {}\ 9--12,
+  \btxprintmonthyear{.}{10}{2000}{long}.
+
+\bibitem [{MHK06}]{Ma:Harrold:Kwon:2006}
+\btxnamefont {\btxlastnamefont {Ma}, Yu\btxfnamespacelong Seung}, \btxnamefont
+  {\btxlastnamefont {Harrold}, Mary\btxfnamespacelong Jean}\btxandcomma {}
+  \btxandlong {}\ \btxnamefont {\btxlastnamefont {Kwon}, Yong\btxfnamespacelong
+  Rae}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {Evaluation of mutation
+  testing for object-oriented programs}{Evaluation of Mutation Testing for
+  Object-oriented Programs}}.
+\newblock \Btxinlong {}\ \btxtitlefont {Proceedings of the 28th International
+  Conference on Software Engineering}, ICSE '06, \btxpageslong {}\ 869--872,
+  New York, NY, USA, 2006. \btxpublisherfont {ACM}\ifbtxprintISBN {,
+  \mbox{\btxISBN~\btxISBNfont {1-59593-375-1}}}.
+\newblock {\latintext \btxurlfont{http://doi.acm.org/10.1145/1134285.1134437}}.
+
+\bibitem [{MP08}]{Mariani:Pezze:2008}
+\btxnamefont {\btxlastnamefont {Mariani}, Leonardo} \btxandlong {}\
+  \btxnamefont {\btxlastnamefont {Pezze}, Mauro}\btxauthorcolon\ \btxtitlefont
+  {Testing Object-Oriented Software}, \btxchapterlong {}\ Emerging Methods,
+  Technologies and Process Management in Software Engineering, \btxpageslong
+  {}\ 85--108.
+\newblock \btxpublisherfont {Wiley-IEEE Computer Society Press}, 2008.
+
+\bibitem [{MW78}]{Manna:Waldinger:1978}
+\btxnamefont {\btxlastnamefont {Manna}, Zohar} \btxandlong {}\ \btxnamefont
+  {\btxlastnamefont {Waldinger}, Richard\btxfnamespacelong J.}\btxauthorcolon\
+  \btxjtitlefont {\btxifchangecase {The logic of computer programming}{The
+  Logic of Computer Programming}}.
+\newblock \btxjournalfont {{IEEE} Trans. Software Eng.}, 4(3):199--229, 1978.
+\newblock {\latintext
+  \btxurlfont{http://doi.ieeecomputersociety.org/10.1109/TSE.1978.231499}}.
+
+\end{thebibliography}
