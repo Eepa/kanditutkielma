@@ -1,5 +1,21 @@
 \select@language {finnish}
-\contentsline {section}{L\IeC {\"a}hteet}{3}{section*.2}
+\contentsline {section}{\numberline {1}Johdanto}{1}{section.1}
+\contentsline {section}{\numberline {2}Testaus olioj\IeC {\"a}rjestelmiss\IeC {\"a}}{1}{section.2}
+\contentsline {subsection}{\numberline {2.1}Testauksen tasot}{1}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Testien suunnittelumallit}{1}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Testauksen rajoitukset}{1}{subsection.2.3}
+\contentsline {section}{\numberline {3}Mutaatiotestaus olioj\IeC {\"a}rjestelmiss\IeC {\"a}}{1}{section.3}
+\contentsline {subsection}{\numberline {3.1}Mutaatiotestauksen yleisesittely}{1}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Mutaatiotestauksen piirteet olioj\IeC {\"a}rjestelmiss\IeC {\"a} (erot muihin j\IeC {\"a}rjestelmiin)}{1}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}K\IeC {\"a}yt\IeC {\"a}nn\IeC {\"o}ntoteutus}{1}{subsection.3.3}
+\contentsline {section}{\numberline {4}Mutaatiotestauksen haasteet}{1}{section.4}
+\contentsline {subsection}{\numberline {4.1}Ekvivalentit mutantit}{1}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Tehokkuusongelmat}{1}{subsection.4.2}
+\contentsline {section}{\numberline {5}Mutaatiotestauksen tulevaisuus}{1}{section.5}
+\contentsline {subsection}{\numberline {5.1}Ennusteita tulevalle k\IeC {\"a}yt\IeC {\"o}lle}{1}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Mahdolliset kehityssuunnat}{1}{subsection.5.2}
+\contentsline {section}{\numberline {6}Yhteenveto}{1}{section.6}
+\contentsline {section}{L\IeC {\"a}hteet}{4}{section*.2}
 \select@language {finnish}
 \select@language {finnish}
 \select@language {finnish}

@@ -1,1 +1,17 @@
-\BOOKMARK [1][-]{section*.2}{L\344hteet}{}% 1
+\BOOKMARK [1][-]{section.1}{Johdanto}{}% 1
+\BOOKMARK [1][-]{section.2}{Testaus olioj\344rjestelmiss\344}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Testauksen tasot}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Testien suunnittelumallit}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{Testauksen rajoitukset}{section.2}% 5
+\BOOKMARK [1][-]{section.3}{Mutaatiotestaus olioj\344rjestelmiss\344}{}% 6
+\BOOKMARK [2][-]{subsection.3.1}{Mutaatiotestauksen yleisesittely}{section.3}% 7
+\BOOKMARK [2][-]{subsection.3.2}{Mutaatiotestauksen piirteet olioj\344rjestelmiss\344 \(erot muihin j\344rjestelmiin\)}{section.3}% 8
+\BOOKMARK [2][-]{subsection.3.3}{K\344yt\344nn\366ntoteutus}{section.3}% 9
+\BOOKMARK [1][-]{section.4}{Mutaatiotestauksen haasteet}{}% 10
+\BOOKMARK [2][-]{subsection.4.1}{Ekvivalentit mutantit}{section.4}% 11
+\BOOKMARK [2][-]{subsection.4.2}{Tehokkuusongelmat}{section.4}% 12
+\BOOKMARK [1][-]{section.5}{Mutaatiotestauksen tulevaisuus}{}% 13
+\BOOKMARK [2][-]{subsection.5.1}{Ennusteita tulevalle k\344yt\366lle}{section.5}% 14
+\BOOKMARK [2][-]{subsection.5.2}{Mahdolliset kehityssuunnat}{section.5}% 15
+\BOOKMARK [1][-]{section.6}{Yhteenveto}{}% 16
+\BOOKMARK [1][-]{section*.2}{L\344hteet}{}% 17
