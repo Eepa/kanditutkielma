@@ -1,20 +1,20 @@
-\BOOKMARK [1][-]{section.1}{Johdanto}{}% 1
-\BOOKMARK [1][-]{section.2}{Testaus olioj\344rjestelmiss\344}{}% 2
+\BOOKMARK [1][-]{section.1}{Johdanto \(1s\)}{}% 1
+\BOOKMARK [1][-]{section.2}{Testaus olioj\344rjestelmiss\344 \(5s\)}{}% 2
 \BOOKMARK [2][-]{subsection.2.1}{Testauksen erityispiirteet olioj\344rjestelmiss\344/yleisesittely \(onko tarpeellinen omana osionaan?\)}{section.2}% 3
 \BOOKMARK [2][-]{subsection.2.2}{Testauksen tasot}{section.2}% 4
 \BOOKMARK [2][-]{subsection.2.3}{Testien suunnittelumallit}{section.2}% 5
 \BOOKMARK [2][-]{subsection.2.4}{Testauksen rajoitukset}{section.2}% 6
-\BOOKMARK [1][-]{section.3}{Mutaatiotestaus olioj\344rjestelmiss\344}{}% 7
+\BOOKMARK [1][-]{section.3}{Mutaatiotestaus olioj\344rjestelmiss\344 \(5-7s\)}{}% 7
 \BOOKMARK [2][-]{subsection.3.1}{Mutaatiotestauksen yleisesittely}{section.3}% 8
-\BOOKMARK [2][-]{subsection.3.2}{Mutaatiotestauksen piirteet olioj\344rjestelmiss\344 \(erot muihin j\344rjestelmiin\)}{section.3}% 9
-\BOOKMARK [1][-]{section.4}{Mutaatiotestauksen haasteet}{}% 10
+\BOOKMARK [2][-]{subsection.3.2}{Mutaatiotestauksen piirteet olioj\344rjestelmiss\344 \(erot muihin j\344rjestelmiin?\)}{section.3}% 9
+\BOOKMARK [1][-]{section.4}{Mutaatiotestauksen haasteet \(5-7s\)}{}% 10
 \BOOKMARK [2][-]{subsection.4.1}{Ekvivalentit mutantit}{section.4}% 11
 \BOOKMARK [2][-]{subsection.4.2}{Tehokkuusongelmat}{section.4}% 12
 \BOOKMARK [2][-]{subsection.4.3}{Muita ongelmia?}{section.4}% 13
-\BOOKMARK [2][-]{subsection.4.4}{K\344yt\344nn\366ntoteutus \(miten k\344yt\344nn\366ss\344 on yritetty kiert\344\344 ongelmat\)}{section.4}% 14
-\BOOKMARK [1][-]{section.5}{Mutaatiotestauksen tulevaisuus}{}% 15
+\BOOKMARK [2][-]{subsection.4.4}{K\344yt\344nn\366ntoteutus \(miten k\344yt\344nn\366ss\344 on yritetty kiert\344\344 haasteet\)}{section.4}% 14
+\BOOKMARK [1][-]{section.5}{Mutaatiotestauksen tulevaisuus \(2s\)}{}% 15
 \BOOKMARK [2][-]{subsection.5.1}{Ennusteita tulevalle k\344yt\366lle \(teollisuudessa\)}{section.5}% 16
 \BOOKMARK [2][-]{subsection.5.2}{Mahdolliset kehityssuunnat \(tutkimuksessa\)}{section.5}% 17
-\BOOKMARK [2][-]{subsection.5.3}{Miten saa evaluointia/analyysi\344?}{section.5}% 18
-\BOOKMARK [1][-]{section.6}{Yhteenveto}{}% 19
+\BOOKMARK [1][-]{section.6}{Miten saa evaluointia/analyysi\344? Mihin lukuihin se sopii?}{}% 18
+\BOOKMARK [1][-]{section.7}{Yhteenveto \(1s\)}{}% 19
 \BOOKMARK [1][-]{section*.2}{L\344hteet}{}% 20

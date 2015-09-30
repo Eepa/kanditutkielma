@@ -134,102 +134,128 @@
 
 %\[\frac{a}{b}\]
 
-\section{Johdanto}
+\section{Johdanto (1s)}
 
-Olioperustaisen ohjelmoinnin kehityksen myötä klassisia ohjelmistojen testausmenetelmiä on sopeutettu uusiin vaatimuksiin, joita oliojärjestelmien kattava ja laadukas testaaminen vaatii. Vaikka olioperustainen ohjelmointi ratkaisee joitakin proseduraalisen ohjelmoinnin suunnittelu- ja toteutusongelmia, se tuo mukanaan myös uusia haasteita, jotka vaativat uusien testaus- ja analysointimenetelmien kehittämistä. Näitä olio-ohjelmoinnin erityispiirteitä ovat muun muuassa kapselointi, perintä, dynaaminen linkitys ja polymorfismi~\cite[s. 86]{Mariani:Pezze:2008}.
+Olioperustaisen ohjelmoinnin kehityksen myötä klassisia ohjelmistojen testausmenetelmiä on sopeutettu uusiin vaatimuksiin, joita \textit{oliojärjestelmien} (\textit{object oriented systems}) kattava ja laadukas testaaminen tuo mukanaan. Vaikka olioperustainen ohjelmointi ratkaisee joitakin proseduraalisen ohjelmoinnin suunnittelu- ja toteutusongelmia, sen mukana tulevat uudet haasteet vaativat uusien testaus- ja analysointimenetelmien kehittämistä. Olio-ohjelmoinnissa testauksen tekevät haastavaksi muun muuassa kapselointi, perintä, \textit{dynaaminen linkitys} (\textit{dynamic binding}) ja polymorfismi~\cite[s. 86]{Mariani:Pezze:2008}.
 
-Testausta on käytetty ohjelmistokehityksessä ohjelmiston laadun varmistamiseen ja samalla auttamaan virheiden havaitsemisessa jo kehitysvaiheen aikana. Ohjelmistojen testaamisen ensisijainen tavoite on siis paljastaa virheitä, joiden havaitseminen muiden laadunvarmistusmenetelmien avulla olisi työlästä tai mahdotonta. Lisäksi testauksen avulla on pyritty varmistamaan, että ohjelma toimii sille asetettujen vaatimusten mukaisesti~\cite[s. 59]{Binder:1999}. 
+Testausta käytetään ohjelmistokehityksessä ohjelmiston laadun varmistamiseen ja samalla auttamaan virheiden havaitsemisessa jo kehitysvaiheen aikana. Ohjelmistojen testaamisen ensisijainen tavoite on siis paljastaa virheitä, joiden havaitseminen muiden laadunvarmistusmenetelmien avulla olisi työlästä tai mahdotonta. Lisäksi testauksen avulla on pyritty varmistamaan, että ohjelma toimii sille asetettujen vaatimusten mukaisesti~\cite[s. 59]{Binder:1999} (lähde pitää siirtää johonkin toiseen kohtaan/lisätä jokaisen lauseen perään lähde). 
 
-Testaukseen liittyy kuitenkin myös rajoituksia. Sen avulla ei voi esimerkiksi todeta ohjelmiston oikeellisuutta. Tähän liittyen Dijkstra kirjoitti seuraavan korollaarin, joka liittyy ohjelmistojen oikeaksi todistamiseen: \textit{''Program testing can be used to show the presence of bugs, but never to show their absence!''}~\cite[s. 6]{Dahl:Dijkstra:Hoare:1972}. 
+Testauksessa on kuitenkin myös rajoituksia. Sen avulla ei voi esimerkiksi todeta ohjelmiston oikeellisuutta. Ohjelmistojen oikeaksi todistamiseen ja testauksen rajoituksiin liittyen Dijkstra kirjoitti seuraavan korollaarin: \textit{''Program testing can be used to show the presence of bugs, but never to show their absence!''}~\cite[s. 6]{Dahl:Dijkstra:Hoare:1972}. 
 
-Ohjelmistoja voidaan testata monella tasolla, jotka muodostuvat joukoista ohjelman komponentteja, joita halutaan testata. Alimmalla testauksen tasolla testattavat ohjelman osat ovat pienimpiä mahdollisia suoritettavissa olevia komponentteja. Tämän tason testausta kutsutaan \textit{yksikkötestaukseksi} (\textit{unit testing}) ja testattavat osat ovat olio-ohjelmissa esimerkiksi yksittäisiä metodeja tai luokkia~\cite[s. 45]{Binder:1999}.
+%Ohjelmistoja voidaan testata monella tasolla. Testauksen tasot muodostetaan määrittämällä joukko ohjelman osia eli komponentteja, joita halutaan testata. Alimmalla testauksen tasolla testattavat ohjelman osat ovat pienimpiä mahdollisia suoritettavissa olevia komponentteja. Tämän tason testausta kutsutaan \textit{yksikkötestaukseksi} (\textit{unit testing}) ja testattavat osat ovat olio-ohjelmissa esimerkiksi yksittäisiä metodeja tai luokkia~\cite[s. 45]{Binder:1999}.
+%
+%Yksikkötestauksesta seuraava taso ylöspäin on \textit{integraatiotestaus} (\textit{integration testing}), jossa tarkastellaan järjestelmän tai sen osien yhteistoimintaa ja keskinäistä kommunikointia testaamalla osien välisiä rajapintoja. Olio-ohjelmissa luokkien muodostuminen perinnän avulla ja luokkien koostuminen toisten luokkien olioista aiheuttaa sen, että integraatiotestaukselle on tarvetta jo olioperustaisen ohjelmoinnin alkuvaiheessa~\cite[s. 45]{Binder:1999}.
+%
+%Valmista integroitua sovellusta testataan \textit{järjestelmätestauksen} (\textit{system testing}) avulla. Tällä testauksen tasolla keskitytään vain valmiissa sovelluksessa esiintyvien piirteiden testaamiseen. Testauksen kohteena voi olla esimerkiksi sovelluksen toiminnallisuus, suorituskyky tai sovelluksen kestämä kuormitus~\cite[s. 45]{Binder:1999}.
+%
+%Testien suunnittelussa ja kehittämisessä voidaan myös käyttää erilaisia suunnittelumalleja, joiden avulla kuvataan testien suunnitteluun käytettävää näkökulmaa. Ohjelman sisäiseen rakenteeseen eli lähdekoodin tuntemukseen perustuvaa testien suunnittelumallia kutsutaan \textit{white box -testaukseksi}. \textit{Black box -testaukseksi} tai \textit{funktionaaliseksi testaukseksi} kutsutussa suunnittelumallissa testejä suunnitellaan analysoimalla ohjelmiston ulkoista toiminnallisuutta~\cite[s. 52]{Binder:1999}.
 
-Yksikkötestauksesta seuraava taso ylöspäin on \textit{integraatiotestaus} (\textit{integration testing}), jossa tarkastellaan järjestelmän tai sen osien yhteistoimintaa ja keskinäistä kommunikointia testaamalla osien välisiä rajapintoja. Olio-ohjelmissa luokkien muodostuminen perinnän avulla ja niiden koostuminen toisten luokkien olioista aiheuttaa sen, että integraatiotestaukselle on tarvetta jo aikaisin olioperustaisen ohjelmoinnin alkuvaiheessa~\cite[s. 45]{Binder:1999}.
+Vaikka testauksen avulla ei voikaan varmistua ohjelmiston oikeellisuudesta, voidaan sitä käyttää välineenä ohjelmiston laadun parantamisessa. Testaukseen liittyy kuitenkin myös epävarmuus käytettävän testausjärjestelmän oikeellisuudesta ja oikeellisuuden varmistamisesta~\cite[s. 209]{Manna:Waldinger:1978}. Tämä herättää kysymyksen siitä, kuka voi valvoa valvojia eli kuinka varmistetaan ohjelmiston testien laadukkuus.
 
-Jo valmista integroitua sovellusta testataan \textit{järjestelmätestauksen} (\textit{system testing}) avulla. Tällä testauksen tasolla keskitytään vain valmiissa sovelluksessa esiintyvien piirteiden testaamiseen. Testauksen kohteena voi olla esimerkiksi sovelluksen toiminnallisuus, suorituskyky tai sen kestämän kuormituksen määrä~\cite[s. 45]{Binder:1999}.
+Yksi strategia testien laadun varmistamiseen on \textit{mutaatiotestaus}. Mutaatiotestauksessa ohjelmiston alkuperäistä lähdekoodia käsitellään \textit{mutaatio-operaattoreilla} (\textit{mutation operators}), jotka muuntavat koodia muodostaen siitä virheellisiä versioita. Näitä virheellisiä ohjelmakoodin versioita kutsutaan \textit{mutanteiksi}~\cite[s. 869]{Ma:Harrold:Kwon:2006}. 
 
-Testien suunnittelussa ja kehittämisessä voidaan myös käyttää erilaisia suunnittelumalleja, joiden avulla kuvataan testien suunnitteluun käytettävää näkökulmaa. Ohjelman sisäiseen rakenteeseen eli ohjelmiston lähdekoodin tuntemukseen perustuvaa testien suunnittelumallia kutsutaan \textit{white box -testaukseksi} (\textit{white box testing}). \textit{Black box -testaukseksi} (\textit{black box testing}) tai \textit{funktionaaliseksi testaukseksi} (\textit{functional testing}) kutsutussa suunnittelumallissa testejä suunnitellaan analysoimalla ohjelmiston ulkoista toiminnallisuutta~\cite[s. 52]{Binder:1999}.
+%Mutanttien generoinnin jälkeen ohjelmiston alkuperäiset testit suoritetaan jokaisen mutantin kohdalla. Tavoitteena on, että testien avulla havaitaan lähdekoodiin tehdyt muutokset. Jos alkuperäiset testit eivät mene läpi, se tarkoittaa, että mutantti on tapettu eli lähdekoodiin tehdyt muutokset on havaittu~\cite[s. 9]{Kim:Clark:McDermid:2000}. 
+%
+%Mutaatiotestausprosessi tuottaa lopputuloksena \textit{mutaatiopistemäärän} (\textit{mutation adequacy score}), jonka avulla voidaan arvioida ohjelmiston testien laadukkuutta ja kykyä havaita lähdekoodissa olevia vikoja. 
 
-Vaikka testauksen avulla ei voikaan varmistua ohjelmiston oikeellisuudesta, voidaan sitä käyttää välineenä ohjelmiston laadun parantamisessa. Testaukseen liittyy kuitenkin myös epävarmuutta käytettävän testausjärjestelmän oikeellisuudesta ja oikeellisuuden varmistamisesta~\cite[s. 209]{Manna:Waldinger:1978}. Tämä herättää kysymyksen siitä, kuka voi valvoa valvojia eli kuinka varmistetaan ohjelmiston testien laadukkuus.
-
-Yksi strategia testien laadun varmistamiseen on \textit{mutaatiotestaus} (\textit{mutation testing}). Mutaatiotestauksessa ohjelmiston alkuperäistä lähdekoodia käsitellään \textit{mutaatio-operaattoreilla} (\textit{mutation operators}), jotka muuntavat koodia muodostaen siitä virheellisiä versioita. Näitä virheellisiä ohjelmakoodin versioita kutsutaan \textit{mutanteiksi} (\textit{mutants})~\cite[s. 869]{Ma:Harrold:Kwon:2006}. 
-
-Mutanttien generoinnin jälkeen ohjelmiston alkuperäiset testit suoritetaan jokaisen mutantin kohdalla, ja tavoitteena on, että testit eivät mene läpi. Jos testit tuottavat väärän lopputuloksen, se tarkoittaa, että mutantti on tapettu eli lähdekoodiin tehdyt muutokset on havaittu~\cite[s. 9]{Kim:Clark:McDermid:2000}. 
-
-Mutaatotestausprosessi tuottaa lopputuloksena \textit{mutaatiopistemäärän} (\textit{mutation adequacy score}), jonka avulla ohjelmiston testien laadukkuutta ja kykyä havaita lähdekoodissa olevia vikoja voidaan arvioida. Mutaatiotestaus on virheperustainen testausmenetelmä, jonka taustaperiaatteena on ohjelmoijien tekemien ohjelmointivirheiden simulointi~\cite[s. 649]{Jia:Harman:2011}. Tavoitteena mutaatiotestauksessa on tutkia, ovatko ohjelmistoa varten tehdyt testit laadukkaita ja havaitsevatko ne kattavasti ohjelmistossa mahdollisesti esiintyvät virheet ja ongelmat. 
+Mutaatiotestaus on \textit{virheperustainen testausmenetelmä} (\textit{fault based jotakin}), jonka taustaperiaatteena on ohjelmoijien tekemien ohjelmointivirheiden simulointi~\cite[s. 649]{Jia:Harman:2011}. Tavoitteena mutaatiotestauksessa on tutkia, ovatko ohjelmistoa varten tehdyt testit laadukkaita ja havaitaanko niillä kattavasti ohjelmistossa mahdollisesti esiintyvät virheet ja ongelmat. 
 
 
-\section{Testaus oliojärjestelmissä}
+\section{Testaus oliojärjestelmissä (5s)}
 
-Tähän tietoa siitä, mikä on oliojärjestelmä. Aiheen esittely.
+\textbf{Tähän tietoa siitä, mikä on oliojärjestelmä. Aiheen esittely.}
 
-Olioperustaisen ohjelmoinnin kehityksen myötä klassisia ohjelmistojen testausmenetelmiä on sopeutettu uusiin vaatimuksiin, joita oliojärjestelmien kattava ja laadukas testaaminen vaatii. Vaikka olioperustainen ohjelmointi ratkaisee joitakin proseduraalisen ohjelmoinnin suunnittelu- ja toteutusongelmia, se tuo mukanaan myös uusia haasteita, jotka vaativat uusien testaus- ja analysointimenetelmien kehittämistä. 
+Olioperustaisen ohjelmoinnin kehityksen myötä klassisia ohjelmistojen testausmenetelmiä (avaa lisää näitä klassisia menetelmiä) on sopeutettu uusiin vaatimuksiin, joita \textit{oliojärjestelmien} (\textit{object oriented systems}) kattava ja laadukas testaaminen tuo mukanaan. Vaikka olioperustainen ohjelmointi ratkaisee joitakin proseduraalisen ohjelmoinnin suunnittelu- ja toteutusongelmia, sen mukana tulevat uudet haasteet vaativat uusien testaus- ja analysointimenetelmien kehittämistä. 
 
-Testausta on käytetty ohjelmistokehityksessä ohjelmiston laadun varmistamiseen ja samalla auttamaan virheiden havaitsemisessa jo kehitysvaiheen aikana. Ohjelmistojen testaamisen ensisijainen tavoite on siis paljastaa virheitä, joiden havaitseminen muiden laadunvarmistusmenetelmien avulla olisi työlästä tai mahdotonta. Lisäksi testauksen avulla on pyritty varmistamaan, että ohjelma toimii sille asetettujen vaatimusten mukaisesti~\cite[s. 59]{Binder:1999}.
+Testausta käytetään ohjelmistokehityksessä ohjelmiston laadun varmistamiseen ja samalla auttamaan virheiden havaitsemisessa jo kehitysvaiheen aikana. Ohjelmistojen testaamisen ensisijainen tavoite on siis paljastaa virheitä, joiden havaitseminen muiden laadunvarmistusmenetelmien avulla olisi työlästä tai mahdotonta. Lisäksi testauksen avulla on pyritty varmistamaan, että ohjelma toimii sille asetettujen vaatimusten mukaisesti~\cite[s. 59]{Binder:1999} (lähde pitää siirtää johonkin toiseen kohtaan/lisätä jokaisen lauseen perään lähde). 
 
 \subsection{Testauksen erityispiirteet oliojärjestelmissä/yleisesittely (onko tarpeellinen omana osionaan?)}
 
-Onko tämä tarpeellinen oma osio vai lisätäänkö tiedot introon. 
+\textbf{Onko tämä tarpeellinen oma osio vai lisätäänkö tiedot luvun introon?} 
 
-Näitä olio-ohjelmoinnin erityispiirteitä ovat muun muuassa kapselointi, perintä, dynaaminen linkitys ja polymorfismi~\cite[s. 86]{Mariani:Pezze:2008}.
+ Näitä olio-ohjelmoinnin erityispiirteitä ovat muun muuassa kapselointi, perintä, \textit{dynaaminen linkitys} (\textit{dynamic binding}) ja polymorfismi~\cite[s. 86]{Mariani:Pezze:2008}.
 
 
 \subsection{Testauksen tasot}
 
-Ohjelmistoja voidaan testata monella tasolla, jotka muodostuvat joukoista ohjelman komponentteja, joita halutaan testata. Alimmalla testauksen tasolla testattavat ohjelman osat ovat pienimpiä mahdollisia suoritettavissa olevia komponentteja. Tämän tason testausta kutsutaan \textit{yksikkötestaukseksi} (\textit{unit testing}) ja testattavat osat ovat olio-ohjelmissa esimerkiksi yksittäisiä metodeja tai luokkia~\cite[s. 45]{Binder:1999}.
+\textbf{Avataanko testauksen tasoja enemmän? Kuinka paljon niistä on kerrottava?}
 
-Yksikkötestauksesta seuraava taso ylöspäin on \textit{integraatiotestaus} (\textit{integration testing}), jossa tarkastellaan järjestelmän tai sen osien yhteistoimintaa ja keskinäistä kommunikointia testaamalla osien välisiä rajapintoja. Olio-ohjelmissa luokkien muodostuminen perinnän avulla ja niiden koostuminen toisten luokkien olioista aiheuttaa sen, että integraatiotestaukselle on tarvetta jo aikaisin olioperustaisen ohjelmoinnin alkuvaiheessa~\cite[s. 45]{Binder:1999}.
+Ohjelmistoja voidaan testata monella tasolla. Testauksen tasot muodostetaan määrittämällä joukko ohjelman osia eli komponentteja, joita halutaan testata. Alimmalla testauksen tasolla testattavat ohjelman osat ovat pienimpiä mahdollisia suoritettavissa olevia komponentteja. Tämän tason testausta kutsutaan \textit{yksikkötestaukseksi} (\textit{unit testing}) ja testattavat osat ovat olio-ohjelmissa esimerkiksi yksittäisiä metodeja tai luokkia~\cite[s. 45]{Binder:1999}.
 
-Jo valmista integroitua sovellusta testataan \textit{järjestelmätestauksen} (\textit{system testing}) avulla. Tällä testauksen tasolla keskitytään vain valmiissa sovelluksessa esiintyvien piirteiden testaamiseen. Testauksen kohteena voi olla esimerkiksi sovelluksen toiminnallisuus, suorituskyky tai sen kestämän kuormituksen määrä~\cite[s. 45]{Binder:1999}.
+Yksikkötestauksesta seuraava taso ylöspäin on \textit{integraatiotestaus} (\textit{integration testing}), jossa tarkastellaan järjestelmän tai sen osien yhteistoimintaa ja keskinäistä kommunikointia testaamalla osien välisiä rajapintoja. Olio-ohjelmissa luokkien muodostuminen perinnän avulla ja luokkien koostuminen toisten luokkien olioista aiheuttaa sen, että integraatiotestaukselle on tarvetta jo olioperustaisen ohjelmoinnin alkuvaiheessa~\cite[s. 45]{Binder:1999}.
+
+Valmista integroitua sovellusta testataan \textit{järjestelmätestauksen} (\textit{system testing}) avulla. Tällä testauksen tasolla keskitytään vain valmiissa sovelluksessa esiintyvien piirteiden testaamiseen. Testauksen kohteena voi olla esimerkiksi sovelluksen toiminnallisuus, suorituskyky tai sovelluksen kestämä kuormitus~\cite[s. 45]{Binder:1999}.
+
 
 \subsection{Testien suunnittelumallit}
 
-Kuinka paljon näitä avataan lisää?
+\textbf{Kuinka paljon näitä avataan lisää? Miten paljon on relevanttia tutkielman kannalta?}
 
-Testien suunnittelussa ja kehittämisessä voidaan myös käyttää erilaisia suunnittelumalleja, joiden avulla kuvataan testien suunnitteluun käytettävää näkökulmaa. Ohjelman sisäiseen rakenteeseen eli ohjelmiston lähdekoodin tuntemukseen perustuvaa testien suunnittelumallia kutsutaan \textit{white box -testaukseksi} (\textit{white box testing}). \textit{Black box -testaukseksi} (\textit{black box testing}) tai \textit{funktionaaliseksi testaukseksi} (\textit{functional testing}) kutsutussa suunnittelumallissa testejä suunnitellaan analysoimalla ohjelmiston ulkoista toiminnallisuutta~\cite[s. 52]{Binder:1999}.
+Testien suunnittelussa ja kehittämisessä voidaan myös käyttää erilaisia suunnittelumalleja, joiden avulla kuvataan testien suunnitteluun käytettävää näkökulmaa. Ohjelman sisäiseen rakenteeseen eli lähdekoodin tuntemukseen perustuvaa testien suunnittelumallia kutsutaan \textit{white box -testaukseksi}. \textit{Black box -testaukseksi} tai \textit{funktionaaliseksi testaukseksi} kutsutussa suunnittelumallissa testejä suunnitellaan analysoimalla ohjelmiston ulkoista toiminnallisuutta~\cite[s. 52]{Binder:1999}.
+
 
 \subsection{Testauksen rajoitukset}
 
-Testaukseen liittyy kuitenkin myös rajoituksia. Sen avulla ei voi esimerkiksi todeta ohjelmiston oikeellisuutta. Tähän liittyen Dijkstra kirjoitti seuraavan korollaarin, joka liittyy ohjelmistojen oikeaksi todistamiseen: \textit{''Program testing can be used to show the presence of bugs, but never to show their absence!''}~\cite[s. 6]{Dahl:Dijkstra:Hoare:1972}. 
+\textbf{Kuinka paljon rajoituksista on kerrottava? Niitä on aika paljon erilaisia. Mitkä niistä ovat relevantteja tämän tutkielman kannalta?}
 
-Vaikka testauksen avulla ei voikaan varmistua ohjelmiston oikeellisuudesta, voidaan sitä käyttää välineenä ohjelmiston laadun parantamisessa. Testaukseen liittyy kuitenkin myös epävarmuutta käytettävän testausjärjestelmän oikeellisuudesta ja oikeellisuuden varmistamisesta~\cite[s. 209]{Manna:Waldinger:1978}. Tämä herättää kysymyksen siitä, kuka voi valvoa valvojia eli kuinka varmistetaan ohjelmiston testien laadukkuus.
+Testauksessa on kuitenkin myös rajoituksia. Sen avulla ei voi esimerkiksi todeta ohjelmiston oikeellisuutta. Ohjelmistojen oikeaksi todistamiseen ja testauksen rajoituksiin liittyen Dijkstra kirjoitti seuraavan korollaarin: \textit{''Program testing can be used to show the presence of bugs, but never to show their absence!''}~\cite[s. 6]{Dahl:Dijkstra:Hoare:1972}. 
 
-\section{Mutaatiotestaus oliojärjestelmissä}
+\section{Mutaatiotestaus oliojärjestelmissä (5-7s)}
+
+\textbf{Haasteisiin voidaan vastata mutaatiotestauksen avulla}
+
+Vaikka testauksen avulla ei voikaan varmistua ohjelmiston oikeellisuudesta, voidaan sitä käyttää välineenä ohjelmiston laadun parantamisessa. Testaukseen liittyy kuitenkin myös epävarmuus käytettävän testausjärjestelmän oikeellisuudesta ja oikeellisuuden varmistamisesta~\cite[s. 209]{Manna:Waldinger:1978}. Tämä herättää kysymyksen siitä, kuka voi valvoa valvojia eli kuinka varmistetaan ohjelmiston testien laadukkuus.
 
 \subsection{Mutaatiotestauksen yleisesittely}
 
-Yksi strategia testien laadun varmistamiseen on \textit{mutaatiotestaus} (\textit{mutation testing}). Mutaatiotestauksessa ohjelmiston alkuperäistä lähdekoodia käsitellään \textit{mutaatio-operaattoreilla} (\textit{mutation operators}), jotka muuntavat koodia muodostaen siitä virheellisiä versioita. Näitä virheellisiä ohjelmakoodin versioita kutsutaan \textit{mutanteiksi} (\textit{mutants})~\cite[s. 869]{Ma:Harrold:Kwon:2006}. 
+\textbf{Laajentaa sopivista kohdista yleisesittelyä.}
 
-Mutanttien generoinnin jälkeen ohjelmiston alkuperäiset testit suoritetaan jokaisen mutantin kohdalla, ja tavoitteena on, että testit eivät mene läpi. Jos testit tuottavat väärän lopputuloksen, se tarkoittaa, että mutantti on tapettu eli lähdekoodiin tehdyt muutokset on havaittu~\cite[s. 9]{Kim:Clark:McDermid:2000}. 
+Yksi strategia testien laadun varmistamiseen on \textit{mutaatiotestaus}. Mutaatiotestauksessa ohjelmiston alkuperäistä lähdekoodia käsitellään \textit{mutaatio-operaattoreilla} (\textit{mutation operators}), jotka muuntavat koodia muodostaen siitä virheellisiä versioita. Näitä virheellisiä ohjelmakoodin versioita kutsutaan \textit{mutanteiksi}~\cite[s. 869]{Ma:Harrold:Kwon:2006}. 
 
-Mutaatotestausprosessi tuottaa lopputuloksena \textit{mutaatiopistemäärän} (\textit{mutation adequacy score}), jonka avulla ohjelmiston testien laadukkuutta ja kykyä havaita lähdekoodissa olevia vikoja voidaan arvioida. Mutaatiotestaus on virheperustainen testausmenetelmä, jonka taustaperiaatteena on ohjelmoijien tekemien ohjelmointivirheiden simulointi~\cite[s. 649]{Jia:Harman:2011}. Tavoitteena mutaatiotestauksessa on tutkia, ovatko ohjelmistoa varten tehdyt testit laadukkaita ja havaitsevatko ne kattavasti ohjelmistossa mahdollisesti esiintyvät virheet ja ongelmat.
+Mutanttien generoinnin jälkeen ohjelmiston alkuperäiset testit suoritetaan jokaisen mutantin kohdalla. Tavoitteena on, että testien avulla havaitaan lähdekoodiin tehdyt muutokset. Jos alkuperäiset testit eivät mene läpi, se tarkoittaa, että mutantti on tapettu eli lähdekoodiin tehdyt muutokset on havaittu~\cite[s. 9]{Kim:Clark:McDermid:2000}. 
 
-\subsection{Mutaatiotestauksen piirteet oliojärjestelmissä (erot muihin järjestelmiin)}
-
-Erityisesti ehkä juuri nuo mutaatio-operaattorit ja minkälaisia erilaisia niitä on.
+Mutaatiotestausprosessi tuottaa lopputuloksena \textit{mutaatiopistemäärän} (\textit{mutation adequacy score}), jonka avulla voidaan arvioida ohjelmiston testien laadukkuutta ja kykyä havaita lähdekoodissa olevia vikoja. Mutaatiotestaus on \textit{virheperustainen testausmenetelmä} (\textit{fault based jotakin}), jonka taustaperiaatteena on ohjelmoijien tekemien ohjelmointivirheiden simulointi~\cite[s. 649]{Jia:Harman:2011}. Tavoitteena mutaatiotestauksessa on tutkia, ovatko ohjelmistoa varten tehdyt testit laadukkaita ja havaitaanko niillä kattavasti ohjelmistossa mahdollisesti esiintyvät virheet ja ongelmat. 
 
 
-\section{Mutaatiotestauksen haasteet}
+\subsection{Mutaatiotestauksen piirteet oliojärjestelmissä (erot muihin järjestelmiin?)}
+
+\textbf{Erityisesti juuri nuo mutaatio-operaattorit ja minkälaisia erilaisia niitä on. Esittelyä tulee mutaatio-operaattoreista.}
+
+\section{Mutaatiotestauksen haasteet (5-7s)}
+
+\textbf{Misi mutaatiotestaus ei ole päätynyt suureen suosioon/käyttöön? Valitaan muutama haaste ja esitellään niitä? Kerrotaan että myös muita haasteita, mutta ei esitellä niitä?}
 
 \subsection{Ekvivalentit mutantit}
 
+\textbf{Ratkaisematon ongelma. Pitäisi avata ja kehittää esimerkki.}
+
 \subsection{Tehokkuusongelmat}
+
+\textbf{Laitteisto, testien määrä, ihmisten aika tulee vastaan. Esimerkkejä.}
 
 \subsection{Muita ongelmia?}
 
-\subsection{Käytännöntoteutus (miten käytännössä on yritetty kiertää ongelmat)}
+\textbf{Varmasti on muita, mutta kuinka paljon niitä mahtuu tähän esitelmään?}
 
-\section{Mutaatiotestauksen tulevaisuus}
+\subsection{Käytännöntoteutus (miten käytännössä on yritetty kiertää haasteet)}
+
+\textbf{Onko tämä relevantti aihealue käsitellä?}
+
+\section{Mutaatiotestauksen tulevaisuus (2s)}
+
+\textbf{Osaanko antaa katsausta tulevaisuuteen? Oma arvio sen perusteella mitä on lukenut? Onko se tämän kandin tarkoitus? Mahdollisia käsiteltäviä alueita väliotsikoissa (ovatko väliotsikot edes tarpeen?).}
 
 \subsection{Ennusteita tulevalle käytölle (teollisuudessa)}
 
 \subsection{Mahdolliset kehityssuunnat (tutkimuksessa)}
 
-\subsection{Miten saa evaluointia/analyysiä?}
+\section{Miten saa evaluointia/analyysiä? Mihin lukuihin se sopii?}
 
-\section{Yhteenveto}
+\textbf{Mihin kohtiin evaluointi ja analyysi sopivat, jotta tästä ei tule mutaatiotestauksen/testauksen oppikirjaa? Miten sitä tehdään? Vertailemalla, ennustamalla tulevaa, jotakin muuta?}
 
+\section{Yhteenveto (1s)}
 
+\textbf{Conclusion.}
 
  
 
