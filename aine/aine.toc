@@ -3,15 +3,15 @@
 \contentsline {section}{\numberline {2}Testaus olioj\IeC {\"a}rjestelmiss\IeC {\"a} [2s]}{1}{section.2}
 \contentsline {subsection}{\numberline {2.1}Testauksen rooli olioj\IeC {\"a}rjestelmiss\IeC {\"a}}{1}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Testauksen tasot}{1}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}Testien suunnittelumallit}{2}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}Testauksen rajoitukset}{2}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.3}Testien suunnittelu}{2}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Testauksen rajoitukset}{3}{subsection.2.4}
 \contentsline {section}{\numberline {3}Mutaatiotestaus olioj\IeC {\"a}rjestelmiss\IeC {\"a} [3s]}{3}{section.3}
 \contentsline {subsection}{\numberline {3.1}Mutaatiotestauksen yleisesittely}{3}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}Mutaatiotestauksen piirteet olioj\IeC {\"a}rjestelmiss\IeC {\"a} (erot muihin j\IeC {\"a}rjestelmiin?)}{4}{subsection.3.2}
 \contentsline {section}{\numberline {4}Mutaatiotestauksen haasteet [3s]}{4}{section.4}
 \contentsline {subsection}{\numberline {4.1}Ekvivalentit mutantit}{4}{subsection.4.1}
 \contentsline {subsection}{\numberline {4.2}Tehokkuusongelmat}{4}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Muita ongelmia?}{4}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.3}Muita ongelmia?}{5}{subsection.4.3}
 \contentsline {subsection}{\numberline {4.4}K\IeC {\"a}yt\IeC {\"a}nn\IeC {\"o}ntoteutus (miten k\IeC {\"a}yt\IeC {\"a}nn\IeC {\"o}ss\IeC {\"a} on yritetty kiert\IeC {\"a}\IeC {\"a} haasteet)}{5}{subsection.4.4}
 \contentsline {section}{\numberline {5}Yhteenveto [1s]}{5}{section.5}
 \contentsline {section}{L\IeC {\"a}hteet}{6}{section*.2}
