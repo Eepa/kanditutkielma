@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.9.8)  6 OCT 2015 19:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.9.8)  6 OCT 2015 23:19
 entering extended mode
 **aine.tex
 (aine.tex
@@ -911,17 +911,21 @@ Package babel Info: Redefining finnish shorthand "|
 LaTeX Warning: Citation `Mistä lie tähän?' on page 3 undefined on input line 18
 6.
 
+
+LaTeX Warning: Citation `Joku mutaatiolähde' on page 3 undefined on input line 
+188.
+
 Package babel Info: Redefining finnish shorthand "|
 (babel)             in language  on input line 191.
 Package babel Info: Redefining finnish shorthand "|
 (babel)             in language  on input line 197.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 205.
+(babel)             in language  on input line 204.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 209.
-Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 209.
+(babel)             in language  on input line 204.
 [3]
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 205.
 Package babel Info: Redefining finnish shorthand "|
 (babel)             in language  on input line 218.
 Package babel Info: Redefining finnish shorthand "|
@@ -929,10 +933,10 @@ Package babel Info: Redefining finnish shorthand "|
 Package babel Info: Redefining finnish shorthand "|
 (babel)             in language  on input line 227.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 231.
-Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 231.
+(babel)             in language  on input line 227.
  [4]
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 227.
 Package babel Info: Redefining finnish shorthand "|
 (babel)             in language  on input line 231.
 Package babel Info: Redefining finnish shorthand "|
@@ -988,11 +992,11 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 298.
  ) 
 Here is how much of TeX's memory you used:
- 9780 strings out of 493673
- 144548 string characters out of 3143952
- 278737 words of memory out of 3000000
- 12819 multiletter control sequences out of 15000+200000
- 50253 words of font info for 91 fonts, out of 3000000 for 9000
+ 9787 strings out of 493673
+ 144630 string characters out of 3143952
+ 277737 words of memory out of 3000000
+ 12820 multiletter control sequences out of 15000+200000
+ 50549 words of font info for 94 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  31i,8n,35p,632b,498s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}<C:/Program Files/M
@@ -1002,9 +1006,9 @@ r10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Progra
 m Files/MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><C:/Program Files/MiKTeX 2.9/
 fonts/type1/public/lm/lmri10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
 c/lm/lmtt10.pfb>
-Output written on aine.pdf (9 pages, 236585 bytes).
+Output written on aine.pdf (9 pages, 237091 bytes).
 PDF statistics:
- 194 PDF objects out of 1000 (max. 8388607)
+ 195 PDF objects out of 1000 (max. 8388607)
  33 named destinations out of 1000 (max. 500000)
  14465 words of extra memory for PDF output out of 17280 (max. 10000000)
 
