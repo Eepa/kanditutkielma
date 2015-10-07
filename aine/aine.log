@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.9.8)  6 OCT 2015 23:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.9.8)  7 OCT 2015 11:50
 entering extended mode
 **aine.tex
 (aine.tex
@@ -829,32 +829,32 @@ Package babel Info: Redefining finnish shorthand "|
 
 
 ] (aine.toc
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 4.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 5.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd"
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 4.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 5.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omllmm.fd"
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 4.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 5.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omslmsy.fd"
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 4.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 5.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omxlmex.fd"
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 4.
+(Font)              <10.95> on input line 5.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 4.
+(Font)              <8> on input line 5.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 4.
-LaTeX Font Info:    Try loading font information for U+msa on input line 4.
+(Font)              <6> on input line 5.
+LaTeX Font Info:    Try loading font information for U+msa on input line 5.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -862,7 +862,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ("C:\Program Files\MiKTeX 2.9\tex\latex\microtype\mt-msa.cfg"
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 4.
+LaTeX Font Info:    Try loading font information for U+msb on input line 5.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -881,75 +881,93 @@ Package babel Info: Redefining finnish shorthand "|
 Package babel Info: Redefining finnish shorthand "|
 (babel)             in language  on input line 137.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 156.
+(babel)             in language  on input line 166.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 160.
+(babel)             in language  on input line 173.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 167.
+(babel)             in language  on input line 176.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 172.
-Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 172.
+(babel)             in language  on input line 176.
  [1
 
 ]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 178.
-
-
-LaTeX Warning: Citation `JOKU??' on page 2 undefined on input line 182.
-
-
-LaTeX Warning: Citation `Mistä lie?' on page 2 undefined on input line 184.
-
+(babel)             in language  on input line 177.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 185.
-Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 185.
-[2]
-
-LaTeX Warning: Citation `Mistä lie tähän?' on page 3 undefined on input line 18
-6.
-
-
-LaTeX Warning: Citation `Joku mutaatiolähde' on page 3 undefined on input line 
-188.
-
+(babel)             in language  on input line 184.
 Package babel Info: Redefining finnish shorthand "|
 (babel)             in language  on input line 191.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 197.
+(babel)             in language  on input line 191.
+
+[2]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 204.
-Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 204.
-[3]
+(babel)             in language  on input line 195.
+
+
+LaTeX Warning: Citation `Joku mutaatiolähde tähän.' on page 3 undefined on inpu
+t line 197.
+
+
+LaTeX Warning: Citation `JOKU??' on page 3 undefined on input line 199.
+
+
+LaTeX Warning: Citation `Mistä lie?' on page 3 undefined on input line 201.
+
+
+LaTeX Warning: Citation `Mistä lie tähän?' on page 3 undefined on input line 20
+3.
+
 Package babel Info: Redefining finnish shorthand "|
 (babel)             in language  on input line 205.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 218.
+(babel)             in language  on input line 205.
+[3]
+
+LaTeX Warning: Citation `Joku mutaatiolähde' on page 4 undefined on input line 
+205.
+
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 223.
+(babel)             in language  on input line 208.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 227.
+(babel)             in language  on input line 214.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 227.
- [4]
+(babel)             in language  on input line 220.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 227.
+(babel)             in language  on input line 225.
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 225.
+[4]
 Package babel Info: Redefining finnish shorthand "|
 (babel)             in language  on input line 231.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 235.
+(babel)             in language  on input line 236.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 239.
+(babel)             in language  on input line 242.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 255.
+(babel)             in language  on input line 246.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 280.
+(babel)             in language  on input line 250.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 280.
- [5] (aine.bbl
+(babel)             in language  on input line 254.
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 254.
+ [5]
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 254.
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 258.
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 261.
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 263.
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 269.
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 294.
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 294.
+ [6] (aine.bbl
 Package babel Info: Redefining finnish shorthand "|
 (babel)             in language  on input line 1.
 
@@ -973,42 +991,42 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 298.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 312.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 298.
+(babel)             in language  on input line 312.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 298.
- [6]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 298.
+(babel)             in language  on input line 312.
+ [7]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 312.
  (aine.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 298.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 298.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 312.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 312.
 Package rerunfilecheck Info: File `aine.out' has not changed.
-(rerunfilecheck)             Checksum: C6925DD81DEEFD5074E0B64A987A48D2;1240.
+(rerunfilecheck)             Checksum: DAC74780D70C7E4CC9513CE09FC58355;1767.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 298.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 312.
  ) 
 Here is how much of TeX's memory you used:
- 9787 strings out of 493673
- 144630 string characters out of 3143952
- 277737 words of memory out of 3000000
- 12820 multiletter control sequences out of 15000+200000
- 50549 words of font info for 94 fonts, out of 3000000 for 9000
+ 9796 strings out of 493673
+ 144774 string characters out of 3143952
+ 278740 words of memory out of 3000000
+ 12827 multiletter control sequences out of 15000+200000
+ 54607 words of font info for 93 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 31i,8n,35p,632b,498s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 31i,8n,35p,615b,498s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}<C:/Program Files/M
 iKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
 ype1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lm
-r10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Progra
-m Files/MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><C:/Program Files/MiKTeX 2.9/
-fonts/type1/public/lm/lmri10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
-c/lm/lmtt10.pfb>
-Output written on aine.pdf (9 pages, 237091 bytes).
+bxi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/public/lm/lmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/lm/lmri10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb>
+Output written on aine.pdf (10 pages, 264589 bytes).
 PDF statistics:
- 195 PDF objects out of 1000 (max. 8388607)
- 33 named destinations out of 1000 (max. 500000)
- 14465 words of extra memory for PDF output out of 17280 (max. 10000000)
+ 228 PDF objects out of 1000 (max. 8388607)
+ 38 named destinations out of 1000 (max. 500000)
+ 15009 words of extra memory for PDF output out of 17280 (max. 10000000)
 

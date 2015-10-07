@@ -1,16 +1,20 @@
 \BOOKMARK [1][-]{section.1}{Johdanto [1s]}{}% 1
-\BOOKMARK [1][-]{section.2}{Testaus olioj\344rjestelmiss\344 [2s]}{}% 2
-\BOOKMARK [2][-]{subsection.2.1}{Testauksen rooli olioj\344rjestelmiss\344}{section.2}% 3
-\BOOKMARK [2][-]{subsection.2.2}{Testauksen tasot}{section.2}% 4
-\BOOKMARK [2][-]{subsection.2.3}{Testien suunnittelu}{section.2}% 5
-\BOOKMARK [2][-]{subsection.2.4}{Testauksen rajoitukset}{section.2}% 6
-\BOOKMARK [1][-]{section.3}{Mutaatiotestaus olioj\344rjestelmiss\344 [3s]}{}% 7
-\BOOKMARK [2][-]{subsection.3.1}{Mutaatiotestauksen yleisesittely}{section.3}% 8
-\BOOKMARK [2][-]{subsection.3.2}{Mutaatiotestauksen piirteet olioj\344rjestelmiss\344 \(erot muihin j\344rjestelmiin?\)}{section.3}% 9
-\BOOKMARK [1][-]{section.4}{Mutaatiotestauksen haasteet [3s]}{}% 10
-\BOOKMARK [2][-]{subsection.4.1}{Ekvivalentit mutantit}{section.4}% 11
-\BOOKMARK [2][-]{subsection.4.2}{Tehokkuusongelmat}{section.4}% 12
-\BOOKMARK [2][-]{subsection.4.3}{Muita ongelmia?}{section.4}% 13
-\BOOKMARK [2][-]{subsection.4.4}{K\344yt\344nn\366ntoteutus \(miten k\344yt\344nn\366ss\344 on yritetty kiert\344\344 haasteet\)}{section.4}% 14
-\BOOKMARK [1][-]{section.5}{Yhteenveto [1s]}{}% 15
-\BOOKMARK [1][-]{section*.2}{L\344hteet}{}% 16
+\BOOKMARK [1][-]{section.2}{N\344m\344 luvut ovat ihan v\344\344rin}{}% 2
+\BOOKMARK [1][-]{section.3}{Testaus olioj\344rjestelmiss\344 [2s]}{}% 3
+\BOOKMARK [2][-]{subsection.3.1}{Testauksen rooli olioj\344rjestelmiss\344}{section.3}% 4
+\BOOKMARK [2][-]{subsection.3.2}{Testauksen tasot}{section.3}% 5
+\BOOKMARK [2][-]{subsection.3.3}{Testien suunnittelu}{section.3}% 6
+\BOOKMARK [2][-]{subsection.3.4}{Testauksen rajoitukset}{section.3}% 7
+\BOOKMARK [1][-]{section.4}{Mutaatiotestaus olioj\344rjestelmiss\344 [3s]}{}% 8
+\BOOKMARK [2][-]{subsection.4.1}{Mutaatiotestauksen yleisesittely}{section.4}% 9
+\BOOKMARK [2][-]{subsection.4.2}{Mutaatiotestauksen piirteet olioj\344rjestelmiss\344 \(erot muihin j\344rjestelmiin?\)}{section.4}% 10
+\BOOKMARK [1][-]{section.5}{Mutaatiotestauksen haasteet [3s]}{}% 11
+\BOOKMARK [2][-]{subsection.5.1}{Ekvivalentit mutantit}{section.5}% 12
+\BOOKMARK [2][-]{subsection.5.2}{Tehokkuusongelmat}{section.5}% 13
+\BOOKMARK [2][-]{subsection.5.3}{Muita ongelmia?}{section.5}% 14
+\BOOKMARK [2][-]{subsection.5.4}{K\344yt\344nn\366ntoteutus \(miten k\344yt\344nn\366ss\344 on yritetty kiert\344\344 haasteet\)}{section.5}% 15
+\BOOKMARK [1][-]{section.6}{Miten mutaatiotestaus auttaa testien laadun parantamisessa?}{}% 16
+\BOOKMARK [2][-]{subsection.6.1}{Miksi mutaatiotestausta tulisi k\344ytt\344\344, vaikka se on raskasta ja ty\366l\344st\344?}{section.6}% 17
+\BOOKMARK [2][-]{subsection.6.2}{Milt\344 tulevaisuus n\344ytt\344\344, tuleeko k\344ytt\366 lis\344\344ntym\344\344n vai j\344\344k\366 mutaatiotestaus unohduksiin/pienen piirin harrastukseksi?}{section.6}% 18
+\BOOKMARK [1][-]{section.7}{Yhteenveto [1s]}{}% 19
+\BOOKMARK [1][-]{section*.2}{L\344hteet}{}% 20
