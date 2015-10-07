@@ -156,18 +156,11 @@
 %
 %Mutaatiotestausprosessi tuottaa lopputuloksena \textit{mutaatiopistemäärän} (\textit{mutation adequacy score}), jonka avulla voidaan arvioida ohjelmiston testien laadukkuutta ja kykyä havaita lähdekoodissa olevia vikoja. 
 
-\textbf{Kuvaus aineesta ja sen osioista (esim. luvussa 2 käsitellään tätä ja tätä ja luvussa 3 tätä) niin kuin artikkeleissa?}
 
-\textbf{Johdanto jäsennelty asianmukaisesti (kenelle, miksi, millaisessa ympäristössä; ratkaisun lähestymistapa; tutkimuskysymys, tulokset ja impakti; loppulukujen roolitus),
+\textbf{Johdanto jäsennelty asianmukaisesti (kenelle, miksi, millaisessa ympäristössä; ratkaisun lähestymistapa; tutkimuskysymys, tulokset ja impakti),
 pituus 1,5 - 2 s.}
 
 \textbf{\textit{MIKÄ ON MINUN TUTKIMUSKYSYMYKSENI?}}
-
-\section{Nämä luvut ovat ihan väärin}
-
-\textbf{Luku 2 purkaa auki teknisemmälle yleisölle samalla käsitteitä määritellen tutkimuskysymyksen, ratkaisuille ympäristöstä esiintulevat vaatimukset ja keskeiset käsitteet näiden asioiden esittelemiseksi. Antaa riittävästi termistöä ja kysymyksenasetteluja, jotta myöhempänä teksissä on mahdollisuus analyysiin ja evaluointiin.}
-
-\textbf{\textit{MITÄ MÄ LAITAN TÄHÄN LUKUUN?}}
 
 
 \section{Testaus oliojärjestelmissä [2s]}
@@ -176,7 +169,7 @@ Olioperustaisen ohjelmoinnin kehityksen myötä klassisia ohjelmistojen testausm
 
 \subsection{Testauksen rooli oliojärjestelmissä}
 
-Testausta käytetään ohjelmistokehityksessä ohjelmiston laadun varmistamiseen ja auttamaan virheiden havaitsemisessa jo kehitysvaiheen aikana. (Binderin mukaan: väite melkein suora käännös kirjan lauseesta) Ohjelmistojen testaamisen ensisijainen tavoite on siis paljastaa virheitä, joiden havaitseminen muiden laadunvarmistusmenetelmien avulla olisi työlästä tai mahdotonta~\cite[s. 59]{Binder:1999}. Testauksen avulla pyritään lisäksi varmistamaan, että ohjelma toimii sille asetettujen vaatimusten mukaisesti. 
+Testausta käytetään ohjelmistokehityksessä ohjelmiston laadun varmistamiseen ja auttamaan virheiden havaitsemisessa jo kehitysvaiheen aikana. Ohjelmistojen testaamisen ensisijainen tavoite on siis paljastaa virheitä, joiden havaitseminen muiden laadunvarmistusmenetelmien avulla olisi työlästä tai mahdotonta~\cite[s. 59]{Binder:1999}. Testauksen avulla pyritään lisäksi varmistamaan, että ohjelma toimii sille asetettujen vaatimusten mukaisesti. 
 
 Olio-ohjelmoinnissa testaukseen tuovat haasteita olio-ohjelmien erityispiirteet, joita ovat muun muuassa kapselointi, perintä, dynaaminen sidonta ja polymorfismi~\cite[s. 86]{Mariani:Pezze:2008}. \textbf{Lisää tähän? Binderin kirjasta löyty tietoa.}
 
@@ -198,9 +191,9 @@ Testien suunnitteluun ja kehittämiseen voidaan käyttää erilaisia menetelmiä
 
 Ohjelman sisäisen rakenteen eli lähdekoodin tuntemukseen perustuvaa testausmenetelmää kutsutaan \textit{white box -testaukseksi}~\cite[s. 52]{Binder:1999}. \textbf{Lisää tästä. Seuraava omaa keksintöä:} White box -testausta voidaan käyttää esimerkiksi yksikkötestauksessa apuna testien suunnittelussa, sillä lähdekoodin tuntemus auttaa kehittämään testejä yksittäisille metodeille ja olioille~\cite{JOKU??}.
 
-\textit{Black box -testaukseksi} tai \textit{funktionaaliseksi testaukseksi}~\cite[s. 52]{Binder:1999} kutsutussa testausmenetelmässä testejä suunnitellaan analysoimalla ohjelmiston ulkoista toiminnallisuutta. \textbf{Lisää tuosta. Omaa keksintöä:} Koska valmiin sovelluksen piirteitä testatessa tutkitaan myös sovelluksen ulkoista toiminnallisuutta, on black box -testauksesta apua esimerkiksi suunniteltaessa testejä järjestelmätestaukseen~\cite{Mistä lie?}.
+\textit{Black box - testaukseksi} eli \textit{funktionaaliseksi testaukseksi}~\cite[s. 52]{Binder:1999} kutsutussa testausmenetelmässä testejä suunnitellaan analysoimalla ohjelmiston ulkoista toiminnallisuutta. \textbf{Lisää tuosta. Omaa keksintöä:} Koska valmiin sovelluksen piirteitä testatessa tutkitaan myös sovelluksen ulkoista toiminnallisuutta, on black box -testauksesta apua esimerkiksi suunniteltaessa testejä järjestelmätestaukseen~\cite{Mistä lie?}.
 
-\textit{Gray box -} eli \textit{hybriditestauksessa}~\cite[s. 52]{Binder:1999} sekoitetaan white box - ja black box -testausmenetelmien piirteitä. \textbf{Omaa keksintöä:} White box - ja black box -testausta voidaan siis käyttää testien suunnittelussa erikseen tai molempien piirteitä yhdistäen useilla testauksen tasoilla~\cite{Mistä lie tähän?}.
+\textit{Gray box -} eli \textit{hybriditestauksessa}~\cite[s. 52]{Binder:1999} yhdistetään white box - ja black box -testausmenetelmien piirteitä. \textbf{Omaa keksintöä:} Näinollen sekä white box - että black box -testausmenetelmää voidaan käyttää testien suunnittelussa useilla testauksen tasoilla joko erikseen tai molempien piirteitä yhdistellen.
 
 Testausmenetelmää, jossa ohjelman lähdekoodiin lisätään virheitä, kutsutaan \textit{virheperustaiseksi testausmenetelmäksi} (\textit{fault-based testing})~\cite[s. 52]{Binder:1999}. Esimerkkinä virheperustaisesta testausmenetelmästä on mutaatiotestaus, jonka avulla tutkitaan testien kykyä havaita ohjelmiston virheitä~\cite[s. X]{Joku mutaatiolähde}.
 
@@ -209,23 +202,23 @@ Testausmenetelmää, jossa ohjelman lähdekoodiin lisätään virheitä, kutsuta
 
 \textbf{Kuinka paljon rajoituksista on kerrottava? Niitä on aika paljon erilaisia. Mitkä niistä ovat relevantteja tämän tutkielman kannalta?}
 
-Testaukseen kuuluu kuitenkin myös rajoituksia. Testauksen avulla ei voi esimerkiksi todeta ohjelmiston oikeellisuutta. Ohjelmistojen oikeaksi todistamiseen ja testauksen rajoituksiin liittyen Dijkstra kirjoitti seuraavan korollaarin: \textit{''Program testing can be used to show the presence of bugs, but never to show their absence!''}~\cite[s. 6]{Dahl:Dijkstra:Hoare:1972}. 
+Testaukseen kuuluu kuitenkin myös rajoituksia. Testauksen avulla ei voi esimerkiksi todeta ohjelmiston oikeellisuutta. Ohjelmistojen oikeaksi todistamiseen ja testauksen rajoituksiin liittyen Edsger Dijkstra kirjoitti seuraavan korollaarin: \textit{''Program testing can be used to show the presence of bugs, but never to show their absence!''}~\cite[s. 6]{Dahl:Dijkstra:Hoare:1972}. 
 
 \section{Mutaatiotestaus oliojärjestelmissä [3s]}
 
 \textbf{Haasteisiin voidaan vastata mutaatiotestauksen avulla.}
 
-Vaikka testauksen avulla ei voikaan varmistua ohjelmiston oikeellisuudesta, voidaan testausta käyttää välineenä ohjelmiston laadun parantamisessa. Testaukseen sisältyvien rajoitusten lisäksi siihen liittyy myös epävarmuutta käytettävän testausjärjestelmän oikeellisuudesta ja oikeellisuuden varmistamisesta~\cite[s. 209]{Manna:Waldinger:1978}. Tämä herättää kysymyksen siitä, kuka voi ''valvoa valvojia'' eli kuinka varmistetaan ohjelmiston testien laadukkuus.
+Vaikka testauksen avulla ei voikaan varmistua ohjelmiston oikeellisuudesta \textbf{Avaa sana oikeellisuus eli että oikeellisuus = toimii kaikilla mahdollisilla syötteillä jokaisessa tilassa oikein}, voidaan testausta käyttää välineenä ohjelmiston laadun parantamisessa. Testaukseen sisältyvien rajoitusten lisäksi siihen liittyy myös epävarmuutta käytettävän testausjärjestelmän oikeellisuudesta ja oikeellisuuden varmistamisesta~\cite[s. 209]{Manna:Waldinger:1978}. Tämä herättää kysymyksen siitä, kuka voi ''valvoa valvojia'' eli kuinka varmistetaan ohjelmiston testien laadukkuus.
 
 \subsection{Mutaatiotestauksen yleisesittely}
 
-Yksi strategia testien laadun varmistamiseen on \textit{mutaatiotestaus}. Mutaatiotestauksessa ohjelmiston alkuperäistä lähdekoodia käsitellään \textit{mutaatio-operaattoreilla} (\textit{mutation operators}), jotka muuntavat koodia muodostaen siitä virheellisiä versioita. Näitä virheellisiä ohjelmakoodin versioita kutsutaan \textit{mutanteiksi}~\cite[s. 869]{Ma:Harrold:Kwon:2006}. 
+Yksi strategia testien laadun varmistamiseen on \textit{mutaatiotestaus}. Mutaatiotestauksessa ohjelmiston alkuperäistä lähdekoodia käsitellään \textit{mutaatio-operaattoreilla} (\textit{mutation operators}), jotka muuntavat koodia muodostaen siitä virheellisiä versioita\textbf{Opettaja halusi lähteen tähän mielummin kuin käsitteen perään}. Näitä virheellisiä ohjelmakoodin versioita kutsutaan \textit{mutanteiksi}~\cite[s. 869]{Ma:Harrold:Kwon:2006}. 
 
 Mutanttien generoinnin jälkeen ohjelmiston alkuperäiset testit suoritetaan jokaisen mutantin kohdalla. Tavoitteena on, että testien avulla havaitaan lähdekoodiin tehdyt muutokset. Jos alkuperäiset testit eivät mene läpi, se tarkoittaa, että mutantti on tapettu eli lähdekoodiin tehdyt muutokset on havaittu~\cite[s. 9]{Kim:Clark:McDermid:2000}. 
 
-Mutaatiotestausprosessi tuottaa lopputuloksena \textit{mutaatiopistemäärän} (\textit{mutation adequacy score}), jonka avulla voidaan arvioida ohjelmiston testien laadukkuutta ja kykyä havaita lähdekoodissa olevia vikoja. 
+Mutaatiotestausprosessi tuottaa lopputuloksena \textit{mutaatiopistemäärän} (\textit{mutation adequacy score}), jonka avulla voidaan arvioida ohjelmiston testien laadukkuutta ja kykyä havaita lähdekoodissa olevia vikoja\textbf{Lähde taas tähän lauseen loppuun mielummin kuin tuonne käsitteen perään}. 
 
-Mutaatiotestaus on \textit{virheperustainen testausmenetelmä} (\textit{fault based jotakin}), jonka periaatteena on ohjelmoijien tekemien ohjelmointivirheiden simulointi~\cite[s. 649]{Jia:Harman:2011}. Tavoitteena mutaatiotestauksessa on tutkia, ovatko ohjelmistoa varten tehdyt testit laadukkaita ja havaitaanko niillä kattavasti ohjelmistossa mahdollisesti esiintyvät virheet ja ongelmat. 
+Mutaatiotestaus on virheperustainen testausmenetelmä, jonka periaatteena on ohjelmoijien tekemien ohjelmointivirheiden simulointi~\cite[s. 649]{Jia:Harman:2011}. Tavoitteena mutaatiotestauksessa on tutkia, ovatko ohjelmistoa varten tehdyt testit laadukkaita ja havaitaanko niillä kattavasti ohjelmistossa mahdollisesti esiintyvät virheet ja ongelmat. 
 
 
 \subsection{Mutaatiotestauksen piirteet oliojärjestelmissä (erot muihin järjestelmiin?)}
@@ -262,9 +255,6 @@ Mutaatiotestaus on \textit{virheperustainen testausmenetelmä} (\textit{fault ba
 
 \subsection{Miltä tulevaisuus näyttää, tuleeko käyttö lisääntymään vai jääkö mutaatiotestaus unohduksiin/pienen piirin harrastukseksi?}
 
-%\section{Miten saa evaluointia/analyysiä? Mihin lukuihin se sopii?}
-
-%\textbf{Mihin kohtiin evaluointi ja analyysi sopivat, jotta tästä ei tule mutaatiotestauksen/testauksen oppikirjaa? Miten sitä tehdään? Vertailemalla, ennustamalla tulevaa, jotakin muuta?}
 
 \section{Yhteenveto [1s]}
 
@@ -283,6 +273,13 @@ Mutaatiotestaus on \textit{virheperustainen testausmenetelmä} (\textit{fault ba
 %Tällä (yksikkö)testauksen tasolla testien suunnittelussa voidaan käyttää ohjelman sisäiseen rakenteeseen perustuvaa suunnittelumallia, jota kutsutaan \textit{white box -testaukseksi} (\textit{white box testing}). Tässä mallissa ohjelmiston lähdekoodia käytetään apuna testien valmistamisessa~\cite[s. 52]{Binder:1999}.
 
 %Tämän tason testien suunnittelustrategiana voidaan käyttää ohjelmiston ulkoisen toiminnallisuuden analysointia. Tällaista testausstrategiaa kutsutaan \textit{black box -testaukseksi} (\textit{black box testing}) tai \textit{funktionaaliseksi testaukseksi} (\textit{functional testing})~\cite[s. 52]{Binder:1999}. Kuitenkin sekä white box - että black box -testausta voidaan käyttää kaikilla testauksen tasoilla testien suunnittelun apuna. 
+
+
+%\section{Miten saa evaluointia/analyysiä? Mihin lukuihin se sopii?}
+
+%\textbf{Mihin kohtiin evaluointi ja analyysi sopivat, jotta tästä ei tule mutaatiotestauksen/testauksen oppikirjaa? Miten sitä tehdään? Vertailemalla, ennustamalla tulevaa, jotakin muuta?}
+
+%Evaluointi ja analyysi ovat jossain määrin vähemmän sisältäviä kuin voisi kuvitella. Analyysi esim. on pääasiassa vaikka asioiden vertailua (koska omaa tutkimusta ei tehdä). Evaluointi taas on esimerkiksi tiedon rajaamista ja esittämistä yhdisteltynä toisiin tietoihin. Ts. olet joutunut itse keräämään tiedon ja rajaamaan sen sopivaksi joukoksi infoa tätä tutkielmaa varten. Siitä muodostuu evaluointi osa.
 
 
 % --- References ---

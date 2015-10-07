@@ -1,17 +1,13 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: aine.aux
-White space in argument---line 37 of file aine.aux
+White space in argument---line 36 of file aine.aux
  : \citation{Joku
  :                mutaatiolähde tähän.}
 I'm skipping whatever remains of this command
-White space in argument---line 41 of file aine.aux
+White space in argument---line 40 of file aine.aux
  : \citation{Mistä
  :                 lie?}
 I'm skipping whatever remains of this command
 White space in argument---line 43 of file aine.aux
- : \citation{Mistä
- :                 lie tähän?}
-I'm skipping whatever remains of this command
-White space in argument---line 46 of file aine.aux
  : \citation{Joku
  :                mutaatiolähde}
 I'm skipping whatever remains of this command
@@ -30,4 +26,4 @@ I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "JOKU??"
 Warning--empty language in Binder:1999
 Warning--can't use both author and editor fields in Mariani:Pezze:2008
-(There were 6 error messages)
+(There were 5 error messages)
