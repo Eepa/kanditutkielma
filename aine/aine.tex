@@ -136,13 +136,13 @@
 
 \section{Johdanto [1s]}
 
-\textcolor{cyan}{Tutkimuskysymys: On tutkittu, että mutaatiotestauksesta on hyötyä testien laadun parantamisessa ja testikattavuuden tarkastelussa/kasvattamisessa. Miksi mutaatiotestausta ei kuitenkaan käytetä laajasti näiden asioiden tekemiseen?}
-
-\textcolor{red}{Vastaus: Koska mutaatiotestaus on tällä hetkellä vielä työlästä ja tehotonta sen tuomaan hyötyyn nähden. Koska mutaatiotestauksessa on ratkaisemattomia ongelmia (esim. ekvivalentit mutantit), joita ei voi automatisoida --> vaativat ihmisten panostusta --> lisää työläyttä.} 
-
-\textcolor{blue}{Tai toisinpäin: Miksi mutaatiotestausta käytettäisiin/pitäisi käyttää enemmän testaamiseen, vaikka mutaatiotestaus on tehotonta/työlästä?}
-
-\textcolor{red}{Vastaus: Koska mutaatiotestausta voidaan käyttää testien laadun parantamiseen tai testikattavuuden kasvattamiseen. Koska mutaatiotestauksen avulla voi varmistaa, että testien laatu on hyvä ja näin ollen parantaa samalla ohjelmiston laatua --> ohjelmistosta saadaan suurin osa ongelmista ja virheistä pois testien avulla. Koska mutaatiotestauksella voi paikata normaaliin testaukseen jääneitä puutteita.} 
+%\textcolor{cyan}{Tutkimuskysymys: On tutkittu, että mutaatiotestauksesta on hyötyä testien laadun parantamisessa ja testikattavuuden tarkastelussa/kasvattamisessa. Miksi mutaatiotestausta ei kuitenkaan käytetä laajasti näiden asioiden tekemiseen?}
+%
+%\textcolor{red}{Vastaus: Koska mutaatiotestaus on tällä hetkellä vielä työlästä ja tehotonta sen tuomaan hyötyyn nähden. Koska mutaatiotestauksessa on ratkaisemattomia ongelmia (esim. ekvivalentit mutantit), joita ei voi automatisoida --> vaativat ihmisten panostusta --> lisää työläyttä.} 
+%
+%\textcolor{blue}{Tai toisinpäin: Miksi mutaatiotestausta käytettäisiin/pitäisi käyttää enemmän testaamiseen, vaikka mutaatiotestaus on tehotonta/työlästä?}
+%
+%\textcolor{red}{Vastaus: Koska mutaatiotestausta voidaan käyttää testien laadun parantamiseen tai testikattavuuden kasvattamiseen. Koska mutaatiotestauksen avulla voi varmistaa, että testien laatu on hyvä ja näin ollen parantaa samalla ohjelmiston laatua --> ohjelmistosta saadaan suurin osa ongelmista ja virheistä pois testien avulla. Koska mutaatiotestauksella voi paikata normaaliin testaukseen jääneitä puutteita.} 
 
 %Ohjelmistoja voidaan testata monella tasolla. Testauksen tasot muodostetaan määrittämällä joukko ohjelman osia eli komponentteja, joita halutaan testata. Alimmalla testauksen tasolla testattavat ohjelman osat ovat pienimpiä mahdollisia suoritettavissa olevia komponentteja. Tämän tason testausta kutsutaan \textit{yksikkötestaukseksi} (\textit{unit testing}) ja testattavat osat ovat olio-ohjelmissa esimerkiksi yksittäisiä metodeja tai luokkia~\cite[s. 45]{Binder:1999}.
 %
@@ -160,7 +160,7 @@
 \textbf{Johdanto jäsennelty asianmukaisesti (kenelle, miksi, millaisessa ympäristössä; ratkaisun lähestymistapa; tutkimuskysymys, tulokset ja impakti),
 pituus 1,5 - 2 s.}
 
-\textbf{\textit{MIKÄ ON MINUN TUTKIMUSKYSYMYKSENI?}}
+%\textbf{\textit{MIKÄ ON MINUN TUTKIMUSKYSYMYKSENI?}}
 
 
 \section{Testaus oliojärjestelmissä [2s]}
@@ -189,26 +189,24 @@ Valmista integroitua sovellusta testataan \textit{järjestelmätestauksen} (\tex
 
 Testien suunnitteluun ja kehittämiseen voidaan käyttää erilaisia menetelmiä. Testausmenetelmän avulla kuvataan näkökulmaa, josta ohjelman lähdekoodia tarkastellaan testejä kehitettäessä~\cite[s. 51]{Binder:1999}. Testausmenetelmiä ovat esimerkiksi white box - ja black box -testaus sekä niitä yhdistävä hybriditestaus. Lisäksi testien laadun parantamiseen voidaan käyttää virheisiin perustuvaa testausmenetelmää~\cite{Joku mutaatiolähde tähän.}.
 
-Ohjelman sisäisen rakenteen eli lähdekoodin tuntemukseen perustuvaa testausmenetelmää kutsutaan \textit{white box -testaukseksi}~\cite[s. 52]{Binder:1999}. \textbf{Lisää tästä. Seuraava omaa keksintöä:} White box -testausta voidaan käyttää esimerkiksi yksikkötestauksessa apuna testien suunnittelussa, sillä lähdekoodin tuntemus auttaa kehittämään testejä yksittäisille metodeille ja olioille~\cite{JOKU??}.
+Ohjelman sisäisen rakenteen eli lähdekoodin tuntemukseen perustuvaa testausmenetelmää kutsutaan \textit{white box -testaukseksi}~\cite[s. 52]{Binder:1999}. \textbf{Lisää tästä.} White box -testausta voidaan käyttää esimerkiksi yksikkötestauksessa apuna testien suunnittelussa, sillä lähdekoodin tuntemus auttaa kehittämään testejä yksittäisille metodeille ja olioille~\cite{JOKU??}.
 
-\textit{Black box - testaukseksi} eli \textit{funktionaaliseksi testaukseksi}~\cite[s. 52]{Binder:1999} kutsutussa testausmenetelmässä testejä suunnitellaan analysoimalla ohjelmiston ulkoista toiminnallisuutta. \textbf{Lisää tuosta. Omaa keksintöä:} Koska valmiin sovelluksen piirteitä testatessa tutkitaan myös sovelluksen ulkoista toiminnallisuutta, on black box -testauksesta apua esimerkiksi suunniteltaessa testejä järjestelmätestaukseen~\cite{Mistä lie?}.
+\textit{Black box - testaukseksi} eli \textit{funktionaaliseksi testaukseksi}~\cite[s. 52]{Binder:1999} kutsutussa testausmenetelmässä testejä suunnitellaan analysoimalla ohjelmiston ulkoista toiminnallisuutta. \textbf{Lisää tuosta.} Koska valmiin sovelluksen piirteitä testatessa tutkitaan myös sovelluksen ulkoista toiminnallisuutta, on black box -testauksesta apua esimerkiksi suunniteltaessa testejä järjestelmätestaukseen~\cite{Mistä lie?}.
 
-\textit{Gray box -} eli \textit{hybriditestauksessa}~\cite[s. 52]{Binder:1999} yhdistetään white box - ja black box -testausmenetelmien piirteitä. \textbf{Omaa keksintöä:} Näinollen sekä white box - että black box -testausmenetelmää voidaan käyttää testien suunnittelussa useilla testauksen tasoilla joko erikseen tai molempien piirteitä yhdistellen.
+\textit{Gray box -} eli \textit{hybriditestauksessa}~\cite[s. 52]{Binder:1999} yhdistetään white box - ja black box -testausmenetelmien piirteitä. Näinollen sekä white box - että black box -testausmenetelmää voidaan käyttää testien suunnittelussa useilla testauksen tasoilla joko erikseen tai molempien piirteitä yhdistellen.
 
 Testausmenetelmää, jossa ohjelman lähdekoodiin lisätään virheitä, kutsutaan \textit{virheperustaiseksi testausmenetelmäksi} (\textit{fault-based testing})~\cite[s. 52]{Binder:1999}. Esimerkkinä virheperustaisesta testausmenetelmästä on mutaatiotestaus, jonka avulla tutkitaan testien kykyä havaita ohjelmiston virheitä~\cite[s. X]{Joku mutaatiolähde}.
 
 
 \subsection{Testauksen rajoitukset}
 
-\textbf{Kuinka paljon rajoituksista on kerrottava? Niitä on aika paljon erilaisia. Mitkä niistä ovat relevantteja tämän tutkielman kannalta?}
-
-Testaukseen kuuluu kuitenkin myös rajoituksia. Testauksen avulla ei voi esimerkiksi todeta ohjelmiston oikeellisuutta. Ohjelmistojen oikeaksi todistamiseen ja testauksen rajoituksiin liittyen Edsger Dijkstra kirjoitti seuraavan korollaarin: \textit{''Program testing can be used to show the presence of bugs, but never to show their absence!''}~\cite[s. 6]{Dahl:Dijkstra:Hoare:1972}. 
+Yksi testaukseen liittyvistä rajoituksista on, että testauksen avulla ei voi aina todeta ohjelmiston oikeellisuutta. Oikeellisuuden todistaminen vaatisi sen testaamista, että ohjelma toimii oikein kaikilla mahdollisilla syötteillä ja niiden kombinaatioilla. Tämä tarkoittaa, että ohjelman oikeellisuuden todistaminen vastaa ohjelman kattavaa testaamista  \textbf{\textit{exhaustive testing}}. Kattava testaaminen on usein kuitenkin käytännössä mahdotonta toteuttaa muille kuin triviaaleille ohjelmille~\cite[s. 58]{Binder:1999}. Ohjelmistojen oikeaksi todistamiseen liittyen Edsger Dijkstra totesi seuraavasti: \textit{''Program testing can be used to show the presence of bugs, but never to show their absence!''}~\cite[s. 6]{Dahl:Dijkstra:Hoare:1972}. 
 
 \section{Mutaatiotestaus oliojärjestelmissä [3s]}
 
 \textbf{Haasteisiin voidaan vastata mutaatiotestauksen avulla.}
 
-Vaikka testauksen avulla ei voikaan varmistua ohjelmiston oikeellisuudesta \textbf{Avaa sana oikeellisuus eli että oikeellisuus = toimii kaikilla mahdollisilla syötteillä jokaisessa tilassa oikein}, voidaan testausta käyttää välineenä ohjelmiston laadun parantamisessa. Testaukseen sisältyvien rajoitusten lisäksi siihen liittyy myös epävarmuutta käytettävän testausjärjestelmän oikeellisuudesta ja oikeellisuuden varmistamisesta~\cite[s. 209]{Manna:Waldinger:1978}. Tämä herättää kysymyksen siitä, kuka voi ''valvoa valvojia'' eli kuinka varmistetaan ohjelmiston testien laadukkuus.
+Vaikka testauksen avulla ei voikaan varmistua ohjelmiston oikeellisuudesta, voidaan testausta käyttää välineenä ohjelmiston laadun parantamisessa. Testaukseen sisältyvien rajoitusten lisäksi siihen liittyy myös epävarmuutta käytettävän testausjärjestelmän oikeellisuudesta ja oikeellisuuden varmistamisesta~\cite[s. 209]{Manna:Waldinger:1978}. Tämä herättää kysymyksen siitä, kuka voi ''valvoa valvojia'' eli kuinka varmistetaan ohjelmiston testien laadukkuus.
 
 \subsection{Mutaatiotestauksen yleisesittely}
 
