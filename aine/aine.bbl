@@ -1,4 +1,4 @@
-\begin{thebibliography}{MHK06}
+\begin{thebibliography}{MKO02}
   \providebibliographyfont{name}{}%
   \providebibliographyfont{lastname}{}%
   \providebibliographyfont{title}{\emph}%
@@ -75,6 +75,16 @@
   New York, NY, USA, 2006. \btxpublisherfont {ACM}\ifbtxprintISBN {,
   \mbox{\btxISBN~\btxISBNfont {1-59593-375-1}}}.
 \newblock {\latintext \btxurlfont{http://doi.acm.org/10.1145/1134285.1134437}}.
+
+\bibitem [{MKO02}]{Ma:Kwon:Offutt:2002}
+\btxnamefont {\btxlastnamefont {Ma}, Yu\btxfnamespacelong Seung}, \btxnamefont
+  {\btxlastnamefont {Kwon}, Yong\btxfnamespacelong Rae}\btxandcomma {}
+  \btxandlong {}\ \btxnamefont {\btxlastnamefont {Offutt}, J.}\btxauthorcolon\
+  \btxtitlefont {\btxifchangecase {Inter-class mutation operators for
+  java}{Inter-class mutation operators for Java}}.
+\newblock \Btxinlong {}\ \btxtitlefont {Software Reliability Engineering, 2002.
+  ISSRE 2003. Proceedings. 13th International Symposium on}, \btxpageslong {}\
+  352--363, 2002.
 
 \bibitem [{MP08}]{Mariani:Pezze:2008}
 \btxnamefont {\btxlastnamefont {Mariani}, Leonardo} \btxandlong {}\

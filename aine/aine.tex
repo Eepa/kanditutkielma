@@ -141,7 +141,7 @@
 
 %\[\frac{a}{b}\]
 
-\section{Johdanto [1s]}
+\section{Johdanto}
 
 %\textcolor{cyan}{Tutkimuskysymys: On tutkittu, että mutaatiotestauksesta on hyötyä testien laadun parantamisessa ja testikattavuuden tarkastelussa/kasvattamisessa. Miksi mutaatiotestausta ei kuitenkaan käytetä laajasti näiden asioiden tekemiseen?}
 %
@@ -170,7 +170,7 @@ pituus 1,5 - 2 s.}
 %\textbf{\textit{MIKÄ ON MINUN TUTKIMUSKYSYMYKSENI?}}
 
 
-\section{Testaus oliojärjestelmissä [2s]}
+\section{Testaus oliojärjestelmissä}
 
 Olioperustaisen ohjelmoinnin kehityksen myötä klassisia ohjelmistojen testausmenetelmiä on sopeutettu mahdollistamaan \textit{oliojärjestelmien} (\textit{object oriented systems}) kattava ja laadukas testaaminen. Vaikka olioperustainen ohjelmointi ratkaisee joitakin proseduraalisen ohjelmoinnin suunnittelu- ja toteutusongelmia, olio-ohjelmoinnin mukana tulevat uudet haasteet vaativat uusien testaus- ja analysointimenetelmien kehittämistä. 
 
@@ -218,7 +218,7 @@ Suoritettujen testien tulosten tulkintaan liittyy myös rajoituksia ja epävarmu
 
 Epävarmuutta liittyy myös testattavan järjestelmän toiminnalle asetettuihin vaatimuksiin. Vaatimusten todentaminen testauksen avulla ei ole mahdollista, joten vaatimuksia on käytettävä vain vertailukohtana testauksen tulosten tulkinnassa~\cite[s. 58]{Binder:1999}. Jos virheellisiä tai puutteellisia vaatimuksia käytetään testejä tehdessä, voi siitä seurata harhaanjohtavia testejä. Testauksen avulla ei myöskään voi paljastaa lähdekoodista puuttuvia osia, sillä olematonta koodia ei voi testata~\cite[s. 58]{Binder:1999}.
 
-\section{Mutaatiotestaus oliojärjestelmissä [3s]}
+\section{Mutaatiotestaus oliojärjestelmissä}
 
 Vaikka testauksen avulla ei voikaan varmistua ohjelmiston oikeellisuudesta, voidaan testausta käyttää välineenä ohjelmiston laadun parantamisessa. Testaukseen sisältyvien rajoitusten lisäksi siihen liittyy myös epävarmuutta käytettävän testausjärjestelmän oikeellisuudesta ja oikeellisuuden varmistamisesta~\cite[s. 209]{Manna:Waldinger:1978}. Tämä herättää kysymyksen siitä, kuka voi ''valvoa valvojia'' eli kuinka varmistetaan ohjelmiston testien laadukkuus.
 
@@ -234,9 +234,9 @@ Mutaatiotestausprosessi tuottaa lopputuloksena \textit{mutaatiopistemäärän} (
 
 Mutaatiotestaus on virheperustainen testausmenetelmä, jonka periaatteena on ohjelmoijien tekemien ohjelmointivirheiden simulointi~\cite[s. 649]{Jia:Harman:2011}. Tavoitteena mutaatiotestauksessa on tutkia, ovatko ohjelmistoa varten tehdyt testit laadukkaita ja havaitaanko niillä kattavasti ohjelmistossa mahdollisesti esiintyvät virheet ja ongelmat. 
 
-\subsection{Mutaatiotestauksen piirteet oliojärjestelmissä (erot muihin järjestelmiin?)}
+\subsection{Mutaatiotestauksen piirteet oliojärjestelmissä}
 
-Table \ref{table:Mutaatio-operaattorit-taulukko} on page \pageref{table:Mutaatio-operaattorit-taulukko} refers to the ...
+Taulukko \ref{table:Mutaatio-operaattorit-taulukko} sivulla \pageref{table:Mutaatio-operaattorit-taulukko} on peräisin artikkelista~\cite{Ma:Kwon:Offutt:2002}.
 
 \begin{table}[H]
 \begin{spacing}{1.0}
@@ -256,11 +256,11 @@ Table \ref{table:Mutaatio-operaattorit-taulukko} on page \pageref{table:Mutaatio
 			& ISK & \textit{super} keyword deletion \\ \cline{2-3}
 			& IPC & Explicit call of a parent's constructor deletion \\
 			\hline
-			\multirow{7}{*}{Polymorfismi} & PNC & \textit{new} method call with child class type \\ \cline{2-3}
-			& PMD & Member variable declaration with paren class type \\ \cline{2-3}
-			& PDD & \parbox[t]{7cm}{Parameter variable declaration with child class type}
+			\multirow{7}{*}{\parbox[t]{2cm}{Polymor-\\fismi}} & PNC & \textit{new} method call with child class type \\ \cline{2-3}
+			& PMD & Member variable declaration with parent class type \\ \cline{2-3}
+			& PPD & \parbox[t]{7cm}{Parameter variable declaration with\\child class type}
 \\ \cline{2-3}
-			& PRV & \parbox[t]{7cm}{Reference assignment with other compatible type} \\
+			& PRV & \parbox[t]{7cm}{Reference assignment with other\\compatible type} \\
 			\hline
 			\multirow{4}{*}{\parbox[t]{2cm}{Metodin ylikuormitus}} & OMR & Overloading method contents change \\ \cline{2-3}
 			& OMD & Overloading method deletion \\ \cline{2-3}
@@ -287,7 +287,7 @@ Table \ref{table:Mutaatio-operaattorit-taulukko} on page \pageref{table:Mutaatio
 
 
 
-\section{Mutaatiotestauksen haasteet [3s]}
+\section{Mutaatiotestauksen haasteet}
 
 \textbf{Misi mutaatiotestaus ei ole päätynyt suureen suosioon/käyttöön? Valitaan muutama haaste ja esitellään niitä? Kerrotaan että myös muita haasteita, mutta ei esitellä niitä niin tarkasti?}
 
@@ -309,14 +309,14 @@ Table \ref{table:Mutaatio-operaattorit-taulukko} on page \pageref{table:Mutaatio
 
 \textbf{Onko tämä relevantti aihealue käsitellä?}
 
-\section{Miten mutaatiotestaus auttaa testien laadun parantamisessa?}
+%\section{Miten mutaatiotestaus auttaa testien laadun parantamisessa?}
 
-\subsection{Miksi mutaatiotestausta tulisi käyttää, vaikka se on raskasta ja työlästä?}
+%\subsection{Miksi mutaatiotestausta tulisi käyttää, vaikka se on raskasta ja työlästä?}
 
-\subsection{Miltä tulevaisuus näyttää, tuleeko käyttö lisääntymään vai jääkö mutaatiotestaus unohduksiin/pienen piirin harrastukseksi?}
+%\subsection{Miltä tulevaisuus näyttää, tuleeko käyttö lisääntymään vai jääkö mutaatiotestaus unohduksiin/pienen piirin harrastukseksi?}
 
 
-\section{Yhteenveto [1s]}
+\section{Yhteenveto}
 
 \textbf{Conclusion.}
 
