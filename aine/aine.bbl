@@ -30,6 +30,18 @@
 \newblock \btxpublisherfont {Academic Press Ltd.}, London, UK, UK,
   1972\ifbtxprintISBN {, \mbox{\btxISBN~\btxISBNfont {0-12-200550-3}}}.
 
+\bibitem [{DLS78}]{DeMillo:Lipton:Sayward:1978}
+\btxnamefont {\btxlastnamefont {DeMillo}, R.\btxfnamespacelong A.},
+  \btxnamefont {\btxlastnamefont {Lipton}, R.\btxfnamespacelong J.}\btxandcomma
+  {} \btxandlong {}\ \btxnamefont {\btxlastnamefont {Sayward},
+  F.\btxfnamespacelong G.}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase
+  {Hints on test data selection: Help for the practicing programmer}{Hints on
+  Test Data Selection: Help for the Practicing Programmer}}.
+\newblock \btxjournalfont {Computer}, 11(4):34--41,
+  \btxprintmonthyear{.}{4}{1978}{long}\ifbtxprintISSN {,
+  \mbox{\btxISSN~\btxISSNfont {0018-9162}}}.
+\newblock {\latintext \btxurlfont{http://dx.doi.org/10.1109/C-M.1978.218136}}.
+
 \bibitem [{JH11}]{Jia:Harman:2011}
 \btxnamefont {\btxlastnamefont {Jia}, Yue} \btxandlong {}\ \btxnamefont
   {\btxlastnamefont {Harman}, Mark}\btxauthorcolon\ \btxjtitlefont

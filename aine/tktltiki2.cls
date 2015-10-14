@@ -37,7 +37,7 @@
 \LoadClass[titlepage,a4paper,11pt]{article}
 
 % Riviväli
-%\usepackage{setspace}
+\usepackage{setspace}
 %\onehalfspacing
 %\setstretch{1,5}
 
