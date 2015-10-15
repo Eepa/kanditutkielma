@@ -9,12 +9,12 @@
 \contentsline {subsection}{\numberline {3.1}Mutaatiotestauksen yleisesittely}{4}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}Mutaatiotestauksen piirteet olioj\IeC {\"a}rjestelmiss\IeC {\"a}}{5}{subsection.3.2}
 \contentsline {section}{\numberline {4}Mutaatiotestauksen haasteet}{6}{section.4}
-\contentsline {subsection}{\numberline {4.1}Ekvivalentit mutantit}{6}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Tehokkuusongelmat}{6}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Muita ongelmia?}{6}{subsection.4.3}
-\contentsline {subsection}{\numberline {4.4}K\IeC {\"a}yt\IeC {\"a}nn\IeC {\"o}ntoteutus (miten k\IeC {\"a}yt\IeC {\"a}nn\IeC {\"o}ss\IeC {\"a} on yritetty kiert\IeC {\"a}\IeC {\"a} haasteet)}{6}{subsection.4.4}
-\contentsline {section}{\numberline {5}Yhteenveto}{6}{section.5}
-\contentsline {section}{L\IeC {\"a}hteet}{7}{section*.2}
+\contentsline {subsection}{\numberline {4.1}Ekvivalentit mutantit}{7}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Tehokkuusongelmat}{7}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Muita ongelmia?}{7}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}K\IeC {\"a}yt\IeC {\"a}nn\IeC {\"o}ntoteutus (miten k\IeC {\"a}yt\IeC {\"a}nn\IeC {\"o}ss\IeC {\"a} on yritetty kiert\IeC {\"a}\IeC {\"a} haasteet)}{7}{subsection.4.4}
+\contentsline {section}{\numberline {5}Yhteenveto}{7}{section.5}
+\contentsline {section}{L\IeC {\"a}hteet}{8}{section*.2}
 \select@language {finnish}
 \select@language {finnish}
 \select@language {finnish}

@@ -103,4 +103,13 @@
 \newblock {\latintext
   \btxurlfont{http://doi.ieeecomputersociety.org/10.1109/TSE.1978.231499}}.
 
+\bibitem [{Off11}]{Offutt:2011}
+\btxnamefont {\btxlastnamefont {Offutt}, Jeff}\btxauthorcolon\ \btxjtitlefont
+  {\btxifchangecase {A mutation carol: Past, present and future}{A mutation
+  carol: Past, present and future}}.
+\newblock \btxjournalfont {Information {\&} Software Technology},
+  53(10):1098--1107, 2011.
+\newblock {\latintext
+  \btxurlfont{http://dx.doi.org/10.1016/j.infsof.2011.03.007}}.
+
 \end{thebibliography}
