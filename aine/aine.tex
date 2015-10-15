@@ -37,6 +37,8 @@
 \usepackage{enumitem}
 %\usepackage{paralist}
 
+\hyphenation{luok-ka-mu-taa-ti-o-o-pe-raat-to-ri}
+
 % Automatically set the PDF metadata fields
 \makeatletter
 \AtBeginDocument{\hypersetup{pdftitle = {\@title}, pdfauthor = {\@author}}}
@@ -254,7 +256,17 @@ missä \textit{TM} on tapettujen mutanttien määrä, \textit{KM} on kaikkien mu
 
 \subsection{Mutaatiotestauksen piirteet oliojärjestelmissä}
 
-Taulukko \ref{table:Mutaatio-operaattorit-taulukko} sivulla \pageref{table:Mutaatio-operaattorit-taulukko} on peräisin artikkelista~\cite{Ma:Kwon:Offutt:2002}.
+Mutaatio-operaattorit ovat tärkeässä asemassa mutaatiotestauksessa, sillä mutaatiotestauksen tehokkuus riippuu siitä, minkälaisia virheitä mutaatio-operaattoreilla luodaan lähdekoodiin~\cite[s. 352]{Ma:Kwon:Offutt:2002}. Perinteisesti mutaatiotestausta on hyödynnetty proseduraalisessa ohjelmoinnissa, minkä vuoksi myös mutaatio-operaattorit on kehitetty tukemaan suurinta osaa proseduraalisten ohjelmointikielten piirteistä~\cite[s. 352]{Ma:Kwon:Offutt:2002}. 
+
+Olioperustaisiin ohjelmointikieliin sisältyy kuitenkin uusia ominaisuuksia, joiden käytöstä aiheutuu erilaisia virheitä verrattuna proseduraalisessa ohjelmoinnissa esiintyviin virheisiin. Uusien virheiden ilmeneminen olio-ohjelmissa on johtanut uusien olioperustaisten mutaatio-operaattorien kehittämiseen.  
+
+Olio-perustaisten ohjelmien mutaatiotestaukseen käytettävää menetelmää kutsutaan \textit{luokkamutaatioksi}~\cite{Kim:Clark:McDermid:2000}. Kim, Clark ja McDermid kehittivät luokkamutaatiomenetelmän Java-ohjelmointikielessä esiintyvien virheiden pohjalta. Heidän kehittämiensä \textit{luokkamutaatio-operaattoreiden} avulla mutaatiotestausmenetelmää voidaan soveltaa Java-ohjelmissa esiintyviin olio-ohjelmoinnin piirteisiin.
+
+Kimin, Clarkin ja McDermidin kehittämät luokkamutaatio-operaattorit ovat toimineet lähtökohtana myös muiden tutkijoiden luokkamutaatiotutkimuksessa ja uusien luokkamutaatio-operaattorien kehittämisessä. Ma, Kwon ja Offutt kehittivät vuonna 2002 Java-ohjelmointikieltä varten joukon uusia luokkamutaatio-operaattoreita, jotka perustuivat aiemmin kehitettyihin operaattoreihin~\cite[s. 352]{Ma:Kwon:Offutt:2002}. Heidän tavoitteenaan oli parantaa ja kehittää aiempia luokkamutaatio-operaattoreita, jotta mutaatiotestauksella voitaisiin tukea luokkien välisten suhteiden testaamista~\cite[s. 362]{Ma:Kwon:Offutt:2002}.
+
+Taulukossa \ref{table:Mutaatio-operaattorit-taulukko} on listattu Man, Kwonin ja Offuttin kehittämät luok\-ka\-mu\-taa\-ti\-o-o\-pe\-raat\-to\-rit. Operaattorit on jaettu kuuteen ryhmään. Ryhmät perustuvat niihin olio-ohjelmointikielen piirteisiin, joihin ryhmän operaattorit vaikuttavat~\cite[s. 355]{Ma:Kwon:Offutt:2002}.
+
+Mutaatio-operaattorien avulla kuvataan algoritmeja, joilla lähdekoodia muokataan mutantteja muodostettaessa. Esimerkiksi JSC-operaattori lisää ilmentymämuuttujiin \textit{static}-määreen tehden niistä luokkamuuttujia tai vastaavasti poistaa luokkamuuttujista \textit{static}-määreen tehden niistä ilmentymämuuttujia. JSC-operaattorin ja myös muiden Man, Kwonin ja Offuttin kehittämien luokkamutaatio-operaattorien nimet ja kuvaukset voi nähdä taulukosta \ref{table:Mutaatio-operaattorit-taulukko}. Taulukon \ref{table:Mutaatio-operaattorit-taulukko} avulla näkee myös, mihin ryhmiin luokkamutaatio-operaattorit kuuluvat. Tarkemmat tiedot operaattorien toiminnasta löytyvät artikkelista~\cite{Ma:Kwon:Offutt:2002}. 
 
 \begin{table}[H]
 \begin{spacing}{1.0}
