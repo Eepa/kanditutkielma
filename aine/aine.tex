@@ -246,7 +246,7 @@ Testien suorituksen jälkeen saatuja tuloksia verrataan toisiinsa. Testituloksia
 
 Tapauksessa 1. alkuperäiset testit eivät mene läpi mutantin kohdalla. Tämä tarkoittaa, että mutantti on tapettu eli lähdekoodiin tehty muutos on havaittu~\cite[s. 36]{DeMillo:Lipton:Sayward:1978}.
 
-Tapauksessa 2. mutantti on jäänyt eloon. Mutantin jäämiselle eloon on kaksi vaihtoehtoista selitystä. Ensimmäinen selitys on, että alkuperäiset testit eivät ole riittävän hyvät, jotta niiden avulla voidaan havaita lähdekoodiin tehty muutos. Toinen selitys on, että mutantin toiminta ei eroa alkuperäisen ohjelman toiminnasta eli kyseessä on \textit{ekvivalentti mutantti}. Ekvivalentit mutantit ovat syntaktisesti erilaisia kuin alkuperäinen ohjelma mutta toiminnaltaan ne ovat samanlaisia alkuperäisen ohjelman kanssa~\cite[s. 652]{Jia:Harman:2011}.
+\textbf{Tapauksessa 2. mutantti on jäänyt eloon. Omituinen lause korjaa!}Mutantin jäämiselle eloon on kaksi vaihtoehtoista selitystä. Ensimmäinen selitys on, että alkuperäiset testit eivät ole riittävän hyvät, jotta niiden avulla voidaan havaita lähdekoodiin tehty muutos. Toinen selitys on, että mutantin toiminta ei eroa alkuperäisen ohjelman toiminnasta eli kyseessä on \textit{ekvivalentti mutantti}. Ekvivalentit mutantit ovat syntaktisesti erilaisia kuin alkuperäinen ohjelma mutta toiminnaltaan ne ovat samanlaisia alkuperäisen ohjelman kanssa~\cite[s. 652]{Jia:Harman:2011}.
 
 Mutaatiotestausprosessi tuottaa lopputuloksena \textit{mutaatiopistemäärän} (\textit{mutation adequacy score}), jonka avulla voi arvioida ohjelmiston testien laadukkuutta ja kykyä havaita lähdekoodissa olevia vikoja~\cite[s. 652]{Jia:Harman:2011}. Mutaatiopistemäärä \textit{MPM} lasketaan kaavalla 
 \begin{equation}
@@ -322,25 +322,35 @@ Mutaatio-operaattorien avulla kuvataan algoritmeja, joilla lähdekoodia muokataa
 
 \section{Mutaatiotestauksen haasteet}
 
-\textbf{Misi mutaatiotestaus ei ole päätynyt suureen suosioon/käyttöön? Valitaan muutama haaste ja esitellään niitä? Kerrotaan että myös muita haasteita, mutta ei esitellä niitä niin tarkasti?}
+Vaikka mutaatiotestausta voidaan käyttää ohjelmiston olemassa olevien testien kehittämiseen ja testien laadun parantamiseen, ei mutaatiotestausmenetelmän käyttö ole ongelmatonta. Mutaatiotestaukseen liittyy haasteita, jotka estävät menetelmän käyttämisen laaja-alaisesti osana testausprosessia~\cite[s. 652]{Jia:Harman:2011}.
 
-\textbf{\textit{Haasteet sisältäen esimerkin, miten se yksittäinen haaste on yritetty ratkaista (eli joko ratkaisu tai ratkaisuehdotus)??}}
+Yhteen mutaatiotestauksen ongelma-alueista sisältyvät tehokkuuteen liittyvät ongelmat. Tehokkuusongelmia esiintyy erityisesti silloin, kun jokaisen mutantin kohdalla suoritetaan kaikki ohjelmistoa varten tehdyt testit~\cite[s. 652]{Jia:Harman:2011}. Testien suoritus jokaisen mutantin kohdalla hidastaa mutaatiotestausprosessia ja vaatii paljon laskentatehoa. Tehokkuusongelman ratkaisemiseksi on kuitenkin esitetty useita ratkaisuehdotuksia~\cite[s. 653]{Jia:Harman:2011}. Ratkaisuehdotuksia ovat esimerkiksi generoitujen mutanttien määrän vähentäminen ja mutanttien ja testien suorituskustannusten pienentäminen.
 
-\subsection{Ekvivalentit mutantit}
+Toinen mutaatiotestaukseen liittyvistä ongelma-alueista on ekvivalentit mutantit. Ekvivalenttien mutanttien tunnistaminen algoritmien avulla on ratkaisematon ongelma~\cite[s. 657]{Jia:Harman:2011}. Koska ekvivalentteja mutantteja ei voi tunnistaa laskennan avulla, ihmisten on tehtävä ekvivalenttien mutanttien tunnistaminen tutkimalla mutanttia ja vertaamalla sen toimintaa alkuperäiseen ohjelmistoon. Tämä menetelmä kuitenkin johtaa mutaatiotestauksen suorittamiseen tarvittavan työmäärän kasvuun. Ekvivalenttien mutanttien tunnistamisongelma on kuitenkin herättänyt runsaasti teoreettista kiinnostusta ja mahdollisia tunnistamistekniikoita tutkittu paljon~\cite[s. 657]{Jia:Harman:2011}. 
 
-\textbf{Ratkaisematon ongelma. Pitäisi avata ja kehittää esimerkki.}
+Kolmas ongelma-alue liittyy testauksen vaiheeseen, jossa ihmisten on tarkastettava testauksen tulokset~\cite[s. 652]{Jia:Harman:2011}. Tämä ongelma ei liity pelkästään mutaatiotestaukseen vaan ongelma ilmenee myös muissa testausmenetelmissä. Mutaatiotestauksessa ekvivalenttien mutanttien tunnistaminen ja suoritettujen testien suuri määrä lisäävät kuitenkin työmäärää, joka tarvitaan testauksen tulosten tarkastamiseen.
 
-\subsection{Tehokkuusongelmat}
+%\textbf{Misi mutaatiotestaus ei ole päätynyt suureen suosioon/käyttöön? Valitaan muutama haaste ja esitellään niitä? Kerrotaan että myös muita haasteita, mutta ei esitellä niitä niin tarkasti?} HAASTEITA ON JAETTAVA TUTKIELMASSA OMIIN ALALUKUIHINSA. NYT TEHDÄÄN VAIN HAASTEITA VARTEN NS. "JOHDANTOKAPPALE" JONKA VOI TUTKIELMASSA JAKAA OMIKSI KAPPALEIKSEEN.
 
-\textbf{Laitteisto, testien määrä, ihmisten aika tulee vastaan. Esimerkkejä.}
+%\textbf{\textit{Haasteet sisältäen esimerkin, miten se yksittäinen haaste on yritetty ratkaista (eli joko ratkaisu tai ratkaisuehdotus)??}}
 
-\subsection{Muita ongelmia?}
+%\subsection{Ekvivalentit mutantit}
 
-\textbf{Varmasti on muita, mutta kuinka paljon niitä mahtuu tähän esitelmään?}
+%\textbf{Ratkaisematon ongelma. Pitäisi avata ja kehittää esimerkki.}
 
-\subsection{Käytännöntoteutus (miten käytännössä on yritetty kiertää haasteet)}
+%\subsection{Tehokkuusongelmat}
 
-\textbf{Onko tämä relevantti aihealue käsitellä?}
+%\textbf{Laitteisto, testien määrä, ihmisten aika tulee vastaan. Esimerkkejä.}
+
+%\subsection{Muita ongelmia?}
+
+%\textbf{Varmasti on muita, mutta kuinka paljon niitä mahtuu tähän esitelmään?}
+
+%\subsection{Käytännöntoteutus (miten käytännössä on yritetty kiertää haasteet)}
+
+%\textbf{Onko tämä relevantti aihealue käsitellä?}
+
+%__________________________________________________________
 
 %\section{Miten mutaatiotestaus auttaa testien laadun parantamisessa?}
 

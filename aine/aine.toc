@@ -9,12 +9,8 @@
 \contentsline {subsection}{\numberline {3.1}Mutaatiotestauksen yleisesittely}{4}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}Mutaatiotestauksen piirteet olioj\IeC {\"a}rjestelmiss\IeC {\"a}}{6}{subsection.3.2}
 \contentsline {section}{\numberline {4}Mutaatiotestauksen haasteet}{8}{section.4}
-\contentsline {subsection}{\numberline {4.1}Ekvivalentit mutantit}{8}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Tehokkuusongelmat}{8}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Muita ongelmia?}{8}{subsection.4.3}
-\contentsline {subsection}{\numberline {4.4}K\IeC {\"a}yt\IeC {\"a}nn\IeC {\"o}ntoteutus (miten k\IeC {\"a}yt\IeC {\"a}nn\IeC {\"o}ss\IeC {\"a} on yritetty kiert\IeC {\"a}\IeC {\"a} haasteet)}{8}{subsection.4.4}
-\contentsline {section}{\numberline {5}Yhteenveto}{8}{section.5}
-\contentsline {section}{L\IeC {\"a}hteet}{9}{section*.2}
+\contentsline {section}{\numberline {5}Yhteenveto}{9}{section.5}
+\contentsline {section}{L\IeC {\"a}hteet}{10}{section*.2}
 \select@language {finnish}
 \select@language {finnish}
 \select@language {finnish}
