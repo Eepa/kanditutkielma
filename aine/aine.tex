@@ -34,6 +34,8 @@
 \usepackage{multirow}
 \usepackage{tabulary}
 \usepackage{float}
+\usepackage{enumitem}
+%\usepackage{paralist}
 
 % Automatically set the PDF metadata fields
 \makeatletter
@@ -145,6 +147,8 @@
 
 Vaikka testauksen avulla ei voikaan varmistua ohjelmiston oikeellisuudesta, voidaan testausta käyttää välineenä ohjelmiston laadun parantamisessa. 
 
+Mutaatiotestauksen periaatteena on ohjelmoijien tekemien ohjelmointivirheiden simulointi~\cite[s. 649]{Jia:Harman:2011}. Tavoitteena mutaatiotestauksessa on tutkia, ovatko ohjelmistoa varten tehdyt testit laadukkaita ja havaitaanko niillä kattavasti ohjelmistossa mahdollisesti esiintyvät virheet ja ongelmat. 
+
 %\textcolor{cyan}{Tutkimuskysymys: On tutkittu, että mutaatiotestauksesta on hyötyä testien laadun parantamisessa ja testikattavuuden tarkastelussa/kasvattamisessa. Miksi mutaatiotestausta ei kuitenkaan käytetä laajasti näiden asioiden tekemiseen?}
 %
 %\textcolor{red}{Vastaus: Koska mutaatiotestaus on tällä hetkellä vielä työlästä ja tehotonta sen tuomaan hyötyyn nähden. Koska mutaatiotestauksessa on ratkaisemattomia ongelmia (esim. ekvivalentit mutantit), joita ei voi automatisoida --> vaativat ihmisten panostusta --> lisää työläyttä.} 
@@ -228,13 +232,25 @@ Testaukseen sisältyvien rajoitusten lisäksi siihen liittyy myös epävarmuutta
 
 Mutaatiotestauksesta kirjoitettiin ensimmäisiä kertoja jo 1970-luvulla. DeMillon, Liptonin ja Saywardin artikkeli~\cite{DeMillo:Lipton:Sayward:1978} vuodelta 1978 on yksi ensimmäisistä uraauurtavista mutaatiotestausta esittelevistä artikkeleista. Mutaatiotestauksen tutkimus on lisääntynyt vuosien kuluessa, ja erityisesti 2000-luvun alussa uusia tuloksia julkaistiin paljon~\cite[s. 1102]{Offutt:2011}. Tutkimusta on suunnattu etsimään tapoja muuttaa mutaatiotestaus käytännölliseksi testausmenetelmäksi~\cite[s. 649]{Jia:Harman:2011}. 
 
-Mutaatiotestauksessa ohjelmiston alkuperäistä lähdekoodia käsitellään \textit{mutaatio-operaattoreilla} (\textit{mutation operators}), jotka muuntavat koodia muodostaen siitä virheellisiä versioita. Näitä virheellisiä ohjelmakoodin versioita kutsutaan \textit{mutanteiksi}~\cite[s. 869]{Ma:Harrold:Kwon:2006}. 
+Mutaatiotestausprosessissa ensimmäinen vaihe on käsitellä ohjelmiston alkuperäistä lähdekoodia \textit{mutaatio-operaattoreilla}, jotka muuntavat koodia muodostaen siitä virheellisiä versioita~\cite[s. 869]{Ma:Harrold:Kwon:2006}. Näitä virheellisiä ohjelmakoodin versioita kutsutaan \textit{mutanteiksi}. Mutaatio-operaattorit kuvaavat algoritmeja, joiden avulla lähdekoodia käsitellään koodin muuntamisen aikana.
 
-Mutanttien generoinnin jälkeen ohjelmiston alkuperäiset testit suoritetaan jokaisen mutantin kohdalla. Tavoitteena on, että testien avulla havaitaan lähdekoodiin tehdyt muutokset. Jos alkuperäiset testit eivät mene läpi, se tarkoittaa, että mutantti on tapettu eli lähdekoodiin tehdyt muutokset on havaittu~\cite[s. 9]{Kim:Clark:McDermid:2000}. 
+Mutanttien generoinnin jälkeen ohjelmiston alkuperäiset testit suoritetaan sekä muuntamattoman lähdekoodin että jokaisen mutantin kohdalla~\cite[s. 652]{Jia:Harman:2011}. Tavoitteena on havaita testien avulla lähdekoodiin tehdyt muutokset. 
 
-Mutaatiotestausprosessi tuottaa lopputuloksena \textit{mutaatiopistemäärän} (\textit{mutation adequacy score}), jonka avulla voidaan arvioida ohjelmiston testien laadukkuutta ja kykyä havaita lähdekoodissa olevia vikoja\textbf{Lähde taas tähän lauseen loppuun mielummin kuin tuonne käsitteen perään}. 
+Testien suorituksen jälkeen saatuja tuloksia verrataan toisiinsa. Testituloksia vertailtaessa voidaan päästä kahteen lopputulokseen~\cite[s. 36]{DeMillo:Lipton:Sayward:1978}. Muuntamattomalle lähdekoodille suoritettujen testien tulos voi: 
+\begin{enumerate}
+  \item erota yhdelle mutantille suoritettujen testien tuloksesta tai
+  \item olla sama kuin yhdelle mutantille suoritettujen testien tulos.
+\end{enumerate}
 
-Mutaatiotestaus on virheperustainen testausmenetelmä, jonka periaatteena on ohjelmoijien tekemien ohjelmointivirheiden simulointi~\cite[s. 649]{Jia:Harman:2011}. Tavoitteena mutaatiotestauksessa on tutkia, ovatko ohjelmistoa varten tehdyt testit laadukkaita ja havaitaanko niillä kattavasti ohjelmistossa mahdollisesti esiintyvät virheet ja ongelmat. 
+Tapauksessa 1. alkuperäiset testit eivät mene läpi mutantin kohdalla. Tämä tarkoittaa, että mutantti on tapettu eli lähdekoodiin tehty muutos on havaittu~\cite[s. 36]{DeMillo:Lipton:Sayward:1978}.
+
+Tapauksessa 2. mutantti on jäänyt eloon. Mutantin jäämiselle eloon on kaksi vaihtoehtoista selitystä. Ensimmäinen selitys on, että alkuperäiset testit eivät ole riittävän hyvät, jotta niiden avulla voidaan havaita lähdekoodiin tehty muutos. Toinen selitys on, että mutantin toiminta ei eroa alkuperäisen ohjelman toiminnasta eli kyseessä on \textit{ekvivalentti mutantti}. Ekvivalentit mutantit ovat syntaktisesti erilaisia kuin alkuperäinen ohjelma mutta toiminnaltaan ne ovat samanlaisia alkuperäisen ohjelman kanssa~\cite[s. 652]{Jia:Harman:2011}.
+
+Mutaatiotestausprosessi tuottaa lopputuloksena \textit{mutaatiopistemäärän} (\textit{mutation adequacy score}), jonka avulla voi arvioida ohjelmiston testien laadukkuutta ja kykyä havaita lähdekoodissa olevia vikoja~\cite[s. 652]{Jia:Harman:2011}. Mutaatiopistemäärä \textit{MPM} lasketaan kaavalla 
+\begin{equation}
+MPM = \frac{TM}{KM - EM},
+\end{equation}
+missä \textit{TM} on tapettujen mutanttien määrä, \textit{KM} on kaikkien mutanttien määrä ja \textit{EM} on ekvivalenttien mutanttien määrä. Mutaatiopistemäärän maksimiarvo on 1, joka saavutetaan, kun testeillä saadaan tapettua kaikki mutantit.
 
 \subsection{Mutaatiotestauksen piirteet oliojärjestelmissä}
 
@@ -281,12 +297,15 @@ Taulukko \ref{table:Mutaatio-operaattorit-taulukko} sivulla \pageref{table:Mutaa
 			\hline
 		\end{tabulary}
 	\end{center}      
-	\caption{Luokkamutaatio-operaattorit Javalle.}
+	\caption{Luokkamutaatio-operaattoreita Javalle.}
 	\label{table:Mutaatio-operaattorit-taulukko}
 \end{spacing}
 \end{table}
 
 
+%\subsection{Mutaatiotestauksen historia ja periaatteet}
+%historiasta ehkä lisää ja lisäksi käsittele ne hypoteesit mutaatiotestauksen takana eli competent programmer hypothesis ja coupling effect
+%\subsection{Weak mutation + katso muita siitä kokoelma-artikkelista}
 
 
 \section{Mutaatiotestauksen haasteet}

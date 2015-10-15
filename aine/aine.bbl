@@ -52,17 +52,6 @@
   \mbox{\btxISSN~\btxISSNfont {0098-5589}}}.
 \newblock {\latintext \btxurlfont{http://dx.doi.org/10.1109/TSE.2010.62}}.
 
-\bibitem [{KCM00}]{Kim:Clark:McDermid:2000}
-\btxnamefont {\btxlastnamefont {Kim}, Sunwoo}, \btxnamefont {\btxlastnamefont
-  {Clark}, John\btxfnamespacelong A.}\btxandcomma {} \btxandlong {}\
-  \btxnamefont {\btxlastnamefont {McDermid}, John\btxfnamespacelong
-  A.}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {Class mutation: Mutation
-  testing for object-oriented programs}{Class Mutation: Mutation Testing for
-  Object-oriented Programs}}.
-\newblock \Btxinlong {}\ \btxtitlefont {Proceedings of the Net.ObjectDays
-  Conference on Object-Oriented Software Systems}, \btxpageslong {}\ 9--12,
-  \btxprintmonthyear{.}{10}{2000}{long}.
-
 \bibitem [{MHK06}]{Ma:Harrold:Kwon:2006}
 \btxnamefont {\btxlastnamefont {Ma}, Yu\btxfnamespacelong Seung}, \btxnamefont
   {\btxlastnamefont {Harrold}, Mary\btxfnamespacelong Jean}\btxandcomma {}
