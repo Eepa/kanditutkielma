@@ -149,9 +149,21 @@ Perinteisesti mutaatiotestausta on käytetty proseduraalisen ohjelmoinnin avulla
 
 \section{Johdanto}
 
-Vaikka testauksen avulla ei voikaan varmistua ohjelmiston oikeellisuudesta, voidaan testausta käyttää välineenä ohjelmiston laadun parantamisessa. 
+Perinteisiä ohjelmistojen testausmenetelmiä on olioperustaisen ohjelmoinnin kehityksen myötä sopeutettu uusiin olio-ohjelmoinnin mukana tuleviin haasteisiin. Olio-ohjelmoinnin avulla voidaan ratkaista joitakin proseduraalisen ohjelmoinnin ongelmia~\cite[s. 86]{Mariani:Pezze:2008}. Uusia haasteita seuraa kuitenkin olio-ohjelmoinnin piirteistä, joita ovat esimerkiksi kapselointi ja perintä.
 
-Mutaatiotestauksen periaatteena on ohjelmoijien tekemien ohjelmointivirheiden simulointi~\cite[s. 649]{Jia:Harman:2011}. Tavoitteena mutaatiotestauksessa on tutkia, ovatko ohjelmistoa varten tehdyt testit laadukkaita ja havaitaanko niillä kattavasti ohjelmistossa mahdollisesti esiintyvät virheet ja ongelmat. 
+Ohjelmistokehitysprosessissa testausta voidaan käyttää ohjelmistossa olevien virheiden havaitsemiseen jo kehitysvaiheen aikana. Testauksen avulla voidaan myös parantaa ohjelmiston laatua ja varmistaa, että ohjelma toimii sille asetettujen vaatimusten mukaisesti. 
+
+Testaukseen liittyy kuitenkin myös rajoituksia. Testauksen avulla ei esimerkiksi voi aina todistaa ohjelmiston oikeellisuutta~\cite[s. 58]{Binder:1999}. Lisäksi epävarmuutta liittyy myös käytettävän testausjärjestelmän oikeellisuuden ja luotettavuuden varmistamiseen.
+
+Yksi menetelmä ohjelmiston testien laadukkuuden tutkimiseen ja parantamiseen on mutaatiotestauksen käyttö osana ohjelmiston testausprosessia. Mutaatiotestauksessa tavoitteena on tutkia, ovatko ohjelmistoa varten tehdyt testit laadukkaita ja havaitaanko niillä kattavasti ohjelmistossa mahdollisesti esiintyvät virheet ja ongelmat~\cite[s. 649]{Jia:Harman:2011}. 
+
+Mutaatiotestauksen periaatteena on simuloida ohjelmoijien tekemiä yleisiä ohjelmointivirheitä muokkaamalla ohjelmiston alkuperäistä lähdekoodia~\cite[s. 649]{Jia:Harman:2011}. Mutaatiotestauksessa lähdekoodista muodostetaan muunnettuja versioita eli mutantteja. 
+
+Perinteisesti mutaatiotestausta on hyödynnetty proseduraalisella ohjelmoinnilla kehitettyjen ohjelmien testien kehityksessä. Olioperustaisen ohjelmoinnin kehityksen myötä mutaatiotestausta on jouduttu sopeuttamaan, jotta sitä voidaan soveltaa myös olio-ohjelmia varten kehitettyjen testien laadun varmistamiseen~\cite{Kim:Clark:McDermid:2000}.
+
+Vaikka mutaatiotestausta voidaan käyttää apuna ohjelmiston olemassa olevien testien kehittämisessä, liittyy mutaatiotestausmenetelmän käyttöön myös ratkaisemattomia ongelmia, jotka estävät mutaatiotestauksen laaja-alaisen käytön~\cite[s. 652]{Jia:Harman:2011}. Mutaatiotestauksen suoritus vaatii paljon laskentatehoa, mikä on ollut yksi ongelmista. Lisäksi mutaatiotestausprosessissa ihmisiltä vaadittava työpanos on myös suuri. 
+
+Mutaatiotestausta on tutkittu paljon~\cite[s. 649]{Jia:Harman:2011}. Tutkimuksen avulla on yritetty löytää keinoja ratkaista mutaatiotestaukseen liittyviä ongelmia, jotta mutaatiotestaus voitaisiin muuttaa toimivaksi testausmenetelmäksi. 
 
 %\textcolor{cyan}{Tutkimuskysymys: On tutkittu, että mutaatiotestauksesta on hyötyä testien laadun parantamisessa ja testikattavuuden tarkastelussa/kasvattamisessa. Miksi mutaatiotestausta ei kuitenkaan käytetä laajasti näiden asioiden tekemiseen?}
 %
@@ -174,15 +186,14 @@ Mutaatiotestauksen periaatteena on ohjelmoijien tekemien ohjelmointivirheiden si
 %Mutaatiotestausprosessi tuottaa lopputuloksena \textit{mutaatiopistemäärän} (\textit{mutation adequacy score}), jonka avulla voidaan arvioida ohjelmiston testien laadukkuutta ja kykyä havaita lähdekoodissa olevia vikoja. 
 
 
-\textbf{Johdanto jäsennelty asianmukaisesti (kenelle, miksi, millaisessa ympäristössä; ratkaisun lähestymistapa; tutkimuskysymys, tulokset ja impakti),
-pituus 1,5 - 2 s.}
+%\textbf{Johdanto jäsennelty asianmukaisesti (kenelle, miksi, millaisessa ympäristössä; ratkaisun lähestymistapa; tutkimuskysymys, tulokset ja impakti), pituus 1,5 - 2 s.}
 
 %\textbf{\textit{MIKÄ ON MINUN TUTKIMUSKYSYMYKSENI?}}
 
 
 \section{Testaus oliojärjestelmissä}
 
-Olioperustaisen ohjelmoinnin kehityksen myötä klassisia ohjelmistojen testausmenetelmiä on sopeutettu mahdollistamaan \textit{oliojärjestelmien} (\textit{object oriented systems}) kattava ja laadukas testaaminen. Vaikka olioperustainen ohjelmointi ratkaisee joitakin proseduraalisen ohjelmoinnin suunnittelu- ja toteutusongelmia, olio-ohjelmoinnin mukana tulevat uudet haasteet vaativat uusien testaus- ja analysointimenetelmien kehittämistä. 
+Olioperustaisen ohjelmoinnin kehityksen myötä klassisia ohjelmistojen testausmenetelmiä on sopeutettu mahdollistamaan \textit{oliojärjestelmien} (\textit{object oriented systems}) kattava ja laadukas testaaminen. Vaikka olioperustainen ohjelmointi ratkaisee joitakin proseduraalisen ohjelmoinnin suunnittelu- ja toteutusongelmia, olio-ohjelmoinnin mukana tulevat uudet haasteet vaativat uusien testaus- ja analysointimenetelmien kehittämistä~\cite[s. 86]{Mariani:Pezze:2008}. 
 
 \subsection{Testauksen rooli oliojärjestelmissä}
 

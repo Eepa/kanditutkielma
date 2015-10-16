@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.9.8)  16 OCT 2015 15:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.9.8)  16 OCT 2015 17:08
 entering extended mode
 **aine.tex
 (aine.tex
@@ -912,84 +912,84 @@ Package babel Info: Redefining finnish shorthand "|
 Package babel Info: Redefining finnish shorthand "|
 (babel)             in language  on input line 150.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 183.
+(babel)             in language  on input line 166.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 187.
-Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 195.
-Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 198.
-Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 198.
+(babel)             in language  on input line 166.
  [1
 
 ]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 209.
+(babel)             in language  on input line 194.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 216.
+(babel)             in language  on input line 198.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 216.
+(babel)             in language  on input line 206.
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 213.
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 213.
 
 [2]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 223.
-Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 228.
-Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 228.
- [3]
+(babel)             in language  on input line 220.
 Package babel Info: Redefining finnish shorthand "|
 (babel)             in language  on input line 231.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 235.
+(babel)             in language  on input line 231.
+ [3]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 240.
+(babel)             in language  on input line 234.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 240.
+(babel)             in language  on input line 241.
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 241.
  [4]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 261.
+(babel)             in language  on input line 242.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 261.
+(babel)             in language  on input line 246.
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 256.
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 256.
  [5]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 261.
+(babel)             in language  on input line 272.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 274.
+(babel)             in language  on input line 275.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 274.
+(babel)             in language  on input line 275.
  [6]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 320.
+(babel)             in language  on input line 331.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 320.
+(babel)             in language  on input line 331.
  [7]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 327.
+(babel)             in language  on input line 338.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 331.
+(babel)             in language  on input line 342.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 331.
+(babel)             in language  on input line 342.
  [8pdfTeX warning (ext4): destination with the same identifier (name{table.1}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.331 Y
+l.342 Y
        ksi mutaatiotestauksen ongelma-alueista on tehokkuuteen liittyvät on...
 ]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 366.
+(babel)             in language  on input line 377.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 370.
+(babel)             in language  on input line 381.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 370.
+(babel)             in language  on input line 381.
  [9]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 393.
+(babel)             in language  on input line 404.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 393.
+(babel)             in language  on input line 404.
  [10] (aine.bbl
 Package babel Info: Redefining finnish shorthand "|
 (babel)             in language  on input line 1.
@@ -1018,26 +1018,26 @@ Package babel Info: Redefining finnish shorthand "|
 Package babel Info: Redefining finnish shorthand "|
 (babel)             in language  on input line 96.
  [11])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 411.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 422.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 411.
+(babel)             in language  on input line 422.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 411.
+(babel)             in language  on input line 422.
  [12]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 411.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 422.
  (aine.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 411.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 411.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 422.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 422.
 Package rerunfilecheck Info: File `aine.out' has not changed.
 (rerunfilecheck)             Checksum: BD32E789D5D973C603C2AD2772D0E11E;818.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 411.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 422.
  ) 
 Here is how much of TeX's memory you used:
- 10037 strings out of 493673
- 147931 string characters out of 3143952
- 293086 words of memory out of 3000000
+ 10039 strings out of 493673
+ 147951 string characters out of 3143952
+ 295086 words of memory out of 3000000
  13016 multiletter control sequences out of 15000+200000
- 51675 words of font info for 107 fonts, out of 3000000 for 9000
+ 51758 words of font info for 108 fonts, out of 3000000 for 9000
  1026 hyphenation exceptions out of 8191
  31i,13n,35p,782b,586s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/M
@@ -1051,9 +1051,9 @@ c/lm/lmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:
 eX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
 1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt1
 0.pfb>
-Output written on aine.pdf (15 pages, 264532 bytes).
+Output written on aine.pdf (15 pages, 266571 bytes).
 PDF statistics:
- 256 PDF objects out of 1000 (max. 8388607)
+ 263 PDF objects out of 1000 (max. 8388607)
  42 named destinations out of 1000 (max. 500000)
  14433 words of extra memory for PDF output out of 17280 (max. 10000000)
 
