@@ -1,0 +1,16 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: aine.aux
+The style file: babalpha-lf.bst
+Database file #1: references-fi.bib
+You're missing a field name---line 2 of file references-fi.bib
+ : 
+ : %  title = {Graph Theory},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 11 of file references-fi.bib
+ : 
+ : %  title = {Mitä tämä on},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--empty language in Binder:1999
+Warning--can't use both author and editor fields in Mariani:Pezze:2008
+(There were 2 error messages)
