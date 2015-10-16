@@ -6,8 +6,8 @@
 \contentsline {subsection}{\numberline {2.3}Testien suunnittelu}{2}{subsection.2.3}
 \contentsline {subsection}{\numberline {2.4}Testauksen rajoitukset}{3}{subsection.2.4}
 \contentsline {section}{\numberline {3}Mutaatiotestaus olioj\IeC {\"a}rjestelmiss\IeC {\"a}}{4}{section.3}
-\contentsline {subsection}{\numberline {3.1}Mutaatiotestauksen yleisesittely}{4}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Mutaatiotestauksen piirteet olioj\IeC {\"a}rjestelmiss\IeC {\"a}}{6}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.1}Mutaatiotestauksen esittely}{4}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Mutaatio-operaattorit olioj\IeC {\"a}rjestelmiss\IeC {\"a}}{6}{subsection.3.2}
 \contentsline {section}{\numberline {4}Mutaatiotestauksen haasteet}{8}{section.4}
 \contentsline {section}{\numberline {5}Yhteenveto}{9}{section.5}
 \contentsline {section}{L\IeC {\"a}hteet}{10}{section*.2}
