@@ -256,6 +256,8 @@ MP = \frac{T}{K - E},
 \end{equation}
 missä \textit{T} on tapettujen mutanttien määrä, \textit{K} on kaikkien mutanttien määrä ja \textit{E} on ekvivalenttien mutanttien määrä. Mutaatiopistemäärän maksimiarvo 1 saavutetaan, kun testeillä saadaan tapettua kaikki mutantit. 
 
+%Lisää juttua siitä, että mutaatiotestaus kasvattaa testitkattavuutta.
+
 \subsection{Mutaatio-operaattorit oliojärjestelmissä}
 
 Mutaatio-operaattorit ovat tärkeässä asemassa mutaatiotestauksessa, sillä mutaatiotestauksen tehokkuus riippuu siitä, minkälaisia virheitä mutaatio-operaattoreilla luodaan lähdekoodiin~\cite[s. 352]{Ma:Kwon:Offutt:2002}. Perinteisesti mutaatiotestausta on hyödynnetty proseduraalisessa ohjelmoinnissa, minkä vuoksi myös mutaatio-operaattorit on kehitetty tukemaan suurinta osaa proseduraalisten ohjelmointikielten piirteistä~\cite[s. 352]{Ma:Kwon:Offutt:2002}. 
@@ -363,19 +365,17 @@ Kolmas ongelma-alue liittyy mutaatiotestauksen vaiheeseen, jossa ihmisten on tar
 
 \section{Yhteenveto}
 
-\textbf{Conclusion.}
+Olioperustaisen ohjelmoinnin mukana tulevien uusien haasteiden kohtaaminen tuo muutoksia myös ohjelmistojen testausmenetelmiin. Sekä perinteisiä olemassa olevia että uusia testausmenetelmiä kehitetään, jotta olio-ohjelmia voidaan testata kattavasti ja laadukkaasti. 
 
+Perinteisessä ohjelmistotestauksessa keskitytään ohjelmiston toiminnallisuuden testaamiseen ja virheiden etsimiseen ohjelmistosta. Perinteiseen ohjelmistotestaukseen liittyy kuitenkin haasteita, jotka tuovat testaukseen epävarmuutta. Yksi haasteista on määrittää, ovatko testauksessa käytettävät testit ja testausjärjestelmä riittävän luotettavia, jotta niiden avulla ohjelmistoa voidaan testata laadukkaasti.
 
+Mutaatiotestaus on virheperustainen testausmenetelmä, joka tarjoaa ratkaisun testien laadun parantamiseen liittyvään haasteeseen. Mutaatiotestausmenetelmän avulla voidaan mitata ohjelmistoa varten tehtyjen testien kykyä havaita ohjelmistossa esiintyviä virheitä. Mutaatiotestauksen avulla on siis mahdollista kehittää ohjelmiston testejä ja parantaa testien luotettavuutta.
 
-
-
- 
-
+Vaikka mutaatiotestauksen käyttö yleisesti osana testausprosessia on vähäistä mutaatiotestaukseen liittyvien ratkaisemattomien ongelmien takia, on mutaatiotestausta tutkittu paljon. Tutkimuksen avulla voi olla mahdollista löytää ratkaisuja mutaatiotestausta vaivaaviin ongelmiin, jotta mutaatiotestauksen laaja-alaisempi käyttö osana testausprosessia voisi tulevaisuudessa olla mahdollista.
 
 %Tällä (yksikkö)testauksen tasolla testien suunnittelussa voidaan käyttää ohjelman sisäiseen rakenteeseen perustuvaa suunnittelumallia, jota kutsutaan \textit{white box -testaukseksi} (\textit{white box testing}). Tässä mallissa ohjelmiston lähdekoodia käytetään apuna testien valmistamisessa~\cite[s. 52]{Binder:1999}.
 
 %Tämän tason testien suunnittelustrategiana voidaan käyttää ohjelmiston ulkoisen toiminnallisuuden analysointia. Tällaista testausstrategiaa kutsutaan \textit{black box -testaukseksi} (\textit{black box testing}) tai \textit{funktionaaliseksi testaukseksi} (\textit{functional testing})~\cite[s. 52]{Binder:1999}. Kuitenkin sekä white box - että black box -testausta voidaan käyttää kaikilla testauksen tasoilla testien suunnittelun apuna. 
-
 
 %\section{Miten saa evaluointia/analyysiä? Mihin lukuihin se sopii?}
 
