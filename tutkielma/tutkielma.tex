@@ -250,17 +250,15 @@ Mutaatiotestauksesta kirjoitettiin ensimmäistä kertaa jo 1970-luvulla. DeMillo
 
 \textbf{historiasta ehkä lisää ja tutkimuksesta ja lisäksi käsittele ne hypoteesit mutaatiotestauksen takana eli competent programmer hypothesis ja coupling effect}
 
-\subsection{Mutaatiotestausprosessi}
+\subsection{Perinteinen mutaatiotestausprosessi}
 
-Tavoitteena on havaita testien avulla lähdekoodiin tehdyt muutokset.
+Tavoitteena on havaita testien avulla lähdekoodiin tehdyt muutokset~\cite[s. 35]{Offutt:Untch:2001}.
 
 Perinteisessä mutaatiotestausprosessissa ensimmäinen vaihe on käsitellä ohjelmiston alkuperäistä lähdekoodia \textit{mutaatio-operaattoreilla}, jotka muuntavat koodia muodostaen siitä virheellisiä versioita~\cite[s. 869]{Ma:Harrold:Kwon:2006}. Näitä virheellisiä ohjelmakoodin versioita kutsutaan \textit{mutanteiksi}. Mutaatio-operaattorit kuvaavat algoritmeja, joiden avulla lähdekoodia käsitellään koodin muuntamisen aikana.
 
-Mutanttien generoinnin jälkeen ohjelmiston alkuperäiset testit suoritetaan muuntamattoman lähdekoodin kohdalla~\cite[s. 652]{Jia:Harman:2011}. Tavoitteena on varmistaa, että testit voidaan suorittaa alkuperäiselle ohjelmalle ilman virheitä. Jos testit eivät mene läpi eli ohjelmassa havaitaan virheitä, virheet korjataan ennen kuin mutaatiotestausta jatketaan. 
+Mutanttien generoinnin jälkeen ohjelmiston alkuperäiset testit suoritetaan muuntamattomalle lähdekoodille~\cite[s. 652]{Jia:Harman:2011}. Tavoitteena on varmistaa, että testit voidaan suorittaa alkuperäiselle ohjelmalle ilman virheitä. Jos testit eivät mene läpi eli ohjelmassa havaitaan virheitä, virheet korjataan ennen kuin mutaatiotestausta jatketaan. 
 
-Seuraavaksi testit suoritetaan jokaisen elävän mutantin kohdalla. \textbf{Tähän jotakin järkevää?}
-
-\textbf{Mihin kohtaan tämä kappale sijoitetaan?}. Kuvassa \ref{figure:Mutaatiotestausprosessi} on esitelty (esitellään) perinteinen mutaatiotestausprosessi ja sen työvaiheet. Kuvassa \ref{figure:Mutaatiotestausprosessi}  siniset laatikot kuvaavat mutaatiotestausprosessin työvaiheita. Vihreät ja keltaiset laatikot ovat resursseja, joita prosessin työvaiheiden aikana hyödynnetään.
+Seuraavaksi testit suoritetaan jokaisen elävän mutantin kohdalla~\cite[s. 35]{Offutt:Untch:2001}. Mutaatiotestausprosessin työvaiheita \textbf{(havainnollistetaan?)}/esitellään kuvassa \ref{figure:Mutaatiotestausprosessi}. Sinisillä laatikoilla kuvataan työvaiheita. Työvaiheiden aikana käytettäviä resursseja kuvataan vihreillä ja keltaisilla laatikoilla.
 
 Testien suorituksen jälkeen suorituksesta saatuja tuloksia verrataan toisiinsa. Testituloksia vertailtaessa voidaan päästä kahteen lopputulokseen~\cite[s. 36]{DeMillo:Lipton:Sayward:1978}. Alkuperäiselle muuntamattomalle lähdekoodille suoritettujen testien tulos voi: 
 \begin{enumerate}
@@ -272,6 +270,8 @@ Tapauksessa 1. alkuperäiset testit eivät ole menneet läpi mutantin kohdalla. 
 
 Tapauksessa 2. alkuperäiset testit ovat menneet läpi mutantin kohdalla eli mutantti on jäänyt eloon. Mutantin jäämiselle eloon on kaksi vaihtoehtoista selitystä~\cite[s. 36]{DeMillo:Lipton:Sayward:1978}. Ensimmäinen selitys on, että alkuperäiset testit eivät ole riittävän hyvät, jotta niiden avulla voidaan havaita lähdekoodiin tehty muutos. Toinen selitys on, että mutantin toiminta ei eroa alkuperäisen ohjelman toiminnasta eli kyseessä on \textit{ekvivalentti mutantti}. Ekvivalentti mutantti on syntaktisesti erilainen kuin alkuperäinen ohjelma mutta toiminnaltaan se on samanlainen alkuperäisen ohjelman kanssa~\cite[s. 652]{Jia:Harman:2011}.
 
+\textbf{Tästä välistä puuttuu ekvivalenttien mutanttien tarkastelu ja testien korjaus+lisääminen tarvittaessa.}
+
 Mutaatiotestausprosessi tuottaa lopputuloksena \textit{mutaatiopistemäärän} (\textit{mutation adequacy score}), jonka avulla voi arvioida ohjelmiston testien laadukkuutta ja kykyä havaita lähdekoodissa olevia vikoja~\cite[s. 652]{Jia:Harman:2011}. Mutaatiopistemäärä \textit{MP} lasketaan kaavalla 
 \begin{equation}
 MP = \frac{T}{K - E},
@@ -280,12 +280,20 @@ missä \textit{T} on tapettujen mutanttien määrä, \textit{K} on kaikkien muta
 
 \textbf{Lisää juttua siitä, että mutaatiotestaus kasvattaa testitkattavuutta. Ja vois olla kiva joku kuva mutaatiotestausprosessista --> että näkisi visuaalisesti sen silmukan, mitä siinä tehdään.}
 
+\textbf{\textit{Kuvasta puuttuu valmista-kohdasta mutaatiopistemäärä.}}
+
 \begin{figure}[H]
 	\centering
 		\includegraphics[width=\textwidth]{mutaatiotestausprosessi2}
 	\caption{Perinteinen mutaatiotestausprosessi.}
 	\label{figure:Mutaatiotestausprosessi}
 \end{figure}
+
+\textbf{Omaa muotoilua perustuen Uniting orthogonal 2000 artikkeliin --> uusi mutaatiotestausprosessi:} Kuvasta \ref{figure:Mutaatiotestausprosessi} huomataan, että mutaatiotestausprosessi sisältää silmukoita. Ensimmäinen silmukka sisältää mutanttien generoinnin, testien suorituksen alkuperäiselle ohjelmalle ja testien tulosten tarkastamisen jälkeen virheiden korjauksen. Näistä työvaiheista testien tulosten tarkastaminen ja alkuperäisen ohjelman virheiden korjaaminen vaativat ihmisten työpanosta \textbf{(human intensive? käännös)}.
+
+Toinen silmukka eli mutaatiotestauksen pääsilmukka muodostuu työvaiheista, jotka suoritetaan testien läpimenotarkastuksen jälkeen. Toiseen silmukkaan sisältyvät myös ensimmäisen silmukan työvaiheista testien suoritus lähdekoodille ja testien läpimenotarkastus. Tämä tarkoittaa, että silmukat risteävät näiden työvaiheiden kohdalla. Toisessa silmukassa manuaalista työtä vaativat ekvivalenttien mutanttien etsiminen ja merkitseminen ja uusien testien lisääminen tai olemassa olevien testien kehittäminen.
+
+\textbf{Onko konditionaali sallittu --> en tiedä, onko tämä jo käytössä?}. Jotta mutaatiotestausprosessia voidaan tehostaa, manuaaliset työvaiheet tulisi poistaa mutaatiotestauksen pääsilmukasta~\cite[s. 41]{Offutt:Untch:2001}. Perinteisen mutaatiotestausprosessin tilalle tulisi uusi testausprosessi, jossa osa työläistä manuaalisista työvaiheista suoritettaisiin automaattisesti. Ekvivalenttien mutanttien tunnistaminen ja testien generointi ja kehittäminen voitaisiin uudessa testausprosessissa automatisoida, mikä tehostaisi mutaatiotestausprosessia. Ainoa merkittävä manuaalinen työvaihe uudessa mutaatiotestausprosessissa olisi tarkistaa, ovatko alkuperäiselle lähdekoodille suoritetut testit menneet läpi.
 
 \section{Mutaatiotestaus oliojärjestelmissä}
 

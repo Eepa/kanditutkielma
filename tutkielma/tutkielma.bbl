@@ -112,4 +112,17 @@
 \newblock {\latintext
   \btxurlfont{http://dx.doi.org/10.1016/j.infsof.2011.03.007}}.
 
+\bibitem [{OU01}]{Offutt:Untch:2001}
+\btxnamefont {\btxlastnamefont {Offutt}, A.\btxfnamespacelong Jefferson}
+  \btxandlong {}\ \btxnamefont {\btxlastnamefont {Untch},
+  Ronald\btxfnamespacelong H.}\btxauthorcolon\ \btxtitlefont {\btxifchangecase
+  {Mutation testing for the new century}{Mutation Testing for the New
+  Century}}.
+\newblock \btxchapterlong {}\ Mutation 2000: Uniting the Orthogonal,
+  \btxpageslong {}\ 34--44. \btxpublisherfont {Kluwer Academic Publishers},
+  Norwell, MA, USA, 2001\ifbtxprintISBN {, \mbox{\btxISBN~\btxISBNfont
+  {0-7923-7323-5}}}.
+\newblock {\latintext
+  \btxurlfont{http://dl.acm.org/citation.cfm?id=571305.571314}}.
+
 \end{thebibliography}
