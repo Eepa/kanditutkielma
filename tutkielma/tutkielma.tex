@@ -252,9 +252,15 @@ Mutaatiotestauksesta kirjoitettiin ensimmäistä kertaa jo 1970-luvulla. DeMillo
 
 \subsection{Mutaatiotestausprosessi}
 
-Mutaatiotestausprosessissa ensimmäinen vaihe on käsitellä ohjelmiston alkuperäistä lähdekoodia \textit{mutaatio-operaattoreilla}, jotka muuntavat koodia muodostaen siitä virheellisiä versioita~\cite[s. 869]{Ma:Harrold:Kwon:2006}. Näitä virheellisiä ohjelmakoodin versioita kutsutaan \textit{mutanteiksi}. Mutaatio-operaattorit kuvaavat algoritmeja, joiden avulla lähdekoodia käsitellään koodin muuntamisen aikana.
+Tavoitteena on havaita testien avulla lähdekoodiin tehdyt muutokset.
 
-Mutanttien generoinnin jälkeen ohjelmiston alkuperäiset testit suoritetaan sekä muuntamattoman lähdekoodin että jokaisen mutantin kohdalla~\cite[s. 652]{Jia:Harman:2011}. Tavoitteena on havaita testien avulla lähdekoodiin tehdyt muutokset. 
+Perinteisessä mutaatiotestausprosessissa ensimmäinen vaihe on käsitellä ohjelmiston alkuperäistä lähdekoodia \textit{mutaatio-operaattoreilla}, jotka muuntavat koodia muodostaen siitä virheellisiä versioita~\cite[s. 869]{Ma:Harrold:Kwon:2006}. Näitä virheellisiä ohjelmakoodin versioita kutsutaan \textit{mutanteiksi}. Mutaatio-operaattorit kuvaavat algoritmeja, joiden avulla lähdekoodia käsitellään koodin muuntamisen aikana.
+
+Mutanttien generoinnin jälkeen ohjelmiston alkuperäiset testit suoritetaan muuntamattoman lähdekoodin kohdalla~\cite[s. 652]{Jia:Harman:2011}. Tavoitteena on varmistaa, että testit voidaan suorittaa alkuperäiselle ohjelmalle ilman virheitä. Jos testit eivät mene läpi eli ohjelmassa havaitaan virheitä, virheet korjataan ennen kuin mutaatiotestausta jatketaan. 
+
+Seuraavaksi testit suoritetaan jokaisen elävän mutantin kohdalla. \textbf{Tähän jotakin järkevää?}
+
+\textbf{Mihin kohtaan tämä kappale sijoitetaan?}. Kuvassa \ref{figure:Mutaatiotestausprosessi} on esitelty (esitellään) perinteinen mutaatiotestausprosessi ja sen työvaiheet. Kuvassa \ref{figure:Mutaatiotestausprosessi}  siniset laatikot kuvaavat mutaatiotestausprosessin työvaiheita. Vihreät ja keltaiset laatikot ovat resursseja, joita prosessin työvaiheiden aikana hyödynnetään.
 
 Testien suorituksen jälkeen suorituksesta saatuja tuloksia verrataan toisiinsa. Testituloksia vertailtaessa voidaan päästä kahteen lopputulokseen~\cite[s. 36]{DeMillo:Lipton:Sayward:1978}. Alkuperäiselle muuntamattomalle lähdekoodille suoritettujen testien tulos voi: 
 \begin{enumerate}
@@ -274,10 +280,10 @@ missä \textit{T} on tapettujen mutanttien määrä, \textit{K} on kaikkien muta
 
 \textbf{Lisää juttua siitä, että mutaatiotestaus kasvattaa testitkattavuutta. Ja vois olla kiva joku kuva mutaatiotestausprosessista --> että näkisi visuaalisesti sen silmukan, mitä siinä tehdään.}
 
-\begin{figure}[h!]
+\begin{figure}[H]
 	\centering
 		\includegraphics[width=\textwidth]{mutaatiotestausprosessi2}
-	\caption{Mutaatiotestausprosessi.}
+	\caption{Perinteinen mutaatiotestausprosessi.}
 	\label{figure:Mutaatiotestausprosessi}
 \end{figure}
 
