@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.9.8)  26 OCT 2015 23:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.9.8)  27 OCT 2015 11:06
 entering extended mode
 **tutkielma.tex
 (tutkielma.tex
@@ -954,85 +954,85 @@ Package babel Info: Redefining finnish shorthand "|
 (babel)             in language  on input line 252.
  [5]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 253.
+(babel)             in language  on input line 255.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 272.
+(babel)             in language  on input line 273.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 272.
+(babel)             in language  on input line 273.
  [6]
-<mutaatiotestausprosessi2.png, id=192, 804.00375pt x 706.64pt>
+<mutaatiotestausprosessi2.png, id=195, 804.00375pt x 706.64pt>
 File: mutaatiotestausprosessi2.png Graphic file (type png)
 
 <use mutaatiotestausprosessi2.png>
-Package pdftex.def Info: mutaatiotestausprosessi2.png used on input line 287.
+Package pdftex.def Info: mutaatiotestausprosessi2.png used on input line 285.
 (pdftex.def)             Requested size: 360.0pt x 316.40004pt.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 291.
+(babel)             in language  on input line 289.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 291.
+(babel)             in language  on input line 289.
  [7]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 295.
+(babel)             in language  on input line 293.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 295.
+(babel)             in language  on input line 293.
  [8pdfTeX warning (ext4): destination with the same identifier (name{figure.1})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.295 
+l.293 
        <./mutaatiotestausprosessi2.png (PNG copy)>]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 298.
+(babel)             in language  on input line 296.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 302.
+(babel)             in language  on input line 300.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 311.
+(babel)             in language  on input line 308.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 311.
+(babel)             in language  on input line 308.
  [9]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 361.
+(babel)             in language  on input line 359.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 361.
+(babel)             in language  on input line 359.
  [10]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 363.
+(babel)             in language  on input line 361.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 368.
+(babel)             in language  on input line 366.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 371.
+(babel)             in language  on input line 369.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 371.
+(babel)             in language  on input line 369.
  [11pdfTeX warning (ext4): destination with the same identifier (name{table.1})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.371 
+l.369 
       ]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 376.
+(babel)             in language  on input line 374.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 382.
+(babel)             in language  on input line 380.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 387.
+(babel)             in language  on input line 385.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 387.
+(babel)             in language  on input line 385.
  [12]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 388.
+(babel)             in language  on input line 386.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 404.
+(babel)             in language  on input line 402.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 413.
+(babel)             in language  on input line 411.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 413.
+(babel)             in language  on input line 411.
  [13]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 431.
+(babel)             in language  on input line 429.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 431.
+(babel)             in language  on input line 429.
  [14] (tutkielma.bbl
 Package babel Info: Redefining finnish shorthand "|
 (babel)             in language  on input line 1.
@@ -1061,27 +1061,27 @@ Package babel Info: Redefining finnish shorthand "|
 Package babel Info: Redefining finnish shorthand "|
 (babel)             in language  on input line 96.
  [15])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 449.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 447.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 449.
+(babel)             in language  on input line 447.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 449.
+(babel)             in language  on input line 447.
  [16]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 449.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 447.
 
 (tutkielma.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 449.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 449.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 447.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 447.
 Package rerunfilecheck Info: File `tutkielma.out' has not changed.
 (rerunfilecheck)             Checksum: D010C071DFDF39EB632847E0B160E132;1302.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 449.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 447.
  ) 
 Here is how much of TeX's memory you used:
- 10074 strings out of 493673
- 148613 string characters out of 3143952
+ 10080 strings out of 493673
+ 148677 string characters out of 3143952
  294212 words of memory out of 3000000
  13032 multiletter control sequences out of 15000+200000
- 56289 words of font info for 111 fonts, out of 3000000 for 9000
+ 56585 words of font info for 114 fonts, out of 3000000 for 9000
  1026 hyphenation exceptions out of 8191
  31i,13n,35p,787b,586s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/M
@@ -1095,9 +1095,9 @@ C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/M
 iKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
 e1/public/lm/lmri10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy
 10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb>
-Output written on tutkielma.pdf (19 pages, 339274 bytes).
+Output written on tutkielma.pdf (19 pages, 338971 bytes).
 PDF statistics:
- 326 PDF objects out of 1000 (max. 8388607)
+ 329 PDF objects out of 1000 (max. 8388607)
  54 named destinations out of 1000 (max. 500000)
  14998 words of extra memory for PDF output out of 17280 (max. 10000000)
 
