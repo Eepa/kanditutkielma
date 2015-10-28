@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.9.8)  28 OCT 2015 11:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.9.8)  28 OCT 2015 18:27
 entering extended mode
 **tutkielma.tex
 (tutkielma.tex
@@ -1079,13 +1079,13 @@ Package rerunfilecheck Info: File `tutkielma.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 451.
  ) 
 Here is how much of TeX's memory you used:
- 10080 strings out of 493673
- 148687 string characters out of 3143952
- 295212 words of memory out of 3000000
+ 10082 strings out of 493673
+ 148703 string characters out of 3143952
+ 296181 words of memory out of 3000000
  13033 multiletter control sequences out of 15000+200000
- 56502 words of font info for 113 fonts, out of 3000000 for 9000
+ 56585 words of font info for 114 fonts, out of 3000000 for 9000
  1026 hyphenation exceptions out of 8191
- 31i,13n,35p,787b,586s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 31i,13n,35p,747b,586s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/M
 iKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX 2.9/fonts/e
 nc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit
@@ -1097,9 +1097,9 @@ C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/M
 iKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
 e1/public/lm/lmri10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy
 10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb>
-Output written on tutkielma.pdf (19 pages, 340550 bytes).
+Output written on tutkielma.pdf (19 pages, 340433 bytes).
 PDF statistics:
- 335 PDF objects out of 1000 (max. 8388607)
+ 334 PDF objects out of 1000 (max. 8388607)
  55 named destinations out of 1000 (max. 500000)
  15006 words of extra memory for PDF output out of 17280 (max. 10000000)
 
