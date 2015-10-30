@@ -323,23 +323,23 @@ Mutaatio-operaattorien avulla kuvataan algoritmeja, joilla lähdekoodia muokataa
 			\hline
 			\textbf{Ryhmä} & \textbf{Operaattori} & \textbf{Kuvaus} \\
 			\hline
-			Pääsynvalvonta & ACM & Access modifier change \\
+			\parbox[t]{2cm}{Kapselointi} & AMC & Access modifier change \\
 			\hline
-			\multirow{8}{*}{Perintä} & IHD & Hiding variable deletion \\ \cline{2-3}
+			\multirow{8}{*}{\parbox[t]{2cm}{Perintä}} & IHD & Hiding variable deletion \\ \cline{2-3}
 			& IHI & Hiding variable insertion \\ \cline{2-3}
 			& IOD & Overriding method deletion \\ \cline{2-3}
-			& IOP & Overridden method calling position change \\ \cline{2-3}
+			& IOP & \parbox[t]{7cm}{Overridden method calling position change} \\ \cline{2-3}
 			& IOR & Overridden method rename \\ \cline{2-3}
 			& ISK & \textit{super} keyword deletion \\ \cline{2-3}
-			& IPC & Explicit call of a parent's constructor deletion \\
+			& IPC & \parbox[t]{7cm}{Explicit call of a parent's constructor deletion} \\
 			\hline
 			\multirow{7}{*}{\parbox[t]{2cm}{Polymor-\\fismi}} & PNC & \textit{new} method call with child class type \\ \cline{2-3}
-			& PMD & Member variable declaration with parent class type \\ \cline{2-3}
+			& PMD & \parbox[t]{7cm}{Member variable declaration with parent class type} \\ \cline{2-3}
 			& PPD & \parbox[t]{7cm}{Parameter variable declaration with\\child class type}
 \\ \cline{2-3}
 			& PRV & \parbox[t]{7cm}{Reference assignment with other\\compatible type} \\
 			\hline
-			\multirow{4}{*}{\parbox[t]{2cm}{Metodin ylikuormitus}} & OMR & Overloading method contents change \\ \cline{2-3}
+			\multirow{4}{*}{\parbox[t]{2cm}{Metodin\\ylikuormi-\\tus}} & OMR & Overloading method contents change \\ \cline{2-3}
 			& OMD & Overloading method deletion \\ \cline{2-3}
 			& OAO & Argument order change \\ \cline{2-3}
 			& OAN & Argument number change \\
@@ -347,7 +347,7 @@ Mutaatio-operaattorien avulla kuvataan algoritmeja, joilla lähdekoodia muokataa
 			\multirow{4}{*}{\parbox[t]{2cm}{Javan\\erityis-\\piirteet}} & JTD & \textit{this} keyword deletion \\ \cline{2-3}
 			& JSC & \textit{static} modifier change \\ \cline{2-3}
 			& JID & Member variable initialization deletion \\ \cline{2-3}
-			& JDC & Java-supported default constructor create \\
+			& JDC &  \parbox[t]{7cm}{Java-supported default constructor create} \\
 			\hline
 			\multirow{5}{*}{\parbox[t]{2cm}{Yleiset\\ohjelmoin-\\tivirheet}} & EOA & \parbox[t]{7cm}{Reference assignment and content assignment replacement} \\ \cline{2-3}
 			& EOC & \parbox[t]{7cm}{Reference comparison and content comparison replacement} \\ \cline{2-3}
