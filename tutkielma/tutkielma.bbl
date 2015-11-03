@@ -1,4 +1,4 @@
-\begin{thebibliography}{MKO02}
+\begin{thebibliography}{OMK06}
   \providebibliographyfont{name}{}%
   \providebibliographyfont{lastname}{}%
   \providebibliographyfont{title}{\emph}%
@@ -86,6 +86,18 @@
   ISSRE 2003. Proceedings. 13th International Symposium on}, \btxpageslong {}\
   352--363, 2002.
 
+\bibitem [{MOK05}]{Ma:Offutt:Kwon:2005:MuAutomated}
+\btxnamefont {\btxlastnamefont {Ma}, Yu\btxfnamespacelong Seung}, \btxnamefont
+  {\btxlastnamefont {Offutt}, Jeff}\btxandcomma {} \btxandlong {}\ \btxnamefont
+  {\btxlastnamefont {Kwon}, Yong\btxfnamespacelong Rae}\btxauthorcolon\
+  \btxjtitlefont {\btxifchangecase {Mujava: An automated class mutation system:
+  Research articles}{MuJava: An Automated Class Mutation System: Research
+  Articles}}.
+\newblock \btxjournalfont {Softw. Test. Verif. Reliab.}, 15(2):97--133,
+  \btxprintmonthyear{.}{6}{2005}{long}\ifbtxprintISSN {,
+  \mbox{\btxISSN~\btxISSNfont {0960-0833}}}.
+\newblock {\latintext \btxurlfont{http://dx.doi.org/10.1002/stvr.v15:2}}.
+
 \bibitem [{MP08}]{Mariani:Pezze:2008}
 \btxnamefont {\btxlastnamefont {Mariani}, Leonardo} \btxandlong {}\
   \btxnamefont {\btxlastnamefont {Pezze}, Mauro}\btxauthorcolon\ \btxtitlefont
@@ -111,6 +123,18 @@
   53(10):1098--1107, 2011.
 \newblock {\latintext
   \btxurlfont{http://dx.doi.org/10.1016/j.infsof.2011.03.007}}.
+
+\bibitem [{OMK06}]{Offutt:Ma:Kwon:2006:MuClassLevel}
+\btxnamefont {\btxlastnamefont {Offutt}, Jeff}, \btxnamefont {\btxlastnamefont
+  {Ma}, Yu\btxfnamespacelong Seung}\btxandcomma {} \btxandlong {}\ \btxnamefont
+  {\btxlastnamefont {Kwon}, Yong\btxfnamespacelong Rae}\btxauthorcolon\
+  \btxtitlefont {\btxifchangecase {The class-level mutants of mujava}{The
+  Class-level Mutants of MuJava}}.
+\newblock \Btxinlong {}\ \btxtitlefont {Proceedings of the 2006 International
+  Workshop on Automation of Software Test}, AST '06, \btxpageslong {}\ 78--84,
+  New York, NY, USA, 2006. \btxpublisherfont {ACM}\ifbtxprintISBN {,
+  \mbox{\btxISBN~\btxISBNfont {1-59593-408-1}}}.
+\newblock {\latintext \btxurlfont{http://doi.acm.org/10.1145/1138929.1138945}}.
 
 \bibitem [{OU01}]{Offutt:Untch:2001}
 \btxnamefont {\btxlastnamefont {Offutt}, A.\btxfnamespacelong Jefferson}

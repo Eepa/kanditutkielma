@@ -246,9 +246,11 @@ Testaukseen sisältyvien rajoitusten lisäksi testaukseen liittyy myös epävarm
 
 \subsection{Mutaatiotestauksen historia ja periaatteet/teoreettinen perusta}
 
-Mutaatiotestauksesta kirjoitettiin ensimmäistä kertaa jo 1970-luvulla. DeMillon, Liptonin ja Saywardin artikkeli~\cite{DeMillo:Lipton:Sayward:1978} vuodelta 1978 on yksi ensimmäisistä uraauurtavista mutaatiotestausta esittelevistä artikkeleista. Mutaatiotestauksen tutkimus on lisääntynyt vuosien kuluessa, ja erityisesti 2000-luvulla uusia tuloksia on julkaistu paljon~\cite[s. 1102]{Offutt:2011}. Tutkimuksessa suuntana on ollut etsiä keinoja, joilla mutaatiotestaus voidaan muuttaa käytännölliseksi testausmenetelmäksi~\cite[s. 649]{Jia:Harman:2011}. 
+Mutaatiotestauksesta kirjoitettiin ensimmäistä kertaa jo 1970-luvulla. Richard DeMillon, Richard Liptonin ja Frederick Saywardin artikkeli~\cite{DeMillo:Lipton:Sayward:1978} vuodelta 1978 on yksi ensimmäisistä uraauurtavista mutaatiotestausta esittelevistä artikkeleista. Mutaatiotestauksen tutkimus on lisääntynyt vuosien kuluessa, ja erityisesti 2000-luvulla uusia tuloksia on julkaistu paljon~\cite[s. 1102]{Offutt:2011}. Tutkimuksessa suuntana on ollut etsiä keinoja, joilla mutaatiotestaus voidaan muuttaa käytännölliseksi testausmenetelmäksi~\cite[s. 649]{Jia:Harman:2011}. 
 
-\textbf{historiasta ehkä lisää ja tutkimuksesta ja lisäksi käsittele ne hypoteesit mutaatiotestauksen takana eli competent programmer hypothesis ja coupling effect}
+\textbf{historiasta ehkä lisää ja tutkimuksesta}
+
+Mutaatiotestaus perustuu kahteen hypoteesiin: the Competent Programmer Hypothesis ja the Coupling Effect (Hypothesis).
 
 \textbf{Lisää juttua siitä, että mutaatiotestaus kasvattaa testitkattavuutta.}
 
@@ -299,7 +301,11 @@ Automatisoitavia työvaiheita uudessa mutaatiotestausprosessissa ovat ekvivalent
 
 \section{Mutaatiotestaus oliojärjestelmissä}
 
-Esittelyteksti kappaleelle tähän.
+Kappaleen estittelyteksti tähän. \textbf{Kuinka pitkä tämän on oltava?} 
+
+\subsection{Mutaatiotestauksen piirteet oliojärjestelmissä}
+
+MuJava-artikkelista --> inter-intra/class-method testaus.
 
 \subsection{Mutaatio-operaattorit oliojärjestelmissä}
 
@@ -362,7 +368,7 @@ Mutaatio-operaattorien avulla kuvataan algoritmeja, joilla lähdekoodia muokataa
 \end{table}
 
 
-\subsection{Mutaatiosovellukset oliojärjestelmille}
+\subsection{Automatisoidut mutaatiojärjestelmät}
 
 MuJava? jotakin muita. Onko yleisessä käytössä olevia (commercial) järjestelmiä?
 
@@ -377,17 +383,25 @@ Vaikka mutaatiotestausta voidaan käyttää ohjelmiston olemassa olevien testien
 
 \subsection{Ekvivalentit mutantit}
 
-\textbf{Ratkaisematon ongelma. Esimerkki ekvivalenteista mutanteista. Miten on yritetty ratkaista? --> erilaisilla tunnistusalgoritmeilla, tulevaisuudessa välttää ekvivalenttien mutanttien syntymistä.}
+\textbf{Ratkaisematon ongelma --> jos sais sen todistukse käsiin?? En tiedä, onko se mahdollista. TODO: Esimerkki ekvivalenteista mutanteista.}
+
+Yleinen ekvivalenttien mutanttien tunnistaminen (tunnistamisongelma) on ratkaisematon by Budd and Angluin \textbf{ETSI LÄHDE}. Heuristiikkoja kehitetty, jotta ongelman voi ratkaista osittain. Compiler optimization techniques, algorithms in Mothra, infeasible constraints ideaan perustuva väline, Program slicing. Estää jo alkuunsa mutantttien syntymisen eikä etsi niitä vasta sitten, kun ne ovat syntyneet.~\cite[s. 79]{Offutt:Ma:Kwon:2006:MuClassLevel}
 
 Toinen mutaatiotestaukseen liittyvistä ongelma-alueista on ekvivalentit mutantit. Ekvivalenttien mutanttien tunnistaminen algoritmien avulla on ratkaisematon ongelma~\cite[s. 657]{Jia:Harman:2011}. Koska ekvivalentteja mutantteja ei voi tunnistaa laskennan avulla, ihmisten on suoritettava ekvivalenttien mutanttien tunnistaminen tutkimalla mutanttia ja vertaamalla sen toimintaa alkuperäisen ohjelmiston toimintaan. Tämä menetelmä johtaa mutaatiotestauksen toteuttamiseen tarvittavan työmäärän kasvuun. Ekvivalenttien mutanttien tunnistamisongelma on kuitenkin herättänyt runsaasti teoreettista kiinnostusta, ja mahdollisia tunnistamistekniikoita on tutkittu paljon~\cite[s. 657]{Jia:Harman:2011}. 
 
 \subsection{Tehokkuusongelmat}
 
-\textbf{Laitteisto, testien määrä-->suoritus tehotonta. Miten on yritetty ratkaista --> weak mutation, suorituksen jakaminen usealle prosessorille, mutanttien määrän vähentäminen}
+\textit{Do fewer, do smarter, do faster} ovat ratkaisuehdotuksia.~\cite[s. 121]{Ma:Offutt:Kwon:2005:MuAutomated} 
+
+Do smarter laskentatyön jakaminen usealle laitteelle tai weak mutation. 
+
+Do faster mutanttien generoinnin/kääntämisen ja suorituksen tehostaminen, jotta voitaisiin suorittaa niin nopeasti kuin mahdollista. MSG metodi (MuJava) tai compiler-integrated program mutation tai separate compilation.
+
+Do fewer vähemmän mutantteja ilman "mutaatiokattavuuden" kärsimistä suuresti. Mutant sampling, selective mutation, 
 
 Yksi mutaatiotestauksen ongelma-alueista on tehokkuuteen liittyvät ongelmat. Tehokkuusongelmia esiintyy erityisesti silloin, kun jokaisen mutantin kohdalla suoritetaan kaikki ohjelmistoa varten tehdyt testit~\cite[s. 652]{Jia:Harman:2011}. Testien suoritus jokaisen mutantin kohdalla hidastaa mutaatiotestausprosessia ja vaatii paljon laskentatehoa. Tehokkuusongelman ratkaisemiseksi on kuitenkin esitetty useita ratkaisuehdotuksia~\cite[s. 653]{Jia:Harman:2011}. Ratkaisuehdotuksia ovat esimerkiksi generoitujen mutanttien määrän vähentäminen ja mutanttien ja testien suorituskustannusten pienentäminen.
 
-\subsection{Ihmisten työpanosongelma}
+\subsection{Manuaalinen työ}
 
 \textbf{Tähän liittyy ekvivalentit mutantit --> niiden tunnistaminen ja human oracle ongelma --> eli ihmisen käytävä testitulokset läpi sen jälkeen kun tulokset on saatu.}
 

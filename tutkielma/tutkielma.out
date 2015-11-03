@@ -9,11 +9,12 @@
 \BOOKMARK [2][-]{subsection.3.2}{Perinteinen mutaatiotestausprosessi}{section.3}% 9
 \BOOKMARK [2][-]{subsection.3.3}{Uusi mutaatiotestausprosessi}{section.3}% 10
 \BOOKMARK [1][-]{section.4}{Mutaatiotestaus olioj\344rjestelmiss\344}{}% 11
-\BOOKMARK [2][-]{subsection.4.1}{Mutaatio-operaattorit olioj\344rjestelmiss\344}{section.4}% 12
-\BOOKMARK [2][-]{subsection.4.2}{Mutaatiosovellukset olioj\344rjestelmille}{section.4}% 13
-\BOOKMARK [1][-]{section.5}{Mutaatiotestauksen haasteet}{}% 14
-\BOOKMARK [2][-]{subsection.5.1}{Ekvivalentit mutantit}{section.5}% 15
-\BOOKMARK [2][-]{subsection.5.2}{Tehokkuusongelmat}{section.5}% 16
-\BOOKMARK [2][-]{subsection.5.3}{Ihmisten ty\366panosongelma}{section.5}% 17
-\BOOKMARK [1][-]{section.6}{Yhteenveto}{}% 18
-\BOOKMARK [1][-]{section*.2}{L\344hteet}{}% 19
+\BOOKMARK [2][-]{subsection.4.1}{Mutaatiotestauksen piirteet olioj\344rjestelmiss\344}{section.4}% 12
+\BOOKMARK [2][-]{subsection.4.2}{Mutaatio-operaattorit olioj\344rjestelmiss\344}{section.4}% 13
+\BOOKMARK [2][-]{subsection.4.3}{Automatisoidut mutaatioj\344rjestelm\344t}{section.4}% 14
+\BOOKMARK [1][-]{section.5}{Mutaatiotestauksen haasteet}{}% 15
+\BOOKMARK [2][-]{subsection.5.1}{Ekvivalentit mutantit}{section.5}% 16
+\BOOKMARK [2][-]{subsection.5.2}{Tehokkuusongelmat}{section.5}% 17
+\BOOKMARK [2][-]{subsection.5.3}{Manuaalinen ty\366}{section.5}% 18
+\BOOKMARK [1][-]{section.6}{Yhteenveto}{}% 19
+\BOOKMARK [1][-]{section*.2}{L\344hteet}{}% 20
