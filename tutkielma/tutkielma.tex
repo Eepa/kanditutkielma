@@ -36,6 +36,28 @@
 \usepackage{float}
 \usepackage{enumitem}
 %\usepackage{paralist}
+\usepackage{listings}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
 
 \hyphenation{luok-ka-mu-taa-ti-o-o-pe-raat-to-ri}
 
@@ -343,7 +365,7 @@ Mutaatio-operaattorien avulla kuvataan algoritmeja, joilla lähdekoodia muokataa
 \\ \cline{2-3}
 			& PRV & \parbox[t]{7cm}{Reference assignment with other\\compatible type} \\
 			\hline
-			\multirow{4}{*}{\parbox[t]{2cm}{Metodin\\ylikuormi-\\tus}} & OMR & Overloading method contents change \\ \cline{2-3}
+			\multirow{4}{*}{\parbox[t]{2cm}{Metodin\\kuormi-\\tus}} & OMR & Overloading method contents change \\ \cline{2-3}
 			& OMD & Overloading method deletion \\ \cline{2-3}
 			& OAO & Argument order change \\ \cline{2-3}
 			& OAN & Argument number change \\
@@ -368,7 +390,9 @@ Mutaatio-operaattorien avulla kuvataan algoritmeja, joilla lähdekoodia muokataa
 
 \subsection{Automatisoidut mutaatiojärjestelmät}
 
-MuJava? jotakin muita. Onko yleisessä käytössä olevia (commercial) järjestelmiä?
+Mutaatiojärjestelmät opetuksessa: PIT. 
+
+Mutaatiojärjestelmä tutkimuksessa: MuJava.
 
 
 \section{Mutaatiotestauksen haasteet}
@@ -381,11 +405,37 @@ Vaikka mutaatiotestausta voidaan käyttää ohjelmiston olemassa olevien testien
 
 \subsection{Ekvivalentit mutantit}
 
-\textbf{Ratkaisematon ongelma --> jos sais sen todistukse käsiin?? En tiedä, onko se mahdollista. TODO: Esimerkki ekvivalenteista mutanteista.}
+Ekvivalenttien mutanttien tunnistaminen on toinen mutaatiotestaukseen liittyvistä ongelma-alueista. Ekvivalentit mutantit ovat mutantteja, jotka ovat toiminnaltaan samanlaisia kuin alkuperäinen ohjelma, mutta syntaktisesti erilaisia alkuperäisen ohjelman kanssa~\cite[s. 652]{Jia:Harman:2011}. Ekvivalentteja mutantteja muodostuu, kun alkuperäistä lähdekoodia käsitellään mutaatio-operaattoreilla. 
 
-Yleinen ekvivalenttien mutanttien tunnistaminen (tunnistamisongelma) on ratkaisematon by Budd and Angluin \textbf{ETSI LÄHDE}. Heuristiikkoja kehitetty, jotta ongelman voi ratkaista osittain. Compiler optimization techniques, algorithms in Mothra, infeasible constraints ideaan perustuva väline, Program slicing. Estää jo alkuunsa mutantttien syntymisen eikä etsi niitä vasta sitten, kun ne ovat syntyneet.~\cite[s. 79]{Offutt:Ma:Kwon:2006:MuClassLevel}
+Taulukossa \ref{table:Mutaatio-operaattorit-taulukko} esitelty mutaatio-operaattori IHI lisää perivään aliluokkaan piilottavan muuttujan määrittelyn \textbf{(inserts hiding variable declaration)}. Jos piilotettu muuttuja on yliluokassa määritelty \textit{private}-määreellä (private access level), kaikki IHI-operaattorilla tuotetut mutantit ovat ekvivalentteja mutantteja~\cite[s. 80]{Offutt:Ma:Kwon:2006:MuClassLevel}. Esimerkissä 1 IHI-operaattorilla on muodostettu mutantti, jossa \textit{Kauppa}-luokan aliluokaan \textit{Elainkauppa} on lisätty piilottava muuttuja \textit{osoite}. \textit{Elainkauppa}-luokassa yliluokan \textit{osoite}-muuttujaa käsitellään yliluokan metodilla \textit{getOsoite()}. Piilottavan muuttujan \textit{osoite} lisääminen ei siis muuta luokan \textit{Elainkauppa} toimintaa, joten kyseessä on ekvivalentti mutantti. 
 
-Ekvivalentit mutantit ovat toinen mutaatiotestaukseen liittyvistä ongelma-alueista. Ekvivalenttien mutanttien tunnistaminen algoritmien avulla on ratkaisematon ongelma~\cite[s. 657]{Jia:Harman:2011}. Koska ekvivalentteja mutantteja ei voi tunnistaa laskennan avulla, ihmisten on suoritettava ekvivalenttien mutanttien tunnistaminen tutkimalla mutanttia ja vertaamalla sen toimintaa alkuperäisen ohjelmiston toimintaan. Tämä menetelmä johtaa mutaatiotestauksen toteuttamiseen tarvittavan työmäärän kasvuun. Ekvivalenttien mutanttien tunnistamisongelma on kuitenkin herättänyt runsaasti teoreettista kiinnostusta, ja mahdollisia tunnistamistekniikoita on tutkittu paljon~\cite[s. 657]{Jia:Harman:2011}. 
+\vspace{1\baselineskip}\noindent\textbf{Esimerkki 1}
+\begin{lstlisting} 
+public class Kauppa {
+	private String osoite;
+	public void setOsoite(String uusiOsoite){
+		this.osoite = uusiOsoite;
+	};
+	public String getOsoite(){
+		return this.osoite;
+	};
+};
+
+public class Elainkauppa extends Kauppa {
+	private String osoite; //IHI operaattorin lisaama muuttuja
+	private String erikoisala = "kissanruuat";
+	public String toString(){
+		return "Liikkeen osoite on " + getOsoite() +
+		        " ja sen erikoisalana on " + this.erikoisala;
+	};
+};
+\end{lstlisting}
+
+\vspace{1\baselineskip}Ekvivalenttien mutanttien tunnistaminen algoritmien avulla on ratkaisematon ongelma~\cite[s. 657]{Jia:Harman:2011}. Yleinen ekvivalenttien mutanttien tunnistaminen (tunnistamisongelma) on ratkaisematon by Budd and Angluin \textbf{Jos sais sen todistukse käsiin?? En tiedä, onko se mahdollista.}. Heuristiikkoja kehitetty, jotta ongelman voi ratkaista osittain~\cite[s. 79]{Offutt:Ma:Kwon:2006:MuClassLevel}. 
+
+Compiler optimization techniques, algorithms in Mothra, infeasible constraints ideaan perustuva väline, Program slicing. Estää jo alkuunsa mutantttien syntymisen eikä etsi niitä vasta sitten, kun ne ovat syntyneet.~\cite[s. 79]{Offutt:Ma:Kwon:2006:MuClassLevel}
+
+Koska ekvivalentteja mutantteja ei voi tunnistaa laskennan avulla, ihmisten on suoritettava ekvivalenttien mutanttien tunnistaminen tutkimalla mutanttia ja vertaamalla sen toimintaa alkuperäisen ohjelmiston toimintaan. Tämä menetelmä johtaa mutaatiotestauksen toteuttamiseen tarvittavan työmäärän kasvuun. Ekvivalenttien mutanttien tunnistamisongelma on kuitenkin herättänyt runsaasti teoreettista kiinnostusta, ja mahdollisia tunnistamistekniikoita on tutkittu paljon~\cite[s. 657]{Jia:Harman:2011}. 
 
 \subsection{Tehokkuusongelmat}
 

@@ -1,0 +1,24 @@
+public class Kauppa {
+
+	private String osoite;
+
+	public void setOsoite(String uusiOsoite){
+		this.osoite = uusiOsoite;
+	};
+
+	public String getOsoite(){
+		return this.osoite;
+	};
+};
+
+public class El‰inkauppa extends Kauppa {
+
+	private String osoite; //IHI operaattorin lis‰‰m‰ muuttuja
+
+	private String erikoisala = "kissanruuat";
+
+	public String toString(){
+		return "Liikkeen osoite on " + getOsoite() +
+			" ja sen erikoisalana on " + this.erikoisala;
+	};
+};
