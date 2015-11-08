@@ -86,18 +86,6 @@
   ISSRE 2003. Proceedings. 13th International Symposium on}, \btxpageslong {}\
   352--363, 2002.
 
-\bibitem [{MOK05}]{Ma:Offutt:Kwon:2005:MuAutomated}
-\btxnamefont {\btxlastnamefont {Ma}, Yu\btxfnamespacelong Seung}, \btxnamefont
-  {\btxlastnamefont {Offutt}, Jeff}\btxandcomma {} \btxandlong {}\ \btxnamefont
-  {\btxlastnamefont {Kwon}, Yong\btxfnamespacelong Rae}\btxauthorcolon\
-  \btxjtitlefont {\btxifchangecase {Mujava: An automated class mutation system:
-  Research articles}{MuJava: An Automated Class Mutation System: Research
-  Articles}}.
-\newblock \btxjournalfont {Softw. Test. Verif. Reliab.}, 15(2):97--133,
-  \btxprintmonthyear{.}{6}{2005}{long}\ifbtxprintISSN {,
-  \mbox{\btxISSN~\btxISSNfont {0960-0833}}}.
-\newblock {\latintext \btxurlfont{http://dx.doi.org/10.1002/stvr.v15:2}}.
-
 \bibitem [{MP08}]{Mariani:Pezze:2008}
 \btxnamefont {\btxlastnamefont {Mariani}, Leonardo} \btxandlong {}\
   \btxnamefont {\btxlastnamefont {Pezze}, Mauro}\btxauthorcolon\ \btxtitlefont

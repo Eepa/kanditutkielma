@@ -10,14 +10,14 @@
 \contentsline {subsection}{\numberline {3.2}Perinteinen mutaatiotestausprosessi}{6}{subsection.3.2}
 \contentsline {subsection}{\numberline {3.3}Uusi mutaatiotestausprosessi}{8}{subsection.3.3}
 \contentsline {section}{\numberline {4}Mutaatiotestaus olioj\IeC {\"a}rjestelmiss\IeC {\"a}}{9}{section.4}
-\contentsline {subsection}{\numberline {4.1}Mutaatiotestauksen piirteet olioj\IeC {\"a}rjestelmiss\IeC {\"a}}{9}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Mutaatio-operaattorit olioj\IeC {\"a}rjestelmiss\IeC {\"a}}{9}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Automatisoidut mutaatioj\IeC {\"a}rjestelm\IeC {\"a}t}{11}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.1}Mutaatiotestauksen piirteet}{9}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Mutaatio-operaattorit}{9}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Automatisoidut mutaatiotestausj\IeC {\"a}rjestelm\IeC {\"a}t}{11}{subsection.4.3}
 \contentsline {section}{\numberline {5}Mutaatiotestauksen haasteet}{12}{section.5}
 \contentsline {subsection}{\numberline {5.1}Ekvivalentit mutantit}{12}{subsection.5.1}
 \contentsline {subsection}{\numberline {5.2}Tehokkuusongelmat}{13}{subsection.5.2}
 \contentsline {subsection}{\numberline {5.3}Manuaalinen ty\IeC {\"o}}{14}{subsection.5.3}
-\contentsline {section}{\numberline {6}Yhteenveto}{14}{section.6}
+\contentsline {section}{\numberline {6}Yhteenveto}{15}{section.6}
 \contentsline {section}{L\IeC {\"a}hteet}{16}{section*.2}
 \select@language {finnish}
 \select@language {finnish}

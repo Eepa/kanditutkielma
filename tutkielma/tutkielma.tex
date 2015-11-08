@@ -323,11 +323,11 @@ Automatisoitavia työvaiheita uudessa mutaatiotestausprosessissa ovat ekvivalent
 
 Kappaleen estittelyteksti tähän. \textbf{Kuinka pitkä tämän on oltava?} 
 
-\subsection{Mutaatiotestauksen piirteet oliojärjestelmissä}
+\subsection{Mutaatiotestauksen piirteet}
 
 MuJava-artikkelista --> inter-intra/class-method testaus.
 
-\subsection{Mutaatio-operaattorit oliojärjestelmissä}
+\subsection{Mutaatio-operaattorit}
 
 Mutaatio-operaattorit ovat tärkeässä asemassa mutaatiotestauksessa, sillä mutaatiotestauksen tehokkuus riippuu siitä, minkälaisia virheitä mutaatio-operaattoreilla luodaan lähdekoodiin~\cite[s. 352]{Ma:Kwon:Offutt:2002}. Perinteisesti mutaatiotestausta on hyödynnetty proseduraalisessa ohjelmoinnissa, minkä vuoksi myös mutaatio-operaattorit on kehitetty tukemaan suurinta osaa proseduraalisten ohjelmointikielten piirteistä~\cite[s. 352]{Ma:Kwon:Offutt:2002}. 
 
@@ -339,7 +339,7 @@ Kimin, Clarkin ja McDermidin kehittämät luokkamutaatio-operaattorit ovat toimi
 
 Taulukossa \ref{table:Mutaatio-operaattorit-taulukko} on listattu Man, Kwonin ja Offuttin kehittämät luok\-ka\-mu\-taa\-ti\-o-o\-pe\-raat\-to\-rit. Operaattorit on jaettu kuuteen ryhmään. Ryhmät perustuvat niihin olio-ohjelmointikielen piirteisiin, joita ryhmän operaattoreilla muunnetaan~\cite[s. 355]{Ma:Kwon:Offutt:2002}.
 
-Mutaatio-operaattorien avulla kuvataan algoritmeja, joilla lähdekoodia muokataan mutantteja muodostettaessa. Esimerkiksi JSC-operaattori lisää ilmentymämuuttujiin \textit{static}-määreen tehden niistä luokkamuuttujia tai vastaavasti poistaa luokkamuuttujista \textit{static}-määreen tehden niistä ilmentymämuuttujia. JSC-operaattorin ja myös muiden Man, Kwonin ja Offuttin kehittämien luokkamutaatio-operaattorien nimet ja kuvaukset voi nähdä taulukosta \ref{table:Mutaatio-operaattorit-taulukko}. Taulukosta nähdään myös, mihin ryhmiin luokkamutaatio-operaattorit kuuluvat. Tarkemmat tiedot operaattorien toiminnasta löytyvät \textbf{Man, Kwonin ja Offuttin artikkelista "XY"~\cite{Ma:Kwon:Offutt:2002}}. 
+Mutaatio-operaattorien avulla kuvataan algoritmeja, joilla lähdekoodia muokataan mutantteja muodostettaessa. Esimerkiksi JSC-operaattori lisää ilmentymämuuttujiin \textit{static}-määreen tehden niistä luokkamuuttujia tai vastaavasti poistaa luokkamuuttujista \textit{static}-määreen tehden niistä ilmentymämuuttujia. JSC-operaattorin ja myös muiden Man, Kwonin ja Offuttin kehittämien luokkamutaatio-operaattorien nimet ja kuvaukset voi nähdä taulukosta \ref{table:Mutaatio-operaattorit-taulukko}. Taulukosta nähdään myös, mihin ryhmiin luokkamutaatio-operaattorit kuuluvat. Tarkemmat tiedot operaattorien toiminnasta löytyvät \textbf{Man, Kwonin ja Offuttin artikkelista ''Inter-class mutation operators for Java''~\cite{Ma:Kwon:Offutt:2002}}. 
 
 \begin{table}[H]
 \begin{spacing}{1.0}
@@ -388,12 +388,11 @@ Mutaatio-operaattorien avulla kuvataan algoritmeja, joilla lähdekoodia muokataa
 \end{table}
 
 
-\subsection{Automatisoidut mutaatiojärjestelmät}
+\subsection{Automatisoidut mutaatiotestausjärjestelmät}
 
 Mutaatiojärjestelmät opetuksessa: PIT. 
 
 Mutaatiojärjestelmä tutkimuksessa: MuJava.
-
 
 \section{Mutaatiotestauksen haasteet}
 
@@ -431,21 +430,21 @@ public class Elainkauppa extends Kauppa {
 
 \vspace{1\baselineskip}On todistettu, että ekvivalenttien mutanttien tunnistaminen (algoritmisesti) yleisessä tapauksessa on ratkaisematon ongelma~\cite[s. 79]{Offutt:Ma:Kwon:2006:MuClassLevel}. Ekvivalenttien mutanttien tunnistamiseksi on kuitenkin kehitetty heuristiikkoja, joiden avulla ongelma voidaan ratkaista osittain. Tunnistamisongelma on herättänyt runsaasti teoreettista kiinnostusta, ja mahdollisia tunnistamistekniikoita on tutkittu paljon~\cite[s. 657]{Jia:Harman:2011}. 
 
-Yksi vaihtoehto ekvivalenttien mutanttien tunnistamisongelman ratkaisemiseksi on estää ekvivalenttien mutanttien syntyminen mutanttien generointivaiheessa~\cite[s. 80]{Offutt:Ma:Kwon:2006:MuClassLevel}. Muita vaihtoehtoja ovat Compiler optimization techniques, algorithms in Mothra, infeasible constraints ideaan perustuva väline, Program slicing.
+Yksi vaihtoehto ekvivalenttien mutanttien tunnistamisongelman ratkaisemiseksi on estää ekvivalenttien mutanttien syntyminen mutanttien generointivaiheessa~\cite[s. 80]{Offutt:Ma:Kwon:2006:MuClassLevel}. \textbf{Muita vaihtoehtoja ovat Compiler optimization techniques, algorithms in Mothra, infeasible constraints ideaan perustuva väline, Program slicing.}
 
-Heuristiikkojen (ja laskennan) avulla voidaan tunnistaa vain osa ekvivalenteista mutanteista. Jos kaikki ekvivalentit mutantit halutaan tunnistaa, on tunnistaminen suoritettava manuaalisesti tutkimalla mutanttia ja vertaamalla mutantin toimintaa alkuperäisen ohjelmiston toimintaan. Tämä menetelmä johtaa mutaatiotestauksen toteuttamiseen tarvittavan työmäärän kasvuun.
+Heuristiikkojen (ja laskennan) avulla voidaan tunnistaa vain osa ekvivalenteista mutanteista. Jos kaikki ekvivalentit mutantit halutaan tunnistaa, tunnistaminen on suoritettava manuaalisesti tutkimalla mutanttia ja vertaamalla mutantin toimintaa alkuperäisen ohjelmiston toimintaan. Tämä menetelmä johtaa mutaatiotestauksen toteuttamiseen tarvittavan työmäärän kasvuun.
 
 \subsection{Tehokkuusongelmat}
 
-\textit{Do fewer, do smarter, do faster} ovat ratkaisuehdotuksia.~\cite[s. 121]{Ma:Offutt:Kwon:2005:MuAutomated} 
+Tehokkuuteen liittyvät ongelmat ovat toinen mutaatiotestauksen ongelma-alueista. Tehokkuusongelmia esiintyy erityisesti silloin, kun jokaisen mutantin kohdalla suoritetaan kaikki ohjelmistoa varten tehdyt testit~\cite[s. 652]{Jia:Harman:2011}. Testien suoritus jokaisen mutantin kohdalla hidastaa mutaatiotestausprosessia ja vaatii paljon laskentatehoa. Tehokkuusongelman ratkaisemiseksi on kuitenkin esitetty useita ratkaisuehdotuksia~\cite[s. 653]{Jia:Harman:2011}. Ratkaisuehdotuksia ovat esimerkiksi generoitujen mutanttien määrän vähentäminen ja mutanttien ja testien suorituskustannusten pienentäminen.
+
+Ratkaisuehdotukset mutaatiotestauksen laskentakustannusten \textbf{(computational cost)} pienentämiseksi on jaettu kolmeen osa-alueeseen~\cite[s. 37]{Offutt:Untch:2001}. Osa-alueisiin sisältyy menetelmiä, joiden avulla mutaatiotestauksen laskentakustannuksia pienennetään. Mutaatiotestauksen laskentaa voidaan tehostaa tekemällä mutaatiotestausta \textit{viisaammin} (\textit{do smarter}), \textit{nopeammin} (\textit{do faster}) ja \textit{pienemmällä mutanttimäärällä} (\textit{do fewer}) kuin ennen/aiemmin.
 
 Do smarter laskentatyön jakaminen usealle laitteelle tai weak mutation. 
 
 Do faster mutanttien generoinnin/kääntämisen ja suorituksen tehostaminen, jotta voitaisiin suorittaa niin nopeasti kuin mahdollista. MSG metodi (MuJava) tai compiler-integrated program mutation tai separate compilation.
 
 Do fewer vähemmän mutantteja ilman "mutaatiokattavuuden" kärsimistä suuresti. Mutant sampling, selective mutation, 
-
-Tehokkuuteen liittyvät ongelmat ovat yksi mutaatiotestauksen ongelma-alueista. Tehokkuusongelmia esiintyy erityisesti silloin, kun jokaisen mutantin kohdalla suoritetaan kaikki ohjelmistoa varten tehdyt testit~\cite[s. 652]{Jia:Harman:2011}. Testien suoritus jokaisen mutantin kohdalla hidastaa mutaatiotestausprosessia ja vaatii paljon laskentatehoa. Tehokkuusongelman ratkaisemiseksi on kuitenkin esitetty useita ratkaisuehdotuksia~\cite[s. 653]{Jia:Harman:2011}. Ratkaisuehdotuksia ovat esimerkiksi generoitujen mutanttien määrän vähentäminen ja mutanttien ja testien suorituskustannusten pienentäminen.
 
 \subsection{Manuaalinen työ}
 
