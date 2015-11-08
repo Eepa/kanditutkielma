@@ -438,7 +438,7 @@ Heuristiikkojen (ja laskennan) avulla voidaan tunnistaa vain osa ekvivalenteista
 
 Tehokkuuteen liittyvät ongelmat ovat toinen mutaatiotestauksen ongelma-alueista. Tehokkuusongelmia esiintyy erityisesti silloin, kun jokaisen mutantin kohdalla suoritetaan kaikki ohjelmistoa varten tehdyt testit~\cite[s. 652]{Jia:Harman:2011}. Testien suoritus jokaisen mutantin kohdalla hidastaa mutaatiotestausprosessia ja vaatii paljon laskentatehoa. Tehokkuusongelman ratkaisemiseksi on kuitenkin esitetty useita ratkaisuehdotuksia~\cite[s. 653]{Jia:Harman:2011}. Ratkaisuehdotuksia ovat esimerkiksi generoitujen mutanttien määrän vähentäminen ja mutanttien ja testien suorituskustannusten pienentäminen.
 
-Ratkaisuehdotukset mutaatiotestauksen laskentakustannusten \textbf{(computational cost)} pienentämiseksi on jaettu kolmeen osa-alueeseen~\cite[s. 37]{Offutt:Untch:2001}. Osa-alueisiin sisältyy menetelmiä, joiden avulla mutaatiotestauksen laskentakustannuksia pienennetään. Mutaatiotestauksen laskentaa voidaan tehostaa tekemällä mutaatiotestausta \textit{viisaammin} (\textit{do smarter}), \textit{nopeammin} (\textit{do faster}) ja \textit{pienemmällä mutanttimäärällä} (\textit{do fewer}) kuin ennen/aiemmin.
+Ratkaisuehdotukset mutaatiotestauksen vaatiman laskentatehon \textbf{(computational cost)} vähentämiseksi on jaettu kolmeen osa-alueeseen~\cite[s. 37]{Offutt:Untch:2001}. Osa-alueisiin sisältyy menetelmiä, joiden avulla mutaatiotestauksen laskentakustannuksia pienennetään. Mutaatiotestauksessa laskentaa voidaan tehostaa tekemällä mutaatiotestausta \textit{viisaammin} (\textit{do smarter}), \textit{nopeammin} (\textit{do faster}) ja \textit{pienemmällä mutanttimäärällä} (\textit{do fewer}) kuin ennen/aiemmin.
 
 Do smarter laskentatyön jakaminen usealle laitteelle tai weak mutation. 
 
@@ -448,9 +448,11 @@ Do fewer vähemmän mutantteja ilman "mutaatiokattavuuden" kärsimistä suuresti
 
 \subsection{Manuaalinen työ}
 
-\textbf{Tähän liittyy ekvivalentit mutantit --> niiden tunnistaminen ja human oracle ongelma --> eli ihmisen käytävä testitulokset läpi sen jälkeen kun tulokset on saatu.}
+Kolmas mutaatiotestauksen ongelma-alue liittyy perinteiseen mutaatiotestausprosessiin sisältyvään manuaaliseen työhön. Perinteisessä mutaatiotestausprosessissa useaan prosessin työvaiheeseen sisältyy manuaalista työtä \textbf{(tätä käsittelin kappaleessa 3.3 Uusi mutaatiotestausprosessi) --> pitääkö se käsitellä uudestaan tässä kohtaa?}. Kuvassa \ref{figure:Mutaatiotestausprosessi} (sivulla \pageref{figure:Mutaatiotestausprosessi}) on esitelty perinteinen mutaatiotestausprosessi. Kuvassa esiteltyyn kaavioon on merkitty työvaihe, jossa alkuperäisten testien suorituksen jälkeen tarkastetaan, ovatko testit menneet läpi. 
 
-Kolmas ongelma-alue liittyy mutaatiotestauksen vaiheeseen, jossa ihmisen on tarkastettava testauksesta saadut tulokset~\cite[s. 652]{Jia:Harman:2011}. Tarkastusvaiheessa testien suorituksen jälkeen tarkastetaan suorituksesta saatu tuloste. Tulosteen tarkastusvaihe on usein testausprosessin työläin osa~\cite[s. 653]{Jia:Harman:2011}. Tämä ongelma ei liity pelkästään mutaatiotestaukseen vaan ongelma ilmenee myös muissa testausmenetelmissä. Mutaatiotestauksessa ekvivalenttien mutanttien tunnistaminen ja suoritettujen testien suuri määrä lisäävät kuitenkin työmäärää, joka tarvitaan testauksen tulosten tarkastamiseen.
+Testien läpimenotarkastus on usein testausprosessin työläin osa~\cite[s. 653]{Jia:Harman:2011}. Tämä ongelma ei liity pelkästään mutaatiotestaukseen vaan ongelma ilmenee myös muissa testausmenetelmissä. Mutaatiotestauksessa ekvivalenttien mutanttien tunnistaminen ja suoritettujen testien suuri määrä lisäävät kuitenkin työmäärää, joka tarvitaan testauksen tulosten tarkastamiseen.
+
+Uusien, mutantteja tappavien testien kehittäminen on myös yksi perinteisen mutaatiotestausprosessin työläistä manuaalisista työvaiheista~\cite[s. 39]{Offutt:Untch:2001}. Mutaatiotestauksessa tavoitteena on kehittää testejä, joiden avulla saadaan tapettua mahdollisimman paljon mutantteja (mutation adequate). Manuaalisesti tällaisten testien kehittäminen on työlästä. Lisäksi sopivien syötteiden löytäminen testejä varten on yksi vaikeimmista testauksen vaiheista~\cite[s. 39]{Offutt:Untch:2001}. Testien automaattista generointia varten on kuitenkin kehitetty menetelmiä, joiden avulla testien generointi voidaan mutaatiotestausprosessissa automatisoida osittain.
 
 
 %__________________________________________________________
