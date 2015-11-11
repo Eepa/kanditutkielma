@@ -2,22 +2,22 @@
 \contentsline {section}{\numberline {1}Johdanto}{1}{section.1}
 \contentsline {section}{\numberline {2}Testaus olioj\IeC {\"a}rjestelmiss\IeC {\"a}}{2}{section.2}
 \contentsline {subsection}{\numberline {2.1}Rooli}{2}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Tasot}{2}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.2}Tasot}{3}{subsection.2.2}
 \contentsline {subsection}{\numberline {2.3}Suunnittelu}{3}{subsection.2.3}
 \contentsline {subsection}{\numberline {2.4}Rajoitukset}{4}{subsection.2.4}
 \contentsline {section}{\numberline {3}Mutaatiotestaus}{5}{section.3}
 \contentsline {subsection}{\numberline {3.1}Historia ja teoreettinen perusta}{5}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}Perinteinen mutaatiotestausprosessi}{6}{subsection.3.2}
 \contentsline {subsection}{\numberline {3.3}Uusi mutaatiotestausprosessi}{8}{subsection.3.3}
-\contentsline {section}{\numberline {4}Mutaatiotestaus olioj\IeC {\"a}rjestelmiss\IeC {\"a}}{9}{section.4}
-\contentsline {subsection}{\numberline {4.1}Mutaatiotestauksen piirteet}{9}{subsection.4.1}
+\contentsline {section}{\numberline {4}Mutaatiotestaus olioj\IeC {\"a}rjestelmiss\IeC {\"a}}{10}{section.4}
+\contentsline {subsection}{\numberline {4.1}Mutaatiotestauksen piirteet}{10}{subsection.4.1}
 \contentsline {subsection}{\numberline {4.2}Mutaatio-operaattorit}{10}{subsection.4.2}
 \contentsline {subsection}{\numberline {4.3}Automatisoidut mutaatiotestausj\IeC {\"a}rjestelm\IeC {\"a}t}{12}{subsection.4.3}
-\contentsline {section}{\numberline {5}Mutaatiotestauksen haasteet}{12}{section.5}
-\contentsline {subsection}{\numberline {5.1}Ekvivalentit mutantit}{12}{subsection.5.1}
+\contentsline {section}{\numberline {5}Mutaatiotestauksen haasteet}{13}{section.5}
+\contentsline {subsection}{\numberline {5.1}Ekvivalentit mutantit}{13}{subsection.5.1}
 \contentsline {subsection}{\numberline {5.2}Tehokkuusongelmat}{14}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}Manuaalinen ty\IeC {\"o}}{14}{subsection.5.3}
-\contentsline {section}{\numberline {6}Yhteenveto}{15}{section.6}
+\contentsline {subsection}{\numberline {5.3}Manuaalinen ty\IeC {\"o}}{15}{subsection.5.3}
+\contentsline {section}{\numberline {6}Yhteenveto}{16}{section.6}
 \contentsline {section}{L\IeC {\"a}hteet}{17}{section*.2}
 \select@language {finnish}
 \select@language {finnish}

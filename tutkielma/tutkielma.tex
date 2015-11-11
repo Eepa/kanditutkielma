@@ -177,11 +177,11 @@ Ohjelmistokehitysprosessissa testausta voidaan käyttää ohjelmistossa olevien 
 
 Testaukseen liittyy kuitenkin myös rajoituksia. Testauksen avulla ei esimerkiksi voi aina todistaa ohjelmiston oikeellisuutta~\cite[s. 58]{Binder:1999}. Lisäksi epävarmuutta liittyy käytettävän testausjärjestelmän oikeellisuuden ja luotettavuuden varmistamiseen.
 
-Yksi menetelmä ohjelmiston testien laadun tutkimiseen ja parantamiseen on mutaatiotestauksen käyttö osana ohjelmiston testausprosessia. Mutaatiotestauksessa tavoitteena on tutkia, ovatko ohjelmistoa varten tehdyt testit laadukkaita ja havaitaanko niillä kattavasti ohjelmistossa mahdollisesti esiintyvät viat ja ongelmat~\cite[s. 649]{Jia:Harman:2011}. 
+Yksi menetelmä ohjelmiston testien laadun tutkimiseen ja parantamiseen on mutaatiotestauksen käyttö osana ohjelmiston testausprosessia. Mutaatiotestauksessa tavoitteena on tutkia, ovatko ohjelmistoa varten tehdyt testit laadukkaita ja havaitaanko niillä kattavasti ohjelmistossa mahdollisesti esiintyviä vikoja ja ongelmia~\cite[s. 649]{Jia:Harman:2011}. 
 
 Mutaatiotestauksen periaatteena on simuloida ohjelmoijien tekemiä yleisiä ohjelmointivirheitä muokkaamalla ohjelmiston alkuperäistä lähdekoodia~\cite[s. 649]{Jia:Harman:2011}. Mutaatiotestauksessa lähdekoodista muodostetaan muunnettuja versioita eli mutantteja. 
 
-Perinteisesti mutaatiotestausta on käytetty testien kehityksessä proseduraalisella ohjelmoinnilla tuotetuille ohjelmille. Olioperustaisen ohjelmoinnin kehittyessä mutaatiotestausta on sopeutettu uusiin vaatimuksiin. Luokkamutaation avulla mutaatiotestausta voidaan soveltaa olio-ohjelmissa testien laadun varmistamiseen~\cite{Kim:Clark:McDermid:2000}.
+Perinteisesti mutaatiotestausta on käytetty testien kehityksessä proseduraalisella ohjelmoinnilla tuotetuille ohjelmille. Olioperustaisen ohjelmoinnin kehittyessä mutaatiotestausta on sopeutettu uusiin vaatimuksiin. Luokkamutaation avulla mutaatiotestausta voidaan soveltaa olio-ohjelmia testaavien testien laadun varmistamiseen~\cite{Kim:Clark:McDermid:2000}.
 
 Vaikka mutaatiotestausta voidaan käyttää apuna ohjelmiston olemassa olevien testien kehittämisessä, liittyy mutaatiotestausmenetelmän käyttöön myös ratkaisemattomia ongelmia, jotka estävät mutaatiotestauksen laaja-alaisen käytön~\cite[s. 652]{Jia:Harman:2011}. Mutaatiotestauksen suoritus vaatii paljon laskentatehoa, mikä on yksi ongelmista. Lisäksi mutaatiotestausprosessissa ihmiseltä vaadittava työpanos on suuri. 
 
@@ -219,10 +219,12 @@ Olioperustaisen ohjelmoinnin kehityksen myötä klassisia ohjelmistojen testausm
 
 \subsection{Rooli}
 
-Testausta käytetään ohjelmistokehityksessä ohjelmiston laadun varmistamiseen ja auttamaan vikojen havaitsemisessa jo kehitysvaiheen aikana. Ohjelmistojen testaamisen ensisijainen tavoite on siis paljastaa vikoja, joiden havaitseminen muiden laadunvarmistusmenetelmien avulla olisi työlästä tai mahdotonta~\cite[s. 59]{Binder:1999}. Testauksen avulla pyritään myös varmistamaan, että ohjelma toimii sille asetettujen vaatimusten mukaisesti. 
+IEEE:n standardin mukaan ohjelmointivirheen (\textit{error}) aiheuttamaa, ohjelmiston lähdekoodiin päässyttä virheellistä kohtaa kutsutaan viaksi (\textit{fault})~\cite[s. 5]{IEEE:2009}. Lähdekoodissa oleva vika saattaa ohjelman suoritusaikana ilmetä virheenä (\textit{failure}). Virhe ilmenee, kun ohjelma ei \textbf{(ohjelman)} suorituksen aikana toimi odotetulla tavalla. \textbf{(Tässä tutkielmassa käytetään IEEE:n standardin mukaisia määritelmiä vialle ja virheelle.)}
+
+Testausta käytetään ohjelmistokehityksessä ohjelmiston laadun varmistamiseen ja auttamaan lähdekoodissa esiintyvien vikojen havaitsemisessa jo kehitysvaiheen aikana. Ohjelmistojen testaamisen ensisijainen tavoite on siis paljastaa vikoja, joiden havaitseminen muiden laadunvarmistusmenetelmien avulla olisi työlästä tai mahdotonta~\cite[s. 59]{Binder:1999}. Testauksen avulla pyritään myös varmistamaan, että ohjelma toimii sille asetettujen vaatimusten mukaisesti. \textit{\textbf{The primary role of software testing is to reveal bugs that would be too costly or impossible to find with other verification and validation techniques. A secondary purpose is to show that the system under test complies with its stated requirements for a given test suite.}}
 
 Olio-ohjelmoinnissa testaukseen tuovat haasteita olio-ohjelmien erityispiirteet, joita ovat muun muuassa kapselointi, perintä, dynaaminen sidonta ja polymorfismi~\cite[s. 86]{Mariani:Pezze:2008}. 
-\textbf{Lisää tähän? Binderin kirjasta löyty tietoa. Ja joistakin artikkeleista. Voisi käydä myös läpi fault - error - failure osat.}
+\textbf{Lisää tähän? Binderin kirjasta löyty tietoa. Ja joistakin artikkeleista.}
 
 
 \subsection{Tasot}

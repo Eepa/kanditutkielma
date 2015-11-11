@@ -42,6 +42,12 @@
   \mbox{\btxISSN~\btxISSNfont {0018-9162}}}.
 \newblock {\latintext \btxurlfont{http://dx.doi.org/10.1109/C-M.1978.218136}}.
 
+\bibitem [{IEE10}]{IEEE:2009}
+\btxjtitlefont {\btxifchangecase {Ieee standard classification for software
+  anomalies}{IEEE Standard Classification for Software Anomalies}}.
+\newblock \btxjournalfont {IEEE Std 1044-2009 (Revision of IEEE Std
+  1044-1993)}, \btxpageslong {}\ 1--23, \btxprintmonthyear{.}{Jan}{2010}{long}.
+
 \bibitem [{JH11}]{Jia:Harman:2011}
 \btxnamefont {\btxlastnamefont {Jia}, Yue} \btxandlong {}\ \btxnamefont
   {\btxlastnamefont {Harman}, Mark}\btxauthorcolon\ \btxjtitlefont
