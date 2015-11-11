@@ -173,11 +173,11 @@ Perinteisesti mutaatiotestausta on käytetty testien kehittämisessä proseduraa
 
 Perinteisiä ohjelmistojen testausmenetelmiä on olioperustaisen ohjelmoinnin kehityksen myötä sopeutettu uusiin olio-ohjelmoinnin mukana tuleviin haasteisiin. Olio-ohjelmoinnin avulla voidaan ratkaista joitakin proseduraalisen ohjelmoinnin ongelmia~\cite[s. 86]{Mariani:Pezze:2008}. Olio-ohjelmoinnin piirteet, kuten kapselointi ja perintä, aiheuttavat kuitenkin uusia ongelmia.
 
-Ohjelmistokehitysprosessissa testausta voidaan käyttää ohjelmistossa olevien virheiden havaitsemiseen jo kehitysvaiheen aikana. Testauksen avulla voidaan myös parantaa ohjelmiston laatua ja varmistaa, että ohjelma toimii sille asetettujen vaatimusten mukaisesti. 
+Ohjelmistokehitysprosessissa testausta voidaan käyttää ohjelmistossa olevien vikojen havaitsemiseen jo kehitysvaiheen aikana. Testauksen avulla voidaan myös parantaa ohjelmiston laatua ja varmistaa, että ohjelma toimii sille asetettujen vaatimusten mukaisesti. 
 
 Testaukseen liittyy kuitenkin myös rajoituksia. Testauksen avulla ei esimerkiksi voi aina todistaa ohjelmiston oikeellisuutta~\cite[s. 58]{Binder:1999}. Lisäksi epävarmuutta liittyy käytettävän testausjärjestelmän oikeellisuuden ja luotettavuuden varmistamiseen.
 
-Yksi menetelmä ohjelmiston testien laadun tutkimiseen ja parantamiseen on mutaatiotestauksen käyttö osana ohjelmiston testausprosessia. Mutaatiotestauksessa tavoitteena on tutkia, ovatko ohjelmistoa varten tehdyt testit laadukkaita ja havaitaanko niillä kattavasti ohjelmistossa mahdollisesti esiintyvät virheet ja ongelmat~\cite[s. 649]{Jia:Harman:2011}. 
+Yksi menetelmä ohjelmiston testien laadun tutkimiseen ja parantamiseen on mutaatiotestauksen käyttö osana ohjelmiston testausprosessia. Mutaatiotestauksessa tavoitteena on tutkia, ovatko ohjelmistoa varten tehdyt testit laadukkaita ja havaitaanko niillä kattavasti ohjelmistossa mahdollisesti esiintyvät viat ja ongelmat~\cite[s. 649]{Jia:Harman:2011}. 
 
 Mutaatiotestauksen periaatteena on simuloida ohjelmoijien tekemiä yleisiä ohjelmointivirheitä muokkaamalla ohjelmiston alkuperäistä lähdekoodia~\cite[s. 649]{Jia:Harman:2011}. Mutaatiotestauksessa lähdekoodista muodostetaan muunnettuja versioita eli mutantteja. 
 
@@ -219,10 +219,10 @@ Olioperustaisen ohjelmoinnin kehityksen myötä klassisia ohjelmistojen testausm
 
 \subsection{Rooli}
 
-Testausta käytetään ohjelmistokehityksessä ohjelmiston laadun varmistamiseen ja auttamaan virheiden havaitsemisessa jo kehitysvaiheen aikana. Ohjelmistojen testaamisen ensisijainen tavoite on siis paljastaa virheitä, joiden havaitseminen muiden laadunvarmistusmenetelmien avulla olisi työlästä tai mahdotonta~\cite[s. 59]{Binder:1999}. Testauksen avulla pyritään myös varmistamaan, että ohjelma toimii sille asetettujen vaatimusten mukaisesti. 
+Testausta käytetään ohjelmistokehityksessä ohjelmiston laadun varmistamiseen ja auttamaan vikojen havaitsemisessa jo kehitysvaiheen aikana. Ohjelmistojen testaamisen ensisijainen tavoite on siis paljastaa vikoja, joiden havaitseminen muiden laadunvarmistusmenetelmien avulla olisi työlästä tai mahdotonta~\cite[s. 59]{Binder:1999}. Testauksen avulla pyritään myös varmistamaan, että ohjelma toimii sille asetettujen vaatimusten mukaisesti. 
 
 Olio-ohjelmoinnissa testaukseen tuovat haasteita olio-ohjelmien erityispiirteet, joita ovat muun muuassa kapselointi, perintä, dynaaminen sidonta ja polymorfismi~\cite[s. 86]{Mariani:Pezze:2008}. 
-\textbf{Lisää tähän? Binderin kirjasta löyty tietoa.}
+\textbf{Lisää tähän? Binderin kirjasta löyty tietoa. Ja joistakin artikkeleista. Voisi käydä myös läpi fault - error - failure osat.}
 
 
 \subsection{Tasot}
@@ -248,7 +248,7 @@ Ohjelman sisäisen rakenteen eli lähdekoodin tuntemukseen perustuvaa testausmen
 
 \textit{Gray box -} eli \textit{hybriditestauksessa} yhdistetään white box - ja black box -testausmenetelmien piirteitä~\cite[s. 52]{Binder:1999}. Sekä white box -testausta että black box -testausta voidaan käyttää testien suunnittelussa useilla testauksen tasoilla joko erikseen tai molempien piirteitä yhdistäen.
 
-Testausmenetelmää, jossa ohjelman lähdekoodiin lisätään virheitä, kutsutaan \textit{virheperustaiseksi testausmenetelmäksi} (\textit{fault-based testing})~\cite[s. 52]{Binder:1999}. Esimerkkinä virheperustaisesta testausmenetelmästä on mutaatiotestaus, jonka avulla tutkitaan testien kykyä havaita ohjelmistossa olevia virheitä~\cite[s. 36]{DeMillo:Lipton:Sayward:1978}. Testaukseen liittyvät tavoitteet eroavat mutaatiotestauksessa ja perinteisessä ohjelmistotestauksessa toisistaan. Perinteisessä testauksessa keskitytään parantamaan ohjelmiston laatua, kun taas mutaatiotestauksessa kehityksen kohteena ovat olemassa olevat testit ja niiden laatu.
+Testausmenetelmää, jossa ohjelman lähdekoodiin lisätään vikoja, kutsutaan \textit{virheperustaiseksi testausmenetelmäksi} (\textit{fault-based testing})~\cite[s. 52]{Binder:1999}. Esimerkkinä virheperustaisesta testausmenetelmästä on mutaatiotestaus, jonka avulla tutkitaan testien kykyä havaita vikoja ohjelmiston lähdekoodissa~\cite[s. 36]{DeMillo:Lipton:Sayward:1978}. Testaukseen liittyvät tavoitteet eroavat mutaatiotestauksessa ja perinteisessä ohjelmistotestauksessa toisistaan. Perinteisessä testauksessa keskitytään kehittämään ohjelmiston laatua, kun taas mutaatiotestauksessa kehityksen kohteena ovat olemassa olevat testit ja niiden laatu.
 
 \subsection{Rajoitukset}
 
@@ -262,9 +262,9 @@ Epävarmuutta liittyy myös testattavan järjestelmän halutulle toiminnallisuud
 
 \section{Mutaatiotestaus}
 
-Testaukseen sisältyvien rajoitusten lisäksi testaukseen liittyy myös epävarmuutta käytettävän testausjärjestelmän oikeellisuudesta ja oikeellisuuden varmistamisesta~\cite[s. 209]{Manna:Waldinger:1978}. Tämä herättää kysymyksen siitä, kuka voi ''valvoa valvojia'' eli kuinka varmistetaan ohjelmiston testien laadukkuus. Yksi mahdollisuus testien kehittämiseen ja niiden laadun parantamiseen on \textit{mutaatiotestaus}. Mutaatiotestauksen avulla voidaan mitata, kuinka tehokkaasti ohjelmiston testeillä havaitaan ohjelmistossa esiintyviä virheitä~\cite[s. 649]{Jia:Harman:2011}.
+Testaukseen sisältyvien rajoitusten lisäksi testaukseen liittyy myös epävarmuutta käytettävän testausjärjestelmän oikeellisuudesta ja oikeellisuuden varmistamisesta~\cite[s. 209]{Manna:Waldinger:1978}. Tämä herättää kysymyksen siitä, kuka voi ''valvoa valvojia'' eli kuinka varmistetaan ohjelmiston testien laadukkuus. Yksi menetelmä testien kehittämiseen ja niiden laadun parantamiseen on \textit{mutaatiotestaus}. Mutaatiotestauksen avulla voidaan mitata, kuinka tehokkaasti ohjelmiston testeillä havaitaan ohjelmistossa esiintyviä vikoja~\cite[s. 649]{Jia:Harman:2011}.
 
-\subsection{Historia ja periaatteet/teoreettinen perusta}
+\subsection{Historia ja teoreettinen perusta}
 
 Mutaatiotestauksesta kirjoitettiin ensimmäistä kertaa jo 1970-luvulla. Richard DeMillon, Richard Liptonin ja Frederick Saywardin artikkeli~\cite{DeMillo:Lipton:Sayward:1978} vuodelta 1978 on yksi ensimmäisistä uraauurtavista mutaatiotestausta esittelevistä artikkeleista. Mutaatiotestauksen tutkimus on lisääntynyt vuosien kuluessa, ja erityisesti 2000-luvulla uusia tuloksia on julkaistu paljon~\cite[s. 1102]{Offutt:2011}. Tutkimuksessa suuntana on ollut etsiä keinoja, joilla mutaatiotestaus voidaan muuttaa käytännölliseksi testausmenetelmäksi~\cite[s. 649]{Jia:Harman:2011}. 
 
@@ -274,15 +274,17 @@ Mutaatiotestaus perustuu kahteen hypoteesiin: the Competent Programmer Hypothesi
 
 \textbf{Lisää juttua siitä, että mutaatiotestaus kasvattaa testitkattavuutta.}
 
+Tyyliin: Tietyillä mutaatio-operaattoreilla generoitujen mutanttien tappaminen saattaa myös pakotta tiettyjen "polkujen" läpikäyntiin. Tällöin, kun ohjelmiston testejä kehitetään mutaatiotestauksen avulla, sen lisäksi että testien kyky havaita vikoja kasvaa saadaan testien "testikattavuutta" coverage, branch yms. kasvatettua.
+
 \subsection{Perinteinen mutaatiotestausprosessi}
 
-Ohjelmisto ja ohjelmistoa varten tehdyt testit ovat perinteisessä mutaatiotestausprosessissa prosessin lähtökohtia. Perinteisen mutaatiotestauksen aikana olemassa olevien testien laatua kehitetään vaiheittain. Perinteisen mutaatiotestausprosessin työvaiheet on esitelty kuvassa \ref{figure:Mutaatiotestausprosessi}. Työvaiheet on merkitty kuvaan sinisillä \textbf{laatikoilla}. Työvaiheiden aikana käytettäviä resursseja, \textbf{kuten esimerkiksi} ohjelmiston lähdekoodia ja testituloksia, kuvataan vihreillä ja keltaisilla laatikoilla. \textbf{Mihin kuva sijoitetaan?}
+Perinteisen mutaatiotestausprosessin syötteinä käytetään alkuperäistä ohjelmistoa ja ohjelmistoa testaavia testejä. Mutaatiotestausprosessin aikana olemassa olevien testien laatua kehitetään vaiheittain. Perinteisen mutaatiotestausprosessin työvaiheet on esitelty (\textbf{kaavio})kuvassa \ref{figure:Mutaatiotestausprosessi}. Työvaiheet on merkitty kuvaan sinisillä \textbf{laatikoilla}. Työvaiheiden aikana käytettäviä resursseja, \textbf{kuten esimerkiksi} ohjelmiston lähdekoodia ja testituloksia, kuvataan vihreillä ja keltaisilla laatikoilla. \textbf{Mihin kuva sijoitetaan?}
 
-Perinteisessä mutaatiotestausprosessissa ensimmäinen vaihe on käsitellä ohjelmiston alkuperäistä lähdekoodia \textit{mutaatio-operaattoreilla}, jotka muuntavat koodia muodostaen siitä virheellisiä versioita~\cite[s. 869]{Ma:Harrold:Kwon:2006}. Näitä virheellisiä ohjelmakoodin versioita kutsutaan \textit{mutanteiksi}. Mutaatio-operaattorit kuvaavat algoritmeja, joiden avulla lähdekoodia käsitellään koodin muuntamisen aikana.
+Perinteisessä mutaatiotestausprosessissa ensimmäinen työvaihe on käsitellä ohjelmiston alkuperäistä lähdekoodia \textit{mutaatio-operaattoreilla}, jotka muuntavat koodia muodostaen siitä viallisia versioita~\cite[s. 869]{Ma:Harrold:Kwon:2006}. Näitä viallisia ohjelmakoodin versioita kutsutaan \textit{mutanteiksi}. Mutaatio-operaattorit kuvaavat algoritmeja, joiden avulla lähdekoodia käsitellään koodin muuntamisen aikana.
 
-Mutanttien generoinnin jälkeen ohjelmiston alkuperäiset testit suoritetaan muuntamattomalle lähdekoodille~\cite[s. 652]{Jia:Harman:2011}. Tavoitteena on varmistaa, että testit voidaan suorittaa alkuperäiselle ohjelmalle ilman virheitä. Jos testit eivät mene läpi eli ohjelmassa havaitaan virheitä, virheet korjataan ennen kuin mutaatiotestausta jatketaan. 
+Mutanttien generoinnin jälkeen ohjelmiston alkuperäiset testit suoritetaan muuntamattomalle lähdekoodille~\cite[s. 652]{Jia:Harman:2011}. Tavoitteena on varmistaa, että testit voidaan suorittaa alkuperäiselle ohjelmalle ilman virheitä. Jos testit eivät mene läpi, eli ohjelmaa suoritettaessa havaitaan virheitä, ohjelmistossa olevat viat korjataan ennen kuin mutaatiotestausta jatketaan. 
 
-Seuraavaksi testit suoritetaan jokaisen elävän mutantin kohdalla~\cite[s. 35]{Offutt:Untch:2001}. Kun testit suoritetaan mutanteille, tavoitteena on selvittää, havaitaanko testien avulla lähdekoodiin tehdyt muutokset. 
+Seuraavaksi testit suoritetaan jokaisen elävän mutantin kohdalla~\cite[s. 35]{Offutt:Untch:2001}. Kun testit suoritetaan mutanttien kohdalla, tavoitteena on selvittää, havaitaanko testien avulla lähdekoodiin tehdyt muutokset. 
 
 Testien suorituksen jälkeen alkuperäiselle lähdekoodille ja mutanteille suoritettujen testien tuloksia verrataan toisiinsa. Testituloksia vertailtaessa voidaan päästä kahteen lopputulokseen~\cite[s. 36]{DeMillo:Lipton:Sayward:1978}. Alkuperäiselle muuntamattomalle lähdekoodille suoritettujen testien tulos voi: 
 \begin{enumerate}
@@ -294,28 +296,34 @@ Tapauksessa 1. alkuperäiset testit eivät ole menneet läpi mutantin kohdalla. 
 
 Tapauksessa 2. alkuperäiset testit ovat menneet läpi mutantin kohdalla eli mutantti on jäänyt eloon. Mutantin jäämiselle eloon on kaksi vaihtoehtoista selitystä~\cite[s. 36]{DeMillo:Lipton:Sayward:1978}. Ensimmäinen selitys on, että alkuperäiset testit eivät ole riittävän hyvät, jotta niiden avulla voidaan havaita lähdekoodiin tehty muutos. Toinen selitys on, että mutantin toiminta ei eroa alkuperäisen ohjelman toiminnasta eli kyseessä on \textit{ekvivalentti mutantti}. Ekvivalentti mutantti on syntaktisesti erilainen kuin alkuperäinen ohjelma mutta toiminnaltaan se on samanlainen alkuperäisen ohjelman kanssa~\cite[s. 652]{Jia:Harman:2011}.
 
-Jos testituloksia verrattaessa huomataan, että mutantteja on jäänyt eloon, seuraava vaihe mutaatiotestausprosessissa on etsiä ja merkitä ekvivalentit mutantit~\cite[s. 36]{Offutt:Untch:2001}. Tämän jälkeen testien laatua voidaan kehittää joko muokkaamalla olemassa olevia testejä tai lisäämällä uusia testejä, jotta \textbf{eloon jääneet (yhteen/erikseen?)} mutantit saadaan tapettua.
+Jos testituloksia verrattaessa huomataan, että mutantteja on jäänyt eloon, seuraava vaihe mutaatiotestausprosessissa on etsiä ja merkitä ekvivalentit mutantit~\cite[s. 36]{Offutt:Untch:2001}. Tämän jälkeen testien laatua voidaan kehittää joko muokkaamalla olemassa olevia testejä tai lisäämällä uusia testejä, jotta eloon jääneet mutantit saadaan tapettua.
 
-Mutaatiotestausprosessi tuottaa lopputuloksena \textit{mutaatiopistemäärän} (\textit{mutation adequacy score}), jonka avulla voi arvioida ohjelmiston testien laadukkuutta ja kykyä havaita lähdekoodissa olevia vikoja~\cite[s. 652]{Jia:Harman:2011}. Mutaatiopistemäärä \textit{MP} lasketaan kaavalla 
+Mutaatiotestausprosessi tuottaa lopputuloksena \textit{mutaatiopistemäärän} (\textit{mutation adequacy score}), jonka avulla voi arvioida ohjelmiston testien laadukkuutta ja kykyä havaita vikoja lähdekoodissa~\cite[s. 652]{Jia:Harman:2011}. Mutaatiopistemäärä \textit{MP} lasketaan kaavalla 
 \begin{equation}
 MP = \frac{T}{K - E}
 \end{equation}
-missä \textit{T} on tapettujen mutanttien määrä, \textit{K} on kaikkien mutanttien määrä ja \textit{E} on ekvivalenttien mutanttien määrä. Mutaatiopistemäärän maksimiarvo 1 saavutetaan, kun testeillä saadaan tapettua kaikki mutantit~\cite[s. 36]{Offutt:Untch:2001}. Testit ovat tällöin \textit{\textbf{adequate relative to the mutants}} riittävät havaitsemaan kaikki mutantit. Perinteinen mutaatiotestausprosessi päättyy, kun kaikki \textbf{\textit{ei-ekvivalentit} (miten tämä kirjoitetaan?)} mutantit on tapettu. Tämä on merkitty kuvaan \ref{figure:Mutaatiotestausprosessi} violetilla laatikolla.
+missä \textit{T} on tapettujen mutanttien määrä, \textit{K} on kaikkien mutanttien määrä ja \textit{E} on ekvivalenttien mutanttien määrä. Mutaatiopistemäärän maksimiarvo 1 saavutetaan, kun testeillä saadaan tapettua kaikki mutantit~\cite[s. 36]{Offutt:Untch:2001}. Testit ovat tällöin riittävät havaitsemaan kaikki mutantit \textit{\textbf{adequate relative to the mutants}}. Perinteinen mutaatiotestausprosessi päättyy, kun kaikki \textbf{paitsi ekvivalentit/ei-ekvivalentit} mutantit on tapettu. Tämä on merkitty kuvaan \ref{figure:Mutaatiotestausprosessi} violetilla laatikolla.
 
 \begin{figure}[H]
 	\centering
-		\includegraphics[width=\textwidth]{mutaatiotestausprosessi2}
+		\includegraphics[width=\textwidth]{mutaatiotestausprosessi3}
 	\caption{Perinteinen mutaatiotestausprosessi.}
 	\label{figure:Mutaatiotestausprosessi}
 \end{figure}
 
 \subsection{Uusi mutaatiotestausprosessi}
 
-\textbf{Onko tämä hyvä omana kappaleenaan vai voiko tai pitääkö laittaa perinteisen prosessin loppuun? Omaa muotoilua perustuen Uniting orthogonal 2000 artikkeliin --> uusi mutaatiotestausprosessi:} Kuvasta \ref{figure:Mutaatiotestausprosessi} huomataan, että perinteinen mutaatiotestausprosessi sisältää silmukoita. Ensimmäinen silmukka sisältää mutanttien generoinnin, testien suorituksen alkuperäiselle lähdekoodille ja testien tulosten tarkastamisen jälkeen virheiden korjauksen. Näistä työvaiheista alkuperäisten testitulosten tarkastaminen ja alkuperäisen ohjelman virheiden korjaaminen vaativat manuaalista työtä.
+Perinteiseen mutaatiotestausprosessiin sisältyy useita manuaalista työtä vaativia työvaiheita. Kuvassa \ref{figure:Mutaatiotestausprosessi} esitellyssä perinteisessä mutaatiotestausprosessissa manuaalista työtä vaativat työvaiheet ovat alkuperäisten testitulosten tarkastaminen, lähdekoodin vikojen korjaaminen, ekvivalenttien mutanttien merkitseminen ja uusien testien lisääminen tai olemassa olevien testien kehittäminen. 
+
+Mutaatiotestausprosessin suoritus voi edetä silmukoissa, joissa työvaiheita toistetaan kunnes prosessissa määritellyt ehdot täyttyvät. Perinteisessä mutaatiotestausprosessissa ensimmäinen ehto on, että alkuperäiselle lähdekoodille suoritetut testit menevät läpi ennen kuin mutaatiotestausta jatketaan. Toinen ehto on, että kaikki paitsi ekvivalentit mutantit on tapettava ennen kuin prosessi voi päättyä. Jos ehdot eivät täyty, toistetaan työvaiheita sykleittäin kunnes prosessi saadaan päättymään. Ehtojen tarkastusvaiheet on merkitty kuvaan \ref{figure:Mutaatiotestausprosessi} vinoneliön muotoisilla laatikoilla.
+
+Kuvasta \ref{figure:Mutaatiotestausprosessi} huomataan, että perinteiseen mutaatiotestausprosessiin muodostuu kaksi silmukkaa. Ensimmäiseen silmukkaan sisältyy mutanttien generointi, testien suoritus alkuperäiselle lähdekoodille, testien tulosten tarkastaminen ja lähdekoodin vikojen korjaaminen. Mutaatiotestauksen pääsilmukkaan sisältyy testien suoritus lähdekoodille ja eläville mutanteille, testien tulosten tarkastus ja vertailu, ekvivalenttien mutanttien etsiminen ja merkitseminen ja testien kehittäminen.
+
+Jotta perinteistä mutaatiotestausprosessia voidaan tehostaa, manuaaliset työvaiheet on poistettava mutaatiotestausprosessin pääsilmukasta~\cite[s. 41]{Offutt:Untch:2001}. Tällöin perinteisen mutaatiotestausprosessin tilalle muodostuu uusi testausprosessi, jossa osa työläistä manuaalisista työvaiheista suoritetaan automaattisesti. 
+
+\textbf{En tiedä, onko tämä uusi prosessi jo käytössä?} Kuvasta \ref{figure:Mutaatiotestausprosessi} huomataan, että perinteinen mutaatiotestausprosessi sisältää silmukoita. Ensimmäinen silmukka sisältää mutanttien generoinnin, testien suorituksen alkuperäiselle lähdekoodille ja testien tulosten tarkastamisen jälkeen virheiden korjauksen \textbf{(vs. korjataan lähdekoodista viat jotka aiheuttivat virheet)}. Näistä työvaiheista alkuperäisten testitulosten tarkastaminen ja lähdekoodissa esiintyvien vikojen korjaaminen vaativat manuaalista työtä.
 
 Toinen silmukka eli mutaatiotestauksen pääsilmukka muodostuu työvaiheista, jotka suoritetaan alkuperäisten testitulosten läpimenotarkastuksen jälkeen. Toiseen silmukkaan sisältyvät myös ensimmäisen silmukan työvaiheista testien suoritus lähdekoodille ja testien läpimenotarkastus. Tämä tarkoittaa, että silmukat risteävät näiden työvaiheiden kohdalla. Toisessa silmukassa manuaalista työtä vaativat ekvivalenttien mutanttien etsiminen ja merkitseminen ja uusien testien lisääminen tai olemassa olevien testien kehittäminen.
-
-\textbf{En tiedä, onko tämä uusi prosessi jo käytössä?} Jotta perinteistä mutaatiotestausprosessia voidaan tehostaa, manuaaliset työvaiheet on poistettava mutaatiotestauksen pääsilmukasta~\cite[s. 41]{Offutt:Untch:2001}. Tällöin perinteisen mutaatiotestausprosessin tilalle muodostuu uusi testausprosessi, jossa osa työläistä manuaalisista työvaiheista suoritetaan automaattisesti. 
 
 Automatisoitavia työvaiheita uudessa mutaatiotestausprosessissa ovat ekvivalenttien mutanttien tunnistaminen ja testien generointi ja kehittäminen. Ainoaksi merkittäväksi manuaaliseksi työvaiheeksi jää tarkistaa, ovatko alkuperäiselle lähdekoodille suoritetut testit menneet läpi. Jotta alkuperäisen lähdekoodin testitulosten tarkastusvaihe saadaan pois mutaatiotestauksen pääsilmukasta, suoritetaan läpimenotarkastus uudessa mutaatiotestausprosessissa pääsilmukasta poistuttaessa. Työvaiheiden automatisointi ja niiden suoritusjärjestyksen muuttaminen tekevät uudesta mutaatiotestausprosessista tehokkaamman verrattuna perinteiseen mutaatiotestausprosessiin~\cite[s. 41]{Offutt:Untch:2001}.
 
@@ -329,11 +337,11 @@ MuJava-artikkelista --> inter-intra/class-method testaus.
 
 \subsection{Mutaatio-operaattorit}
 
-Mutaatio-operaattorit ovat tärkeässä asemassa mutaatiotestauksessa, sillä mutaatiotestauksen tehokkuus riippuu siitä, minkälaisia virheitä mutaatio-operaattoreilla luodaan lähdekoodiin~\cite[s. 352]{Ma:Kwon:Offutt:2002}. Perinteisesti mutaatiotestausta on hyödynnetty proseduraalisessa ohjelmoinnissa, minkä vuoksi myös mutaatio-operaattorit on kehitetty tukemaan suurinta osaa proseduraalisten ohjelmointikielten piirteistä~\cite[s. 352]{Ma:Kwon:Offutt:2002}. 
+Mutaatio-operaattorit ovat tärkeässä asemassa mutaatiotestauksessa, sillä mutaatiotestauksen tehokkuus riippuu siitä, minkälaisia vikoja mutaatio-operaattoreilla luodaan lähdekoodiin~\cite[s. 352]{Ma:Kwon:Offutt:2002}. Perinteisesti mutaatiotestausta on hyödynnetty proseduraalisessa ohjelmoinnissa, minkä vuoksi myös mutaatio-operaattorit on kehitetty tukemaan suurinta osaa proseduraalisten ohjelmointikielten piirteistä~\cite[s. 352]{Ma:Kwon:Offutt:2002}. 
 
-Olioperustaisiin ohjelmointikieliin sisältyy kuitenkin uusia ominaisuuksia, joiden käytöstä aiheutuu erilaisia virheitä verrattuna proseduraalisessa ohjelmoinnissa esiintyviin virheisiin. Uusien virheiden ilmeneminen olio-ohjelmissa on johtanut uusien olioperustaisten mutaatio-operaattorien kehittämiseen.  
+Olioperustaisiin ohjelmointikieliin sisältyy kuitenkin uusia ominaisuuksia, joiden käytöstä aiheutuu erilaisia virheitä/vikoja verrattuna proseduraalisessa ohjelmoinnissa esiintyviin virheisiin/vikoihin. Uusien virheiden/vikojen ilmeneminen olio-ohjelmissa on johtanut uusien olioperustaisten mutaatio-operaattorien kehittämiseen.  
 
-Olioperustaisten ohjelmien mutaatiotestaukseen käytettävää menetelmää kutsutaan \textit{luokkamutaatioksi}~\cite{Kim:Clark:McDermid:2000}. Luokkamutaatiomenetelmän kehittivät Sunwoo Kim, John Clark ja John McDermid Java-oh\-jel\-moin\-ti\-kie\-les\-sä esiintyvien virheiden pohjalta~\cite{Kim:Clark:McDermid:2000}. Heidän kehittämiensä \textit{luokkamutaatio-operaattorien} avulla mutaatiotestausmenetelmää voidaan soveltaa Java-ohjelmointikielellä toteutettuihin olioperustaisiin ohjelmiin.
+Olioperustaisten ohjelmien mutaatiotestaukseen käytettävää menetelmää kutsutaan \textit{luokkamutaatioksi}~\cite{Kim:Clark:McDermid:2000}. Luokkamutaatiomenetelmän kehittivät Sunwoo Kim, John Clark ja John McDermid Java-oh\-jel\-moin\-ti\-kie\-len käytöstä aiheutuvien vikojen pohjalta~\cite{Kim:Clark:McDermid:2000}. Heidän kehittämiensä \textit{luokkamutaatio-operaattorien} avulla mutaatiotestausmenetelmää voidaan soveltaa Java-ohjelmointikielellä toteutettuihin olioperustaisiin ohjelmiin.
 
 Kimin, Clarkin ja McDermidin kehittämät luokkamutaatio-operaattorit ovat toimineet lähtökohtana myös muiden tutkijoiden luokkamutaatiotutkimuksessa ja uusien luokkamutaatio-operaattorien kehittämisessä. Yu Seung Ma, Yong Rae Kwon ja Jeff Offutt kehittivät vuonna 2002 Java-oh\-jel\-moin\-ti\-kiel\-tä varten joukon uusia luokkamutaatio-operaattoreita, jotka perustuivat aiemmin kehitettyihin operaattoreihin~\cite[s. 352]{Ma:Kwon:Offutt:2002}. Heidän tavoitteenaan oli parantaa ja kehittää olemassa olevia luokkamutaatio-operaattoreita, jotta luokkien välisten suhteiden testaaminen olisi mahdollista mutaatiotestauksella~\cite[s. 362]{Ma:Kwon:Offutt:2002}.
 
@@ -468,9 +476,9 @@ Uusien, mutantteja tappavien testien kehittäminen on myös yksi perinteisen mut
 
 Olioperustaisen ohjelmoinnin mukana tulevien uusien haasteiden kohtaaminen vaatii muutoksia myös ohjelmistojen testausmenetelmiin. Sekä perinteisiä olemassa olevia että uusia testausmenetelmiä kehitetään, jotta olio-ohjelmia voidaan testata kattavasti ja laadukkaasti. 
 
-Perinteisessä ohjelmistotestauksessa keskitytään ohjelmiston toiminnallisuuden testaamiseen ja virheiden etsimiseen ohjelmistosta. Perinteiseen ohjelmistotestaukseen liittyy kuitenkin haasteita, jotka aiheuttavat testaukseen epävarmuutta. Yksi haasteista on määrittää, ovatko testauksessa käytettävät testit ja testausjärjestelmä riittävän luotettavia, jotta niiden avulla ohjelmistoa voidaan testata laadukkaasti.
+Perinteisessä ohjelmistotestauksessa keskitytään ohjelmiston toiminnallisuuden testaamiseen ja vikojen etsimiseen ohjelmistosta. Perinteiseen ohjelmistotestaukseen liittyy kuitenkin haasteita, jotka aiheuttavat testaukseen epävarmuutta. Yksi haasteista on määrittää, ovatko testauksessa käytettävät testit ja testausjärjestelmä riittävän luotettavia, jotta niiden avulla ohjelmistoa voidaan testata laadukkaasti.
 
-Mutaatiotestaus on virheperustainen testausmenetelmä, joka tarjoaa ratkaisun testien laadun määrittämiseen liittyvään haasteeseen. Mutaatiotestauksen avulla voidaan mitata ohjelmistoa varten tehtyjen testien kykyä havaita ohjelmistossa esiintyviä virheitä. Mutaatiotestausmenetelmän avulla on siis mahdollista kehittää olemassa olevia testejä ja parantaa testien luotettavuutta.
+Mutaatiotestaus on virheperustainen testausmenetelmä, joka tarjoaa ratkaisun testien laadun määrittämiseen liittyvään haasteeseen. Mutaatiotestauksen avulla voidaan mitata ohjelmistoa varten tehtyjen testien kykyä havaita ohjelmistossa esiintyviä vikoja. Mutaatiotestausmenetelmän avulla on siis mahdollista kehittää olemassa olevia testejä ja parantaa testien luotettavuutta.
 
 Mutaatiotestauksen käyttö yleisesti osana testausprosessia on vähäistä mutaatiotestaukseen liittyvien ratkaisemattomien ongelmien takia. Mutaatiotestausta on kuitenkin tutkittu paljon. Tutkimuksen avulla voi olla mahdollista löytää ratkaisuja mutaatiotestausta vaivaaviin ongelmiin, jotta mutaatiotestauksen laaja-alainen käyttö voisi tulevaisuudessa olla mahdollista.
 

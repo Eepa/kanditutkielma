@@ -93,10 +93,10 @@
     <node id="n4">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.entityRelationship.small_entity">
-          <y:Geometry height="37.5" width="180.3212890625" x="137.48427734375002" y="-224.25"/>
+          <y:Geometry height="37.5" width="148.3212890625" x="153.48427734375002" y="-224.25"/>
           <y:Fill color="#E8EEF7" color2="#E8EEF7" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="20" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="28.501953125" modelName="custom" textColor="#000000" visible="true" width="155.201171875" x="12.56005859375" y="4.4990234375">Korjataan virheet<y:LabelModel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="20" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="28.501953125" modelName="custom" textColor="#000000" visible="true" width="126.294921875" x="11.01318359375" y="4.4990234375">Korjataan viat<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -336,7 +336,7 @@ pettu?</y:NodeLabel>
     <edge id="e6" source="n4" target="n1">
       <data key="d10">
         <y:PolyLineEdge>
-          <y:Path sx="90.1347987651825" sy="0.0" tx="-112.80645561218262" ty="0.0"/>
+          <y:Path sx="74.13938538120809" sy="0.0" tx="-112.80645561218262" ty="0.0"/>
           <y:LineStyle color="#000000" type="line" width="3.0"/>
           <y:Arrows source="none" target="standard"/>
           <y:BendStyle smoothed="false"/>
