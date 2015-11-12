@@ -6,9 +6,9 @@
 \contentsline {subsection}{\numberline {2.3}Suunnittelu}{3}{subsection.2.3}
 \contentsline {subsection}{\numberline {2.4}Rajoitukset}{4}{subsection.2.4}
 \contentsline {section}{\numberline {3}Mutaatiotestaus}{5}{section.3}
-\contentsline {subsection}{\numberline {3.1}Historia ja teoreettinen perusta}{5}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.1}Historia ja teoreettinen perusta}{6}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}Perinteinen mutaatiotestausprosessi}{6}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Uusi mutaatiotestausprosessi}{8}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.3}Uusi mutaatiotestausprosessi}{9}{subsection.3.3}
 \contentsline {section}{\numberline {4}Mutaatiotestaus olioj\IeC {\"a}rjestelmiss\IeC {\"a}}{10}{section.4}
 \contentsline {subsection}{\numberline {4.1}Mutaatiotestauksen piirteet}{10}{subsection.4.1}
 \contentsline {subsection}{\numberline {4.2}Mutaatio-operaattorit}{10}{subsection.4.2}

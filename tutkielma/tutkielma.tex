@@ -126,7 +126,9 @@ Perinteisesti mutaatiotestausta on käytetty testien kehittämisessä proseduraa
 % This is probably mostly relevant for computer scientists
 % uncomment the following; contents of \classification will be printed under the abstract with a title
 % "ACM Computing Classification System (CCS):"
-% \classification{}
+% \classification{D.2.4 [Software/Program Verification]
+%\\D.2.5 [Testing and Debugging]
+%\\D.3.3 [Language Constructs and Features]}
 
 % If the automatic page number counting is not working as desired in your case,
 % uncomment the following to manually set the number of pages displayed in the abstract page:
@@ -221,7 +223,7 @@ Olioperustaisen ohjelmoinnin kehityksen myötä klassisia ohjelmistojen testausm
 
 IEEE:n standardin mukaan ohjelmointivirheen (\textit{error}) aiheuttamaa, ohjelmiston lähdekoodiin päässyttä virheellistä kohtaa kutsutaan viaksi (\textit{fault})~\cite[s. 5]{IEEE:2009}. Lähdekoodissa oleva vika saattaa ohjelman suoritusaikana ilmetä virheenä (\textit{failure}). Virhe ilmenee, kun ohjelma ei \textbf{(ohjelman)} suorituksen aikana toimi odotetulla tavalla. \textbf{(Tässä tutkielmassa käytetään IEEE:n standardin mukaisia määritelmiä vialle ja virheelle.)}
 
-Testausta käytetään ohjelmistokehityksessä ohjelmiston laadun varmistamiseen ja auttamaan lähdekoodissa esiintyvien vikojen havaitsemisessa jo kehitysvaiheen aikana. Ohjelmistojen testaamisen ensisijainen tavoite on siis paljastaa vikoja, joiden havaitseminen muiden laadunvarmistusmenetelmien avulla olisi työlästä tai mahdotonta~\cite[s. 59]{Binder:1999}. Testauksen avulla pyritään myös varmistamaan, että ohjelma toimii sille asetettujen vaatimusten mukaisesti. \textit{\textbf{The primary role of software testing is to reveal bugs that would be too costly or impossible to find with other verification and validation techniques. A secondary purpose is to show that the system under test complies with its stated requirements for a given test suite.}}
+Testausta käytetään ohjelmistokehityksessä ohjelmiston laadun varmistamiseen ja auttamaan lähdekoodissa esiintyvien vikojen havaitsemisessa jo kehitysvaiheen aikana. Ohjelmistojen testaamisen ensisijainen tavoite on siis paljastaa vikoja, joiden havaitseminen muiden laadunvarmistusmenetelmien avulla olisi työlästä tai mahdotonta~\cite[s. 59]{Binder:1999}. Testauksen avulla pyritään myös varmistamaan, että ohjelma toimii sille asetettujen vaatimusten mukaisesti. %\textit{\textbf{The primary role of software testing is to reveal bugs that would be too costly or impossible to find with other verification and validation techniques. A secondary purpose is to show that the system under test complies with its stated requirements for a given test suite.}}
 
 Olio-ohjelmoinnissa testaukseen tuovat haasteita olio-ohjelmien erityispiirteet, joita ovat muun muuassa kapselointi, perintä, dynaaminen sidonta ja polymorfismi~\cite[s. 86]{Mariani:Pezze:2008}. 
 \textbf{Lisää tähän? Binderin kirjasta löyty tietoa. Ja joistakin artikkeleista.}
@@ -254,13 +256,15 @@ Testausmenetelmää, jossa ohjelman lähdekoodiin lisätään vikoja, kutsutaan 
 
 \subsection{Rajoitukset}
 
-Yksi testaukseen liittyvistä rajoituksista on, että testauksen avulla ei voi aina todeta ohjelmiston oikeellisuutta. Jotta oikeellisuus voidaan todistaa, vaaditaan, että ohjelman oikea toiminta testataan kaikilla mahdollisilla syötteillä ja niiden kombinaatioilla. Ohjelman oikeellisuuden todistaminen vastaa siis ohjelman kattavaa testaamista. Kattava testaaminen on kuitenkin käytännössä usein mahdotonta toteuttaa muille kuin triviaaleille ohjelmille~\cite[s. 58]{Binder:1999}. Oikellisuuden todistamiseen liittyen Edsger Dijkstra totesikin: \textit{''Program testing can be used to show the presence of bugs, but never to show their absence!''}~\cite[s. 6]{Dahl:Dijkstra:Hoare:1972}.
+Yksi testaukseen liittyvistä rajoituksista on, että testauksen avulla ei voi aina todeta ohjelmiston oikeellisuutta. Jotta oikeellisuus voidaan todistaa, vaaditaan, että ohjelman oikea toiminta testataan kaikilla mahdollisilla syötteillä ja niiden kombinaatioilla. Ohjelman oikeellisuuden todistaminen vastaa siis ohjelman \textbf{kattavaa/täydellistä} testaamista. Kattava testaaminen on kuitenkin käytännössä usein mahdotonta toteuttaa muille kuin triviaaleille ohjelmille~\cite[s. 58]{Binder:1999}. Oikellisuuden todistamiseen liittyen Edsger Dijkstra totesikin: \textit{''Program testing can be used to show the presence of bugs, but never to show their absence!''}~\cite[s. 6]{Dahl:Dijkstra:Hoare:1972}.
 
-Suoritettujen testien tulosten tulkintaan liittyy myös rajoituksia ja epävarmuutta. Epävarmuus ilmenee, kun testien suorituksen tuloksia varten ei ole olemassa  vertailukohdaksi luotettavia odotettuja tuloksia. Tällöin testauksesta saatujen toteutuneiden tulosten tulkinta ja arviointi on epävarmaa. Toteutuneista tuloksista ei voi siis \textbf{aina (?)} luotettavasti päätellä, menivätkö testit läpi vai eivät~\cite[s. 58]{Binder:1999}. 
+Testien \textit{odotettujen tulosten} (\textit{expected results}) määrittäminen on tärkeä osa testien suunnittelua, sillä ilman odotettuja tuloksia kattava automaattinen testaaminen ei ole mahdollista~\cite[s. 917]{Binder:1999}. \textit{Testioraakkeliksi} (\textit{test oracle}) kutsutaan lähdettä, joka määrittelee testien odotetut tulokset~\cite[s. 917]{Binder:1999}. Testioraakkeli voi olla esimerkiksi ohjelman vaatimusmäärittely, lista esimerkkikäyttötapauksista tai ohjelmoijan tieto siitä, kuinka ohjelman tulisi toimia~\cite[s. 918]{Binder:1999}. 
 
-Epävarmuutta liittyy myös testattavan järjestelmän halutulle toiminnallisuudelle asetettuihin vaatimuksiin. Toiminnallisuusvaatimusten todentaminen testauksen avulla ei ole mahdollista, joten vaatimuksia on käytettävä vain vertailukohtana testauksen tulosten tulkinnassa~\cite[s. 58]{Binder:1999}. Jos virheellisiä tai puutteellisia vaatimuksia käytetään testejä tehdessä, voi siitä seurata harhaanjohtavia testejä. Testauksen avulla ei myöskään voi paljastaa lähdekoodista puuttuvia osia, sillä olematonta koodia ei voi testata~\cite[s. 58]{Binder:1999}.
+Jos testien suorituksesta saatujen \textit{toteutuneiden tulosten} (\textit{actual results}) vertailukohdaksi ei ole olemassa luotettavia odotettuja tuloksia, toteutuneiden tulosten tulkinta on epävarmaa~\cite[s. 58]{Binder:1999}. Tällöin toteutuneista tuloksista ei voi luotettavasti päätellä, menivätkö testit läpi vai eivät. Täydellisen testioraakkelin kehittäminen on kuitenkin haastavaa ja joissain tapauksissa mahdotonta~\cite[s. 58]{Binder:1999}.
 
-\textbf{Rajoituksista selvennettävä noita 2 viimeistä kappaletta. Niissä voi olla jotakin epäselvyyksiä. Ainakin mulla vielä on joten vois selventää niitä huvin vuoksi.}
+Jotta testauksessa voidaan selvittää, toimiiko testattava ohjelma halutulla tavalla, testauksen tulosten vertailukohtana on käytettävä testattavan järjestelmän toiminnallisuudelle asetettuja vaatimuksia~\cite[s. 58]{Binder:1999}. Jos testejä kehitettäessä toteutuneiden tulosten vertailukohtana käytetään virheellisiä tai puutteellisia vaatimuksia, saattavat kehitetyt testit olla harhaanjohtavia. Toiminnallisuusvaatimusten laadun arvioimiseen liittyy kuitenkin haasteita. Testauksen avulla ei voi \textbf{nimittäin suoraan} varmistaa, ovatko toiminnallisuusvaatimukset kunnollisia~\cite[s. 58]{Binder:1999}.
+
+%Testauksen avulla ei myöskään voi paljastaa lähdekoodista puuttuvia osia, sillä olematonta koodia ei voi testata~\cite[s. 58]{Binder:1999}.
 
 \section{Mutaatiotestaus}
 
