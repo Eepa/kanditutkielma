@@ -323,19 +323,25 @@ Perinteiseen mutaatiotestausprosessiin sisältyy useita manuaalista työtä vaat
 
 Kuvan \ref{figure:Mutaatiotestausprosessi} kaaviosta nähdään, että mutaatiotestaus ei ole suoraviivainen prosessi, vaan prosessin suoritus saattaa haarautua ja palata takaisin jo suoritettuihin työvaiheisiin. Haarautumista tapahtuu esimerkiksi silloin, kun kaikkia mutantteja ei ole saatu tapettua tai testit eivät ole menneet läpi. Mutaatiotestausprosessiin muodostuu haarautumisesta johtuen silmukoita. Mutaatiotestausprosessin pääsilmukkaan kuuluu testien suoritus alkuperäiselle lähdekoodille, testitulosten tarkastus, testien suoritus mutanteille, testitulosten vertailu, ekvivalenttien mutanttien merkitseminen ja lopuksi uusien testien lisääminen tai olemassa olevien testien kehittäminen.
 
-Jotta perinteistä mutaatiotestausprosessia voidaan tehostaa, manuaaliset työvaiheet on poistettava mutaatiotestausprosessin pääsilmukasta~\cite[s. 41]{Offutt:Untch:2001}. Tällöin perinteisen mutaatiotestausprosessin tilalle muodostuu uusi mutaatiotestausprosessi, jossa osa työläistä manuaalisista työvaiheista suoritetaan automaattisesti. Automatisoitavia työvaiheita ovat ekvivalenttien mutanttien tunnistaminen ja uusien testien generointi ja kehittäminen. Ainoaksi merkittäväksi manuaaliseksi työvaiheeksi uudessa prosessissa jäisi tarkistaa, ovatko alkuperäiselle lähdekoodille suoritetut testit menneet läpi.
+Jotta perinteistä mutaatiotestausprosessia voidaan tehostaa, manuaaliset työvaiheet on poistettava mutaatiotestausprosessin pääsilmukasta~\cite[s. 41]{Offutt:Untch:2001}. Tällöin perinteisen mutaatiotestausprosessin tilalle muodostuu uusi mutaatiotestausprosessi, jossa osa työläistä manuaalisista työvaiheista suoritetaan automaattisesti. Automatisoitavia työvaiheita ovat ekvivalenttien mutanttien tunnistaminen ja uusien testien generointi ja kehittäminen. Ainoaksi merkittäväksi manuaaliseksi työvaiheeksi uudessa prosessissa jää tarkistaa, ovatko alkuperäiselle lähdekoodille suoritetut testit menneet läpi.
 
 Automatisoinnin lisäksi uudessa mutaatiotestausprosessissa työvaiheiden suoritusjärjestys muuttuu~\cite[s. 40]{Offutt:Untch:2001}. Manuaalinen testitulosten tarkastusvaihe siirretään pois mutaatiotestauksen pääsilmukasta suoritettavaksi pääsilmukasta poistuttaessa. Lisäksi ekvivalenttien mutanttien tunnistaminen suoritetaan ennen pääsilmukkaan siirtymistä. 
 
-Perinteisessä mutaatiotestausprosessissa suoritus päättyy, kun mutaatiopistemäärä saavuttaa arvon 1. Uudessa mutaatiotestausprosessissa riittävä mutaatiopistemäärä määritellään pistemäärälle asetettavan raja-arvon avulla. Uudessa prosessissa pääsilmukan työvaiheita ovat testien generointi, suoritus ja kehittäminen. Lisäksi pääsilmukassa tarkastetaan, onko mutaatiopistemäärän raja-arvo saavutettu. Työvaiheiden automatisointi ja niiden suoritusjärjestyksen muuttaminen tekevät uudesta mutaatiotestausprosessista tehokkaamman verrattuna perinteiseen mutaatiotestausprosessiin~\cite[s. 41]{Offutt:Untch:2001}.
+Perinteisessä mutaatiotestausprosessissa suoritus päättyy, kun mutaatiopistemäärä saavuttaa arvon 1. Uudessa mutaatiotestausprosessissa riittävä mutaatiopistemäärä määritellään pistemäärälle asetettavan raja-arvon avulla. Uudessa prosessissa pääsilmukan työvaiheita ovat testien generointi, suoritus ja kehittäminen. Testejä kehitetään poistamalla tehottomat testit eli testit, jotka eivät tappaneet yhtään mutanttia. Lisäksi pääsilmukassa tarkastetaan, onko mutaatiopistemäärän raja-arvo saavutettu. 
+
+Työvaiheiden automatisointi ja niiden suoritusjärjestyksen muuttaminen tekevät uudesta mutaatiotestausprosessista tehokkaamman verrattuna perinteiseen mutaatiotestausprosessiin~\cite[s. 41]{Offutt:Untch:2001}. Kuvassa \ref{figure:UusiMutaatiotestausprosessi} on esitelty uusi mutaatiotestausprosessi. Automatisoidut työvaiheet on merkitty kuvaan oransseilla laatikoilla ja manuaaliset työvaiheet on merkitty sinisillä laatikoilla. Prosessissa käytettäviä resursseja kuvataan vihreillä ja keltaisilla laatikoilla.
+
+\begin{figure}[H]
+	\centering
+		\includegraphics[width=\textwidth]{uusiprosessi}
+	\caption{Uusi mutaatiotestausprosessi~\cite[s. 41]{Offutt:Untch:2001}.}
+	\label{figure:UusiMutaatiotestausprosessi}
+\end{figure}
+
 
 \section{Mutaatiotestaus oliojärjestelmissä}
 
 Kappaleen estittelyteksti tähän. \textbf{Kuinka pitkä tämän on oltava?} 
-
-\subsection{Mutaatiotestauksen piirteet}
-
-MuJava-artikkelista --> inter-intra/class-method testaus.
 
 \subsection{Mutaatio-operaattorit}
 
