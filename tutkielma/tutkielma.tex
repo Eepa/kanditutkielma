@@ -226,29 +226,24 @@ IEEE:n standardin mukaan ohjelmointivirheen (\textit{error}) aiheuttamaa, ohjelm
 Testausta käytetään ohjelmistokehityksessä ohjelmiston laadun varmistamiseen ja auttamaan lähdekoodissa esiintyvien vikojen havaitsemisessa jo kehitysvaiheen aikana. Ohjelmistojen testaamisen ensisijainen tavoite on siis paljastaa vikoja, joiden havaitseminen muiden laadunvarmistusmenetelmien avulla olisi työlästä tai mahdotonta~\cite[s. 59]{Binder:1999}. Testauksen avulla pyritään myös varmistamaan, että ohjelma toimii sille asetettujen vaatimusten mukaisesti. %\textit{\textbf{The primary role of software testing is to reveal bugs that would be too costly or impossible to find with other verification and validation techniques. A secondary purpose is to show that the system under test complies with its stated requirements for a given test suite.}}
 
 Olio-ohjelmoinnissa testaukseen tuovat haasteita olio-ohjelmien erityispiirteet, joita ovat muun muuassa kapselointi, perintä, dynaaminen sidonta ja polymorfismi~\cite[s. 86]{Mariani:Pezze:2008}. 
-\textbf{Lisää tähän? Binderin kirjasta löyty tietoa. Ja joistakin artikkeleista.}
-
 
 \subsection{Tasot}
 
 Ohjelmistoja voidaan testata usealla tasolla. Testauksen tasoja ovat yksikkö-, integraatio- ja järjestelmätasot. Tasot muodostuvat yhdestä tai useammasta ohjelman komponentista, joita tason testeillä testataan~\cite[s. 45]{Binder:1999}. Komponentti voi olio-ohjelmissa olla esimerkiksi yksittäinen metodi tai luokka, ohjelman luokkien välinen rajapinta tai jo valmis ohjelmisto.
 
-Alimmalla testauksen tasolla \textit{yksikkötestauksessa} (\textit{unit testing}) testataan ohjelman pienimpiä suoritettavissa olevia komponentteja~\cite[s. 45]{Binder:1999}. Olio-ohjelmissa näitä komponentteja ovat yksittäiset metodit ja oliot. 
-\textbf{Lisää tietoa yksikkötestauksesta.}
+Alimmalla testauksen tasolla \textit{yksikkötestauksessa} (\textit{unit testing}) testataan ohjelman pienimpiä suoritettavissa olevia komponentteja~\cite[s. 45]{Binder:1999}. Olio-ohjelmissa näitä komponentteja ovat yksittäiset metodit ja oliot.
 
-Yksikkötestauksesta seuraava taso ylöspäin on \textit{integraatiotestaus} (\textit{integration testing}), jossa tarkastellaan järjestelmän tai sen osien yhteistoimintaa~\cite[s. 45]{Binder:1999}. Integraatiotestauksessa testataan siis järjestelmän osien välisiä rajapintoja ja osien keskinäistä kommunikointia. Olio-ohjelmissa luokkien muodostumisesta perinnän avulla ja luokkien koostumisesta toisten luokkien olioista seuraa, että integraatiotestaukselle on olio-ohjelmoinnissa tarvetta jo ohjelmoinnin alkuvaiheessa. 
-\textbf{Lisää ehkä vähän myös tästä.}
+Yksikkötestauksesta seuraava taso ylöspäin on \textit{integraatiotestaus} (\textit{integration testing}), jossa tarkastellaan järjestelmän tai sen osien yhteistoimintaa~\cite[s. 45]{Binder:1999}. Integraatiotestauksessa testataan siis järjestelmän osien välisiä rajapintoja ja osien keskinäistä kommunikointia. Olio-ohjelmissa luokkien muodostumisesta perinnän avulla ja luokkien koostumisesta toisten luokkien olioista seuraa, että integraatiotestaukselle on olio-ohjelmoinnissa tarvetta jo ohjelmoinnin alkuvaiheessa.
 
-Valmista integroitua sovellusta testataan \textit{järjestelmätestauksen} (\textit{system testing}) avulla~\cite[s. 45]{Binder:1999}. Tällä testauksen tasolla keskitytään vain valmiissa sovelluksessa esiintyvien piirteiden testaamiseen. Testauksen kohteena voi olla esimerkiksi sovelluksen toiminnallisuus, suorituskyky tai sovelluksen kestämä kuormitus~\cite[s. 45]{Binder:1999}. 
-\textbf{Tästä jonkin verran lisää.}
+Valmista integroitua sovellusta testataan \textit{järjestelmätestauksen} (\textit{system testing}) avulla~\cite[s. 45]{Binder:1999}. Tällä testauksen tasolla keskitytään vain valmiissa sovelluksessa esiintyvien piirteiden testaamiseen. Testauksen kohteena voi olla esimerkiksi sovelluksen toiminnallisuus, suorituskyky tai sovelluksen kestämä kuormitus~\cite[s. 45]{Binder:1999}.
 
 \subsection{Suunnittelu}
 
 Testien suunnitteluun ja kehittämiseen voidaan käyttää useita menetelmiä. Testausmenetelmän avulla kuvataan näkökulmaa, josta esimerkiksi ohjelman lähdekoodia tarkastellaan testejä kehitettäessä~\cite[s. 51]{Binder:1999}. Ohjelman sisäisen rakenteen tai ulkoisen toiminnallisuuden tuntemusta voidaan käyttää testausmenetelmissä apuna uusia testejä kehitettäessä. Lisäksi olemassa olevia testejä voidaan kehittää testausmenetelmien avulla.
 
-Ohjelman sisäisen rakenteen eli lähdekoodin tuntemukseen perustuvaa testausmenetelmää kutsutaan \textit{white box -testaukseksi}~\cite[s. 52]{Binder:1999}. \textbf{Lisää tästä.} White box -testausta voidaan käyttää esimerkiksi yksikkötestauksessa apuna testien suunnittelussa, sillä lähdekoodin tuntemus auttaa kehittämään testejä yksittäisille metodeille ja olioille.
+Ohjelman sisäisen rakenteen eli lähdekoodin tuntemukseen perustuvaa testausmenetelmää kutsutaan \textit{white box -testaukseksi}~\cite[s. 52]{Binder:1999}. White box -testausta voidaan käyttää esimerkiksi yksikkötestauksessa apuna testien suunnittelussa, sillä lähdekoodin tuntemus auttaa kehittämään testejä yksittäisille metodeille ja olioille.
 
-\textit{Black box -testaukseksi} eli \textit{funktionaaliseksi testaukseksi} kutsutussa testausmenetelmässä testejä suunnitellaan ohjelmiston toiminnallisuuden tuntemuksen avulla~\cite[s. 52]{Binder:1999}. \textbf{Lisää tuosta.} Koska valmiin sovelluksen piirteitä testattaessa tutkitaan myös sovelluksen ulkoista toiminnallisuutta, on black box -testausmenetelmästä apua suunniteltaessa testejä esimerkiksi järjestelmätestaukseen.
+\textit{Black box -testaukseksi} eli \textit{funktionaaliseksi testaukseksi} kutsutussa testausmenetelmässä testejä suunnitellaan ohjelmiston toiminnallisuuden tuntemuksen avulla~\cite[s. 52]{Binder:1999}. Koska valmiin sovelluksen piirteitä testattaessa tutkitaan myös sovelluksen ulkoista toiminnallisuutta, on black box -testausmenetelmästä apua suunniteltaessa testejä esimerkiksi järjestelmätestaukseen.
 
 \textit{Gray box -} eli \textit{hybriditestauksessa} yhdistetään white box - ja black box -testausmenetelmien piirteitä~\cite[s. 52]{Binder:1999}. Sekä white box -testausta että black box -testausta voidaan käyttää testien suunnittelussa useilla testauksen tasoilla joko erikseen tai molempien piirteitä yhdistäen.
 
@@ -412,7 +407,9 @@ Mutaatiojärjestelmä tutkimuksessa: MuJava.
 
 \section{Mutaatiotestauksen haasteet}
 
-Vaikka mutaatiotestausta voidaan käyttää ohjelmiston olemassa olevien testien kehittämiseen ja testien laadun parantamiseen, ei mutaatiotestausmenetelmän käyttö ole ongelmatonta. Mutaatiotestaukseen liittyy haasteita, jotka estävät menetelmän käyttämisen laaja-alaisesti osana testausprosessia~\cite[s. 652]{Jia:Harman:2011}.
+Vaikka mutaatiotestausta voidaan käyttää ohjelmiston olemassa olevien testien kehittämiseen ja testien laadun parantamiseen, ei mutaatiotestausmenetelmän käyttö ole ongelmatonta. Mutaatiotestaukseen liittyy haasteita ja ratkaisemattomia ongelmia, jotka estävät menetelmän käyttämisen laaja-alaisesti osana testausprosessia~\cite[s. 652]{Jia:Harman:2011}.
+
+Mutaatiotestaukseen on kuitenkin kehitetty menetelmiä, joilla mutaatiotestauksen ongelmia voidaan ratkaista osittain\textbf{~\cite[s. ]{Lähde}}. Osittaisten ratkaisujen avulla mutaatiotestausprosessi voidaan automatisoida~\cite[s. 653]{Jia:Harman:2011}. \textbf{With existing advances in mutation testing the process of mutation testing can be automated.} Automatisoitu uusi mutaatiotestausprosessi on esitelty kuvassa \ref{figure:UusiMutaatiotestausprosessi} sivulla \pageref{figure:UusiMutaatiotestausprosessi}. Uudessa mutaatiotestausprosessissa automatisoitujen työvaiheiden toteutuksessa voidaan käyttää menetelmiä, joiden avulla mutaatiotestauksen haasteita on yritetty ratkaista.
 
 %\textbf{Misi mutaatiotestaus ei ole päätynyt suureen suosioon/käyttöön? Valitaan muutama haaste ja esitellään niitä? Kerrotaan että myös muita haasteita, mutta ei esitellä niitä niin tarkasti?} HAASTEITA ON JAETTAVA TUTKIELMASSA OMIIN ALALUKUIHINSA. NYT TEHDÄÄN VAIN HAASTEITA VARTEN NS. "JOHDANTOKAPPALE" JONKA VOI TUTKIELMASSA JAKAA OMIKSI KAPPALEIKSEEN.
 
@@ -444,11 +441,11 @@ public class Elainkauppa extends Kauppa {
 };
 \end{lstlisting}
 
-\vspace{1\baselineskip}On todistettu, että ekvivalenttien mutanttien tunnistaminen (algoritmisesti) yleisessä tapauksessa on ratkaisematon ongelma~\cite[s. 79]{Offutt:Ma:Kwon:2006:MuClassLevel}. Ekvivalenttien mutanttien tunnistamiseksi on kuitenkin kehitetty heuristiikkoja, joiden avulla ongelma voidaan ratkaista osittain. Tunnistamisongelma on herättänyt runsaasti teoreettista kiinnostusta, ja mahdollisia tunnistamistekniikoita on tutkittu paljon~\cite[s. 657]{Jia:Harman:2011}. 
+\vspace{1\baselineskip}On todistettu, että ekvivalenttien mutanttien tunnistaminen \textbf{(algoritmisesti)} yleisessä tapauksessa on ratkaisematon ongelma~\cite[s. 79]{Offutt:Ma:Kwon:2006:MuClassLevel}. Ekvivalenttien mutanttien tunnistamiseksi on kuitenkin kehitetty heuristiikkoja, joiden avulla ongelma voidaan ratkaista osittain. Tunnistamisongelma on herättänyt runsaasti teoreettista kiinnostusta, ja mahdollisia tunnistamistekniikoita on tutkittu paljon~\cite[s. 657]{Jia:Harman:2011}. 
 
 Yksi vaihtoehto ekvivalenttien mutanttien tunnistamisongelman ratkaisemiseksi on estää ekvivalenttien mutanttien syntyminen mutanttien generointivaiheessa~\cite[s. 80]{Offutt:Ma:Kwon:2006:MuClassLevel}. \textbf{Muita vaihtoehtoja ovat Compiler optimization techniques, algorithms in Mothra, infeasible constraints ideaan perustuva väline, Program slicing.}
 
-Heuristiikkojen (ja laskennan) avulla voidaan tunnistaa vain osa ekvivalenteista mutanteista. Jos kaikki ekvivalentit mutantit halutaan tunnistaa, tunnistaminen on suoritettava manuaalisesti tutkimalla mutanttia ja vertaamalla mutantin toimintaa alkuperäisen ohjelmiston toimintaan. Tämä menetelmä johtaa mutaatiotestauksen toteuttamiseen tarvittavan työmäärän kasvuun.
+Heuristiikkojen (ja laskennan) avulla voidaan tunnistaa vain osa ekvivalenteista mutanteista. Jos kaikki ekvivalentit mutantit halutaan tunnistaa, tunnistaminen on suoritettava manuaalisesti tutkimalla mutanttia ja vertaamalla mutantin toimintaa alkuperäisen ohjelmiston toimintaan. \textbf{Ekvivalenttien mutanttien tunnistaminen manuaalisesti lisää kuitenkin mutaatiotestaukseen vaadittavaa työmäärää.}
 
 \subsection{Tehokkuusongelmat}
 
@@ -464,11 +461,11 @@ Do fewer vähemmän mutantteja ilman "mutaatiokattavuuden" kärsimistä suuresti
 
 \subsection{Manuaalinen työ}
 
-Kolmas mutaatiotestauksen ongelma-alue liittyy perinteiseen mutaatiotestausprosessiin sisältyvään manuaaliseen työhön. Perinteisessä mutaatiotestausprosessissa useaan prosessin työvaiheeseen sisältyy manuaalista työtä \textbf{(tätä käsittelin kappaleessa 3.3 Uusi mutaatiotestausprosessi) --> pitääkö se käsitellä uudestaan tässä kohtaa?}. Kuvassa \ref{figure:Mutaatiotestausprosessi} (sivulla \pageref{figure:Mutaatiotestausprosessi}) on esitelty perinteinen mutaatiotestausprosessi. Kuvassa esiteltyyn kaavioon on merkitty työvaihe, jossa alkuperäisten testien suorituksen jälkeen tarkastetaan, ovatko testit menneet läpi. 
+Kolmas mutaatiotestauksen ongelma-alue liittyy perinteiseen mutaatiotestausprosessiin sisältyvään manuaaliseen työhön. Perinteisessä mutaatiotestausprosessissa useaan prosessin työvaiheeseen sisältyy manuaalista työtä. Kuvassa \ref{figure:Mutaatiotestausprosessi} \textbf{(sivulla \pageref{figure:Mutaatiotestausprosessi})} on esitelty perinteinen mutaatiotestausprosessi. \textbf{Kuvassa olevaan kaavioon/kuvan kaavioon} on merkitty työvaihe, jossa alkuperäisten testien suorituksen jälkeen tarkastetaan, ovatko testit menneet läpi. 
 
-Testien läpimenotarkastus on usein testausprosessin työläin osa~\cite[s. 653]{Jia:Harman:2011}. Tämä ongelma ei liity pelkästään mutaatiotestaukseen vaan ongelma ilmenee myös muissa testausmenetelmissä. Mutaatiotestauksessa ekvivalenttien mutanttien tunnistaminen ja suoritettujen testien suuri määrä lisäävät kuitenkin työmäärää, joka tarvitaan testauksen tulosten tarkastamiseen.
+Manuaalinen testien läpimenotarkastus on usein testausprosessin työläin osa~\cite[s. 653]{Jia:Harman:2011}. Manuaaliessa läpimenotarkastuksessa \textbf{ihminen} toimii testioraakkelina. \textbf{Tämä ongelma/Ihmisoraakkeliongelma (\textbf{human oracle problem})} ei liity pelkästään mutaatiotestaukseen vaan ongelma ilmenee myös muissa testausmenetelmissä. Koska mutaatiotestauksessa suoritetaan usein paljon testejä, testauksen tulosten tarkastamiseen vaadittava työmäärä kasvaa~\cite[s. 653]{Jia:Harman:2011}. \textbf{Tarvitaanko tuon väitteen perään uudestaan tuo lähde?}
 
-Uusien, mutantteja tappavien testien kehittäminen on myös yksi perinteisen mutaatiotestausprosessin työläistä manuaalisista työvaiheista~\cite[s. 39]{Offutt:Untch:2001}. Mutaatiotestauksessa tavoitteena on kehittää testejä, joiden avulla saadaan tapettua mahdollisimman paljon mutantteja (mutation adequate). Manuaalisesti tällaisten testien kehittäminen on työlästä. Lisäksi sopivien syötteiden löytäminen testejä varten on yksi vaikeimmista testauksen vaiheista~\cite[s. 39]{Offutt:Untch:2001}. Testien automaattista generointia varten on kuitenkin kehitetty menetelmiä, joiden avulla testien generointi voidaan mutaatiotestausprosessissa automatisoida osittain.
+Uusien, mutantteja tappavien testien kehittäminen on myös yksi perinteisen mutaatiotestausprosessin työläistä manuaalisista työvaiheista~\cite[s. 39]{Offutt:Untch:2001}. Mutaatiotestauksessa tavoitteena on kehittää testejä, jotka tappavat mahdollisimman paljon mutantteja \textbf{(mutation adequate)}. Manuaalisesti tällaisten testien kehittäminen on työlästä. Lisäksi sopivien syötteiden löytäminen testejä varten on yksi vaikeimmista testauksen vaiheista~\cite[s. 39]{Offutt:Untch:2001}. Testien automaattista generointia varten on kuitenkin kehitetty menetelmiä, joiden avulla testien generointi voidaan mutaatiotestausprosessissa automatisoida osittain.
 
 
 %__________________________________________________________
