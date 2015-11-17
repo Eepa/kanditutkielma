@@ -269,13 +269,11 @@ Testaukseen sisältyvien rajoitusten lisäksi testaukseen liittyy myös epävarm
 
 Mutaatiotestauksesta kirjoitettiin ensimmäistä kertaa jo 1970-luvulla. Richard DeMillon, Richard Liptonin ja Frederick Saywardin artikkeli~\cite{DeMillo:Lipton:Sayward:1978} vuodelta 1978 on yksi ensimmäisistä uraauurtavista mutaatiotestausta esittelevistä artikkeleista. Mutaatiotestauksen tutkimus on lisääntynyt vuosien kuluessa, ja erityisesti 2000-luvulla uusia tuloksia on julkaistu paljon~\cite[s. 1102]{Offutt:2011}. Tutkimuksessa suuntana on ollut etsiä keinoja, joilla mutaatiotestaus voidaan muuttaa käytännölliseksi testausmenetelmäksi~\cite[s. 649]{Jia:Harman:2011}. 
 
-\textbf{historiasta ehkä lisää ja tutkimuksesta}
+Mutaatiotestauksen avulla pyritään kehittämään testejä, joiden avulla voidaan tunnistaa oikeita ohjelmistossa esiintyviä vikoja~\cite[s. 650]{Jia:Harman:2011}. Oikeita vikoja on kuitenkin valtava määrä, minkä vuoksi mutaatiotestauksessa on mahdotonta generoida mutantteja, jotka edustaisivat kaikkia mahdollisia vikoja~\cite[s. 650]{Jia:Harman:2011}. Näin ollen mutaatiotestauksessa käsitellään vain osajoukkoa (\textbf{subset}) kaikista mahdollisista vioista. Osajoukon vikojen toivotaan olevan riittäviä simuloimaan kaikkia mahdollisia vikoja~\cite[s. 650]{Jia:Harman:2011}.
 
-Mutaatiotestaus perustuu kahteen hypoteesiin: the Competent Programmer Hypothesis ja the Coupling Effect (Hypothesis).
+Osajoukkoon valikoituvia vikoja rajoitetaan mutaatiotestauksessa kahden periaatteen avulla. Periaatteita ovat \textit{pätevän ohjelmoijan hypoteesi} (\textit{competent programmer hypothesis})~\cite[s. x]{ALKUPERÄINEN DEMILLO LÄHDE} ja \textit{kytkeytymisefekti} (\textit{coupling effect})~\cite[s. X]{Offuttinjuttukunhansaalahteen}. \textbf{Omaa keksintöä osaksi} Näiden periaatteiden ohjaamana mutaatiotestauksessa vikojen osajoukkoon valikoituu vikoja, jotka muodostetaan tekemällä alkuperäiseen lähdekoodiin kerrallaan vain yksittäisiä muutoksia/jotka eroavat alkuperäisestä lähdekoodista (kerrallaan vain) yhden muutoksen verran. \textbf{Therefore, traditional mutation testing targets only a subset of these faults, those which are close to the correct version of the program, with the hope that these will be sufficient to simulate all faults.}
 
-\textbf{Lisää juttua siitä, että mutaatiotestaus kasvattaa testitkattavuutta.}
-
-Tyyliin: Tietyillä mutaatio-operaattoreilla generoitujen mutanttien tappaminen saattaa myös pakotta tiettyjen "polkujen" läpikäyntiin. Tällöin, kun ohjelmiston testejä kehitetään mutaatiotestauksen avulla, sen lisäksi että testien kyky havaita vikoja kasvaa saadaan testien "testikattavuutta" coverage, branch yms. kasvatettua.
+\textbf{Lisää juttua siitä, että mutaatiotestaus kasvattaa testitkattavuutta.} Tyyliin: Tietyillä mutaatio-operaattoreilla generoitujen mutanttien tappaminen saattaa myös pakotta tiettyjen "polkujen" läpikäyntiin. Tällöin, kun ohjelmiston testejä kehitetään mutaatiotestauksen avulla, sen lisäksi että testien kyky havaita vikoja kasvaa saadaan testien "testikattavuutta" coverage, branch yms. kasvatettua.
 
 \subsection{Perinteinen mutaatiotestausprosessi}
 
