@@ -1,8 +1,4 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: tutkielma.aux
-White space in argument---line 71 of file tutkielma.aux
- : \citation{ALKUPERÄINEN
- :                        DEMILLO LÄHDE}
-I'm skipping whatever remains of this command
 The style file: babalpha-lf.bst
 Database file #1: references-fi.bib
 You're missing a field name---line 2 of file references-fi.bib
@@ -15,11 +11,10 @@ You're missing a field name---line 11 of file references-fi.bib
  : %  title = {MitÃ¤ tÃ¤mÃ¤ on},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "Offuttinjuttukunhansaalahteen"
 Warning--I didn't find a database entry for "Lähde"
 Warning--to sort, need author or key in IEEE:2009
 Warning--empty language in Binder:1999
 Warning--empty author in IEEE:2009
 Warning--can't use both author and editor fields in Mariani:Pezze:2008
 Warning--empty booktitle in Offutt:Untch:2001
-(There were 3 error messages)
+(There were 2 error messages)

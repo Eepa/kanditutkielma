@@ -109,6 +109,16 @@
 \newblock {\latintext
   \btxurlfont{http://doi.ieeecomputersociety.org/10.1109/TSE.1978.231499}}.
 
+\bibitem [{Off92}]{Offutt:1992:Coupling}
+\btxnamefont {\btxlastnamefont {Offutt}, A.\btxfnamespacelong
+  Jefferson}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {Investigations
+  of the software testing coupling effect}{Investigations of the Software
+  Testing Coupling Effect}}.
+\newblock \btxjournalfont {ACM Trans. Softw. Eng. Methodol.}, 1(1):5--20,
+  \btxprintmonthyear{.}{1}{1992}{long}\ifbtxprintISSN {,
+  \mbox{\btxISSN~\btxISSNfont {1049-331X}}}.
+\newblock {\latintext \btxurlfont{http://doi.acm.org/10.1145/125489.125473}}.
+
 \bibitem [{Off11}]{Offutt:2011}
 \btxnamefont {\btxlastnamefont {Offutt}, Jeff}\btxauthorcolon\ \btxjtitlefont
   {\btxifchangecase {A mutation carol: Past, present and future}{A mutation
