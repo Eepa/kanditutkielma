@@ -1,4 +1,5 @@
-\begin{thebibliography}{OMK06}
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{BHM{\etalchar{+}}15}
   \providebibliographyfont{name}{}%
   \providebibliographyfont{lastname}{}%
   \providebibliographyfont{title}{\emph}%
@@ -13,6 +14,17 @@
   \expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
 
 \expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
+\bibitem [{BHM{\etalchar{+}}15}]{Barr:Harman:McMinn:Shahbaz:Yoo:2015}
+\btxnamefont {\btxlastnamefont {Barr}, E.T.}, \btxnamefont {\btxlastnamefont
+  {Harman}, M.}, \btxnamefont {\btxlastnamefont {McMinn}, P.}, \btxnamefont
+  {\btxlastnamefont {Shahbaz}, M.}\btxandcomma {} \btxandlong {}\ \btxnamefont
+  {\btxlastnamefont {Yoo}, Shin}\btxauthorcolon\ \btxjtitlefont
+  {\btxifchangecase {The oracle problem in software testing: A survey}{The
+  Oracle Problem in Software Testing: A Survey}}.
+\newblock \btxjournalfont {Software Engineering, IEEE Transactions on},
+  41(5):507--525, \btxprintmonthyear{.}{May}{2015}{long}\ifbtxprintISSN {,
+  \mbox{\btxISSN~\btxISSNfont {0098-5589}}}.
+
 \bibitem [{Bin99}]{Binder:1999}
 \btxnamefont {\btxlastnamefont {Binder}, Robert\btxfnamespacelong
   V.}\btxauthorcolon\ \btxtitlefont {Testing Object-oriented Systems: Models,
@@ -91,6 +103,18 @@
 \newblock \Btxinlong {}\ \btxtitlefont {Software Reliability Engineering, 2002.
   ISSRE 2003. Proceedings. 13th International Symposium on}, \btxpageslong {}\
   352--363, 2002.
+
+\bibitem [{MOK05}]{Ma:Offutt:Kwon:2005:MuAutomated}
+\btxnamefont {\btxlastnamefont {Ma}, Yu\btxfnamespacelong Seung}, \btxnamefont
+  {\btxlastnamefont {Offutt}, Jeff}\btxandcomma {} \btxandlong {}\ \btxnamefont
+  {\btxlastnamefont {Kwon}, Yong\btxfnamespacelong Rae}\btxauthorcolon\
+  \btxjtitlefont {\btxifchangecase {Mujava: An automated class mutation system:
+  Research articles}{MuJava: An Automated Class Mutation System: Research
+  Articles}}.
+\newblock \btxjournalfont {Softw. Test. Verif. Reliab.}, 15(2):97--133,
+  \btxprintmonthyear{.}{6}{2005}{long}\ifbtxprintISSN {,
+  \mbox{\btxISSN~\btxISSNfont {0960-0833}}}.
+\newblock {\latintext \btxurlfont{http://dx.doi.org/10.1002/stvr.v15:2}}.
 
 \bibitem [{MP08}]{Mariani:Pezze:2008}
 \btxnamefont {\btxlastnamefont {Mariani}, Leonardo} \btxandlong {}\

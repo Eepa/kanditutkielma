@@ -13,9 +13,9 @@
 \contentsline {section}{\numberline {4}Mutaatiotestauksen haasteet}{13}{section.4}
 \contentsline {subsection}{\numberline {4.1}Ekvivalentit mutantit}{13}{subsection.4.1}
 \contentsline {subsection}{\numberline {4.2}Tehokkuusongelmat}{15}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Manuaalinen ty\IeC {\"o}}{15}{subsection.4.3}
-\contentsline {section}{\numberline {5}Yhteenveto}{16}{section.5}
-\contentsline {section}{L\IeC {\"a}hteet}{18}{section*.2}
+\contentsline {subsection}{\numberline {4.3}Manuaalinen ty\IeC {\"o}}{16}{subsection.4.3}
+\contentsline {section}{\numberline {5}Yhteenveto}{17}{section.5}
+\contentsline {section}{L\IeC {\"a}hteet}{19}{section*.2}
 \select@language {finnish}
 \select@language {finnish}
 \select@language {finnish}
