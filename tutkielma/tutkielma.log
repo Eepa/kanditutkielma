@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.9.8)  25 NOV 2015 16:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.9.8)  25 NOV 2015 16:42
 entering extended mode
 **tutkielma.tex
 (tutkielma.tex
@@ -1006,7 +1006,7 @@ Package babel Info: Redefining finnish shorthand "|
 (babel)             in language  on input line 314.
 Package babel Info: Redefining finnish shorthand "|
 (babel)             in language  on input line 314.
- [8] <mutaatiotestausprosessi3.png, id=226, 804.00375pt x 706.64pt>
+ [8] <mutaatiotestausprosessi3.png, id=225, 804.00375pt x 706.64pt>
 File: mutaatiotestausprosessi3.png Graphic file (type png)
 
 <use mutaatiotestausprosessi3.png>
@@ -1035,7 +1035,7 @@ Package babel Info: Redefining finnish shorthand "|
 Package babel Info: Redefining finnish shorthand "|
 (babel)             in language  on input line 349.
  [11]
-<uusiprosessi.png, id=251, 758.835pt x 664.4825pt>
+<uusiprosessi.png, id=250, 758.835pt x 664.4825pt>
 File: uusiprosessi.png Graphic file (type png)
  <use uusiprosessi.png>
 Package pdftex.def Info: uusiprosessi.png used on input line 354.
@@ -1173,9 +1173,9 @@ c/lm/lmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:
 eX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
 public/lm/lmri10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.
 pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb>
-Output written on tutkielma.pdf (25 pages, 400689 bytes).
+Output written on tutkielma.pdf (25 pages, 400291 bytes).
 PDF statistics:
- 450 PDF objects out of 1000 (max. 8388607)
+ 448 PDF objects out of 1000 (max. 8388607)
  85 named destinations out of 1000 (max. 500000)
  14995 words of extra memory for PDF output out of 17280 (max. 10000000)
 
