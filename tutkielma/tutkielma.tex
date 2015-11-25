@@ -298,11 +298,11 @@ Offuttin tutkimuksen mukaan kytkeytymisefektin paikkansapitävyydelle on näytt�
 
 Perinteisen mutaatiotestausprosessin syötteinä käytetään alkuperäistä ohjelmistoa ja ohjelmistoa testaavia testejä. Mutaatiotestausprosessin aikana olemassa olevien testien laatua kehitetään vaiheittain. Perinteisen mutaatiotestausprosessin työvaiheet on esitelty kuvassa \ref{figure:Mutaatiotestausprosessi}. Työvaiheet on merkitty kuvaan sinisillä laatikoilla. Työvaiheiden aikana käytettäviä resursseja, kuten esimerkiksi ohjelmiston lähdekoodia ja testituloksia, kuvataan vihreillä ja keltaisilla laatikoilla.
 
-Perinteisessä mutaatiotestausprosessissa ensimmäinen työvaihe on käsitellä ohjelmiston alkuperäistä lähdekoodia \textit{mutaatio-operaattoreilla}, jotka muuntavat koodia muodostaen siitä viallisia versioita~\cite[s. 869]{Ma:Harrold:Kwon:2006}. Näitä viallisia ohjelmakoodin versioita kutsutaan mutanteiksi. Mutaatio-operaattorit kuvaavat algoritmeja, joiden avulla lähdekoodia käsitellään koodin muuntamisen aikana.
+Perinteisessä mutaatiotestausprosessissa ensimmäinen työvaihe on käsitellä ohjelmiston alkuperäistä lähdekoodia \textit{mutaatio-operaattoreilla}, jotka muuntavat koodia muodostaen siitä viallisia versioita~\cite[s. 869]{Ma:Harrold:Kwon:2006}. Näitä viallisia ohjelmakoodin versioita kutsutaan mutanteiksi. Mutaatio-operaattorit kuvaavat algoritmeja, joiden avulla lähdekoodia käsitellään koodin muuntamisen aikana~\cite[s. 35]{Offutt:Untch:2001}.
 
 Mutanttien generoinnin jälkeen ohjelmiston alkuperäiset testit suoritetaan muuntamattomalle lähdekoodille~\cite[s. 652]{Jia:Harman:2011}. Tavoitteena on varmistaa, että testit voidaan suorittaa alkuperäiselle ohjelmalle ilman virheitä. Jos testit eivät mene läpi, eli ohjelmaa suoritettaessa havaitaan virheitä, ohjelmistossa olevat viat korjataan ennen kuin mutaatiotestausta jatketaan. 
 
-Seuraavaksi testit suoritetaan jokaisen elävän mutantin kohdalla~\cite[s. 35]{Offutt:Untch:2001}. Kun testit suoritetaan mutanttien kohdalla, tavoitteena on selvittää, havaitaanko testien avulla lähdekoodiin tehdyt muutokset. 
+Seuraavaksi testit suoritetaan jokaisen elävän mutantin kohdalla~\cite[s. 35-36]{Offutt:Untch:2001}. Kun testit suoritetaan mutanttien kohdalla, tavoitteena on selvittää, havaitaanko testien avulla lähdekoodiin tehdyt muutokset. 
 
 Testien suorituksen jälkeen alkuperäiselle lähdekoodille ja mutanteille suoritettujen testien tuloksia verrataan toisiinsa. Testituloksia vertailtaessa voidaan päästä kahteen lopputulokseen~\cite[s. 36]{DeMillo:Lipton:Sayward:1978}. Alkuperäiselle muuntamattomalle lähdekoodille suoritettujen testien tulos voi: 
 \begin{enumerate}
@@ -314,13 +314,13 @@ Tapauksessa 1. alkuperäiset testit eivät ole menneet läpi mutantin kohdalla. 
 
 Tapauksessa 2. alkuperäiset testit ovat menneet läpi mutantin kohdalla eli mutantti on jäänyt eloon. Mutantin jäämiselle eloon on kaksi vaihtoehtoista selitystä~\cite[s. 36]{DeMillo:Lipton:Sayward:1978}. Ensimmäinen selitys on, että alkuperäiset testit eivät ole riittävän hyvät, jotta niiden avulla voidaan havaita lähdekoodiin tehty muutos. Toinen selitys on, että mutantin toiminta ei eroa alkuperäisen ohjelman toiminnasta eli kyseessä on \textit{ekvivalentti mutantti}. Ekvivalentti mutantti on syntaktisesti erilainen kuin alkuperäinen ohjelma mutta toiminnaltaan se on samanlainen alkuperäisen ohjelman kanssa~\cite[s. 652]{Jia:Harman:2011}.
 
-Jos testituloksia verrattaessa huomataan, että mutantteja on jäänyt eloon, seuraava vaihe mutaatiotestausprosessissa on etsiä ja merkitä ekvivalentit mutantit~\cite[s. 36]{Offutt:Untch:2001}. Tämän jälkeen testien laatua voidaan kehittää joko muokkaamalla olemassa olevia testejä tai lisäämällä uusia testejä, jotta eloon jääneet mutantit saadaan tapettua.
+Jos testituloksia verrattaessa huomataan, että mutantteja on jäänyt eloon, seuraava vaihe mutaatiotestausprosessissa on etsiä ja merkitä ekvivalentit mutantit~\cite[s. 36]{Offutt:Untch:2001}. Tämän jälkeen testien laatua voidaan kehittää joko muokkaamalla olemassa olevia testejä tai lisäämällä uusia testejä, jotta \textbf{loput} eloon jääneet mutantit saadaan tapettua.
 
 Mutaatiotestausprosessi tuottaa lopputuloksena \textit{mutaatiopistemäärän} (\textit{mutation adequacy score}), jonka avulla voi arvioida ohjelmiston testien laadukkuutta ja kykyä havaita vikoja lähdekoodissa~\cite[s. 652]{Jia:Harman:2011}. Mutaatiopistemäärä \textit{MP} lasketaan kaavalla 
 \begin{equation}
 MP = \frac{T}{K - E}
 \end{equation}
-missä \textit{T} on tapettujen mutanttien määrä, \textit{K} on kaikkien mutanttien määrä ja \textit{E} on ekvivalenttien mutanttien määrä. Mutaatiopistemäärän maksimiarvo 1 saavutetaan, kun testeillä saadaan tapettua kaikki mutantit~\cite[s. 36]{Offutt:Untch:2001}. Perinteinen mutaatiotestausprosessi päättyy, kun kaikki ei-ekvivalentit mutantit on tapettu. Tämä on merkitty kuvaan \ref{figure:Mutaatiotestausprosessi} violetilla laatikolla.
+missä \textit{T} on tapettujen mutanttien määrä, \textit{K} on kaikkien mutanttien määrä ja \textit{E} on ekvivalenttien mutanttien määrä \textbf{LÄHDE MERKITTÄVÄ?}~\cite[s. 7]{Offutt:1992:Coupling}. Mutaatiopistemäärän maksimiarvo 1 saavutetaan, kun testeillä saadaan tapettua kaikki mutantit~\cite[s. 36]{Offutt:Untch:2001}. Perinteinen mutaatiotestausprosessi päättyy, kun kaikki ei-ekvivalentit mutantit on tapettu. Tämä on merkitty kuvaan \ref{figure:Mutaatiotestausprosessi} violetilla laatikolla. Tarvittaessa mutaatiopistemäärälle voidaan asettaa raja-arvo, jonka avulla määritellään alaraja vaaditulle mutaatiopistemäärälle~\cite[s. 36]{Offutt:Untch:2001}.
 
 \begin{figure}[H]
 	\centering
