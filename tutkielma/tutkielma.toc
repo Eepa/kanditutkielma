@@ -15,7 +15,7 @@
 \contentsline {subsection}{\numberline {4.2}Tehokkuusongelmat}{17}{subsection.4.2}
 \contentsline {subsection}{\numberline {4.3}Manuaalinen ty\IeC {\"o}}{18}{subsection.4.3}
 \contentsline {section}{\numberline {5}Yhteenveto}{19}{section.5}
-\contentsline {section}{L\IeC {\"a}hteet}{20}{section*.2}
+\contentsline {section}{L\IeC {\"a}hteet}{21}{section*.2}
 \select@language {finnish}
 \select@language {finnish}
 \select@language {finnish}
