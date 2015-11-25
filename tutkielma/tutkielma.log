@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.9.8)  24 NOV 2015 12:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.9.8)  25 NOV 2015 11:01
 entering extended mode
 **tutkielma.tex
 (tutkielma.tex
@@ -983,9 +983,9 @@ Package babel Info: Redefining finnish shorthand "|
 Package babel Info: Redefining finnish shorthand "|
 (babel)             in language  on input line 270.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 279.
+(babel)             in language  on input line 277.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 279.
+(babel)             in language  on input line 277.
  [6]
 LaTeX Font Info:    Try loading font information for OMS+lmr on input line 284.
 
@@ -1006,7 +1006,7 @@ Package babel Info: Redefining finnish shorthand "|
 (babel)             in language  on input line 309.
 Package babel Info: Redefining finnish shorthand "|
 (babel)             in language  on input line 309.
- [8] <mutaatiotestausprosessi3.png, id=218, 804.00375pt x 706.64pt>
+ [8] <mutaatiotestausprosessi3.png, id=221, 804.00375pt x 706.64pt>
 File: mutaatiotestausprosessi3.png Graphic file (type png)
 
 <use mutaatiotestausprosessi3.png>
@@ -1035,7 +1035,7 @@ Package babel Info: Redefining finnish shorthand "|
 Package babel Info: Redefining finnish shorthand "|
 (babel)             in language  on input line 347.
  [11]
-<uusiprosessi.png, id=245, 758.835pt x 664.4825pt>
+<uusiprosessi.png, id=248, 758.835pt x 664.4825pt>
 File: uusiprosessi.png Graphic file (type png)
  <use uusiprosessi.png>
 Package pdftex.def Info: uusiprosessi.png used on input line 350.
@@ -1154,11 +1154,11 @@ Package rerunfilecheck Info: File `tutkielma.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 542.
  ) 
 Here is how much of TeX's memory you used:
- 11847 strings out of 493673
- 172020 string characters out of 3143952
+ 11849 strings out of 493673
+ 172042 string characters out of 3143952
  324656 words of memory out of 3000000
  14734 multiletter control sequences out of 15000+200000
- 53673 words of font info for 122 fonts, out of 3000000 for 9000
+ 53803 words of font info for 123 fonts, out of 3000000 for 9000
  1026 hyphenation exceptions out of 8191
  31i,13n,40p,1231b,1919s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/M
@@ -1172,9 +1172,9 @@ c/lm/lmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:
 eX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
 public/lm/lmri10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.
 pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb>
-Output written on tutkielma.pdf (25 pages, 402357 bytes).
+Output written on tutkielma.pdf (25 pages, 402934 bytes).
 PDF statistics:
- 441 PDF objects out of 1000 (max. 8388607)
+ 444 PDF objects out of 1000 (max. 8388607)
  84 named destinations out of 1000 (max. 500000)
  14995 words of extra memory for PDF output out of 17280 (max. 10000000)
 
