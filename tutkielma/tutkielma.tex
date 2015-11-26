@@ -112,7 +112,7 @@
 \level{Tutkielma}
 \abstract{Olioperustaisen ohjelmoinnin kehityksen myötä testausmenetelmiä on sopeutettu uusiin vaatimuksiin, joita olio-ohjelmoinnin erityispiirteet ovat tuoneet mukanaan. Mutaatiotestaus on virheperustainen testausmenetelmä, jonka avulla ohjelmiston olemassa olevien testien laatua voidaan kehittää ja parantaa. Mutaatiotestaus esiteltiin ensimmäistä kertaa jo 1970-luvulla.
 
-Perinteisesti mutaatiotestausta on käytetty testien kehittämisessä proseduraalisella ohjelmoinnilla tuotetuille ohjelmille. Olioperustaisten ohjelmien mutaatiotestaukseen on kuitenkin kehitetty luokkamutaatioksi kutsuttu mutaatiotestausmenetelmä. Mutaatiotestaukseen liittyy ratkaisemattomia ongelmia, jotka estävät mutaatiotestauksen laajamittaisen käytön osana ohjelmistotestausta. 
+Perinteisesti mutaatiotestausta on käytetty testien kehittämisessä proseduraalisella ohjelmoinnilla tuotetuille ohjelmille. Olioperustaisten ohjelmien mutaatiotestaukseen on kehitetty luokkamutaatioksi kutsuttu mutaatiotestausmenetelmä. Mutaatiotestaukseen liittyy ratkaisemattomia ongelmia, jotka estävät mutaatiotestauksen laajamittaisen käytön osana ohjelmistotestausta. 
 \vspace{1\baselineskip}\vspace{-\parskip}\\ACM Computing Classification System (CCS):
 \\D.2.4 [Software/Program Verification]
 \\D.2.5 [Testing and Debugging]
@@ -177,7 +177,7 @@ Perinteisiä ohjelmistojen testausmenetelmiä on olioperustaisen ohjelmoinnin ke
 
 Ohjelmistokehitysprosessissa testausta voidaan käyttää ohjelmistossa olevien vikojen havaitsemiseen jo kehitysvaiheen aikana. Testauksen avulla voidaan myös parantaa ohjelmiston laatua ja varmistaa, että ohjelma toimii sille asetettujen vaatimusten mukaisesti. 
 
-Testaukseen liittyy kuitenkin myös rajoituksia. Testauksen avulla ei esimerkiksi voi aina todistaa ohjelmiston oikeellisuutta~\cite[s. 58]{Binder:1999}. Lisäksi epävarmuutta liittyy käytettävän testausjärjestelmän oikeellisuuden ja luotettavuuden varmistamiseen.
+Testaukseen liittyy kuitenkin myös rajoituksia. Testauksen avulla ei esimerkiksi voi aina todistaa ohjelmiston oikeellisuutta~\cite[s. 58]{Binder:1999}. Epävarmuutta liittyy \textbf{lisäksi/myös} käytettävän testausjärjestelmän oikeellisuuden ja luotettavuuden varmistamiseen.
 
 Yksi vaihtoehto ohjelmiston testien laadun selvittämiseen ja parantamiseen on käyttää mutaatiotestausta osana ohjelmiston testausprosessia. Mutaatiotestauksessa tavoitteena on tutkia, ovatko ohjelmistoa varten tehdyt testit laadukkaita ja havaitaanko niillä \textbf{kattavasti/tehokkaasti} ohjelmistossa mahdollisesti esiintyviä vikoja~\cite[s. 649]{Jia:Harman:2011}. 
 
@@ -257,7 +257,7 @@ Yksi testaukseen liittyvistä rajoituksista on, että testauksen avulla ei voi a
 
 Testien \textit{odotetut tulokset} (\textit{expected results}) ovat tarpeellisia testien suunnittelussa, sillä ilman odotettuja tuloksia kattava automatisoitu testaaminen ei ole mahdollista~\cite[s. 917]{Binder:1999}. \textit{Testioraakkeliksi} (\textit{test oracle}) kutsutaan lähdettä, joka määrittelee testien odotetut tulokset~\cite[s. 917]{Binder:1999}. Testioraakkeli voi olla esimerkiksi ohjelman vaatimusmäärittely, lista esimerkkikäyttötapauksia tai ohjelmoijan tieto siitä, kuinka ohjelman tulisi toimia~\cite[s. 918]{Binder:1999}. 
 
-Jos testien suorituksesta saatujen \textit{toteutuneiden tulosten} (\textit{actual results}) vertailukohdaksi ei ole olemassa luotettavia odotettuja tuloksia, toteutuneiden ja odotettujen tulosten vertailu on epävarmaa~\cite[s. 58]{Binder:1999}. Tällöin tulosten vertailun avulla ei voi luotettavasti päätellä, menivätkö testit läpi vai eivät. Luotettavien odotettujen tulosten määrittäminen on kuitenkin vaikeaa, sillä täydellisen testioraakkelin kehittäminen on haastavaa ja joissain tapauksissa mahdotonta~\cite[s. 58, 918]{Binder:1999}.
+Jos testien suorituksesta saatujen \textit{toteutuneiden tulosten} (\textit{actual results}) vertailukohdaksi ei ole olemassa luotettavia odotettuja tuloksia, toteutuneiden ja odotettujen tulosten vertailu on epävarmaa~\cite[s. 58]{Binder:1999}. Tällöin tulosten vertailun avulla ei voi luotettavasti päätellä, menivätkö testit läpi vai eivät. Luotettavien odotettujen tulosten määrittäminen on vaikeaa, sillä täydellisen testioraakkelin kehittäminen on haastavaa ja joissain tapauksissa mahdotonta~\cite[s. 58, 918]{Binder:1999}.
 
 Jotta testauksessa voidaan selvittää, toimiiko testattava ohjelma halutulla tavalla, testauksen tulosten vertailukohtana on käytettävä testattavan järjestelmän toiminnallisuudelle asetettuja vaatimuksia~\cite[s. 58]{Binder:1999}. Jos testejä kehitettäessä toteutuneiden tulosten vertailukohtana käytetään virheellisiä tai puutteellisia vaatimuksia, saattavat kehitetyt testit olla harhaanjohtavia. Toiminnallisuusvaatimusten laadun arvioimiseen liittyy kuitenkin haasteita. Testauksen avulla ei voi suoraan varmistaa toiminnallisuusvaatimusten oikeellisuutta~\cite[s. 58]{Binder:1999}.
 
@@ -339,9 +339,7 @@ Jotta perinteistä mutaatiotestausprosessia voidaan tehostaa, manuaaliset työva
 
 Uudessa mutaatiotestausprosessissa työvaiheiden suoritusjärjestys muuttuu~\cite[s. 40]{Offutt:Untch:2001}. Kuvassa \ref{figure:UusiMutaatiotestausprosessi} on esitelty uusi mutaatiotestausprosessi. Automatisoidut työvaiheet on merkitty kuvaan oransseilla laatikoilla ja manuaaliset työvaiheet sinisillä laatikoilla. Prosessissa käytettäviä syötteitä kuvataan vihreillä ja keltaisilla laatikoilla. 
 
-Uudessa prosessissa pääsilmukan työvaiheita ovat testien generointi ja testien suoritus ja kehittäminen. Testejä kehitetään poistamalla tehottomat testit eli testit, jotka eivät tapa yhtään mutanttia. Lisäksi pääsilmukassa tarkastetaan, onko mutaatiopistemäärän raja-arvo saavutettu. 
-
-Manuaalinen testitulosten tarkastusvaihe siirretään uudessa mutaatiotestausprosessissa pois mutaatiotestauksen pääsilmukasta suoritettavaksi pääsilmukasta poistuttaessa. Lisäksi ekvivalenttien mutanttien tunnistaminen suoritetaan ennen pääsilmukkaan siirtymistä. 
+Uudessa prosessissa pääsilmukan työvaiheita ovat testien generointi ja testien suoritus ja kehittäminen. Testejä kehitetään poistamalla tehottomat testit eli testit, jotka eivät tapa yhtään mutanttia. Lisäksi pääsilmukassa tarkastetaan, onko mutaatiopistemäärän raja-arvo saavutettu. Manuaalinen testitulosten tarkastusvaihe siirretään uudessa mutaatiotestausprosessissa pois mutaatiotestauksen pääsilmukasta suoritettavaksi pääsilmukasta poistuttaessa. Ekvivalenttien mutanttien tunnistaminen suoritetaan ennen pääsilmukkaan siirtymistä. 
 
 Perinteinen mutaatiotestausprosessi päättyy, kun mutaatiopistemäärä saavuttaa arvon 1. Uudessa mutaatiotestausprosessissa riittävä mutaatiopistemäärä määritellään pistemäärälle asetettavan raja-arvon avulla. Uudessa mutaatiotestausprosessissa prosessin suoritus päättyy, kun mutaatiopistemäärälle asetettu raja-arvo saavutetaan. 
 
@@ -365,7 +363,7 @@ Jotta uutta mutaatiotestausprosessia voitaisiin hyödyntää käytännössä, ol
 
 Mutaatio-operaattorit ovat tärkeässä asemassa mutaatiotestauksessa, sillä mutaatiotestauksen tehokkuus riippuu siitä, minkälaisia vikoja mutaatio-operaattoreilla luodaan lähdekoodiin~\cite[s. 352]{Ma:Kwon:Offutt:2002}. Perinteisesti mutaatiotestausta on hyödynnetty proseduraalisessa ohjelmoinnissa, minkä vuoksi myös mutaatio-operaattorit on kehitetty tukemaan suurinta osaa proseduraalisten ohjelmointikielten piirteistä~\cite[s. 352]{Ma:Kwon:Offutt:2002}. 
 
-Olioperustaisiin ohjelmointikieliin sisältyy kuitenkin uusia ominaisuuksia, joiden käytöstä aiheutuu erilaisia vikoja verrattuna proseduraalisessa ohjelmoinnissa esiintyviin vikoihin. Uusien vikojen ilmeneminen olio-ohjelmissa on johtanut uusien olioperustaisten mutaatio-operaattorien kehittämiseen.  
+Olioperustaisiin ohjelmointikieliin sisältyy uusia ominaisuuksia, joiden käytöstä aiheutuu erilaisia vikoja verrattuna proseduraalisessa ohjelmoinnissa esiintyviin vikoihin. Uusien vikojen ilmeneminen olio-ohjelmissa on johtanut uusien olioperustaisten mutaatio-operaattorien kehittämiseen.  
 
 Olioperustaisten ohjelmien mutaatiotestaukseen käytettävää menetelmää kutsutaan \textit{luokkamutaatioksi}~\cite{Kim:Clark:McDermid:2000}. Luokkamutaatiomenetelmän kehittivät Sunwoo Kim, John Clark ja John McDermid Java-oh\-jel\-moin\-ti\-kie\-len käytöstä aiheutuvien vikojen pohjalta~\cite{Kim:Clark:McDermid:2000}. Heidän kehittämiensä \textit{luokkamutaatio-operaattorien} avulla mutaatiotestausmenetelmää voidaan soveltaa Java-ohjelmointikielellä toteutettuihin olioperustaisiin ohjelmiin.
 
@@ -469,11 +467,11 @@ public class Elainkauppa extends Kauppa {
 
 Yksi vaihtoehto ekvivalenttien mutanttien tunnistamisongelman ratkaisemiseksi on estää ekvivalenttien mutanttien syntyminen mutanttien generointivaiheessa~\cite[s. 80]{Offutt:Ma:Kwon:2006:MuClassLevel}. Lisäksi useita menetelmiä on kehitetty ekvivalenttien mutanttien tunnistamiseksi mutanttien generoinnin jälkeen~\cite[s. 79-80]{Offutt:Ma:Kwon:2006:MuClassLevel}.
 
-Heuristiikkojen avulla voidaan tunnistaa vain osa ekvivalenteista mutanteista. Jos kaikki ekvivalentit mutantit halutaan tunnistaa, tunnistaminen on suoritettava manuaalisesti tutkimalla mutanttia ja vertaamalla mutantin toimintaa alkuperäisen ohjelmiston toimintaan. Ekvivalenttien mutanttien tunnistaminen manuaalisesti lisää kuitenkin mutaatiotestaukseen vaadittavaa työmäärää.
+Heuristiikkojen avulla voidaan tunnistaa vain osa ekvivalenteista mutanteista. Jos kaikki ekvivalentit mutantit halutaan tunnistaa, tunnistaminen on suoritettava manuaalisesti tutkimalla mutanttia ja vertaamalla mutantin toimintaa alkuperäisen ohjelmiston toimintaan. Ekvivalenttien mutanttien tunnistaminen manuaalisesti \textbf{kasvattaa/lisää} mutaatiotestaukseen vaadittavaa työmäärää.
 
 \subsection{Tehokkuusongelmat}
 
-Tehokkuuteen liittyvät ongelmat ovat toinen mutaatiotestauksen ongelma-alueista. Tehokkuusongelmia esiintyy erityisesti silloin, kun jokaisen mutantin kohdalla suoritetaan kaikki ohjelmistoa varten tehdyt testit~\cite[s. 652]{Jia:Harman:2011}. Testien suoritus jokaisen mutantin kohdalla hidastaa mutaatiotestausprosessia ja vaatii paljon laskentatehoa. Tehokkuusongelman ratkaisemiseksi on kuitenkin esitetty useita ratkaisuehdotuksia~\cite[s. 653-656]{Jia:Harman:2011}. Ratkaisuehdotuksia ovat esimerkiksi generoitujen mutanttien määrän vähentäminen ja mutanttien ja testien suorituskustannusten pienentäminen.
+Tehokkuuteen liittyvät ongelmat ovat toinen mutaatiotestauksen ongelma-alueista. Tehokkuusongelmia esiintyy erityisesti silloin, kun jokaisen mutantin kohdalla suoritetaan kaikki ohjelmistoa varten tehdyt testit~\cite[s. 652]{Jia:Harman:2011}. Testien suoritus jokaisen mutantin kohdalla hidastaa mutaatiotestausprosessia ja vaatii paljon laskentatehoa. Tehokkuusongelman ratkaisemiseksi on esitetty useita ratkaisuehdotuksia~\cite[s. 653-656]{Jia:Harman:2011}. Ratkaisuehdotuksia ovat esimerkiksi generoitujen mutanttien määrän vähentäminen ja mutanttien ja testien suorituskustannusten pienentäminen.
 
 Ratkaisuehdotukset mutaatiotestauksen laskentakustannusten vähentämiseksi on jaettu kolmeen osa-alueeseen~\cite[s. 37]{Offutt:Untch:2001}. Osa-alueisiin sisältyy menetelmiä, joiden avulla mutaatiotestauksen laskentakustannuksia pienennetään. Mutaatiotestauksessa laskentaa voidaan tehostaa tekemällä mutaatiotestausta \textit{viisaammin} (\textit{do smarter}), \textit{nopeammin} (\textit{do faster}) ja \textit{pienemmällä mutanttimäärällä} (\textit{do fewer}) kuin aiemmin~\cite[s. 37]{Offutt:Untch:2001}.
 
