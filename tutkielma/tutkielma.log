@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.9.8)  2 DEC 2015 13:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.9.8)  2 DEC 2015 13:29
 entering extended mode
 **tutkielma.tex
 (tutkielma.tex
@@ -1084,17 +1084,17 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 449.
+(babel)             in language  on input line 445.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 449.
+(babel)             in language  on input line 445.
  [15]
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 474.
+(babel)             in language  on input line 473.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 477.
-Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 477.
+(babel)             in language  on input line 473.
  [16]
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 474.
 Package babel Info: Redefining finnish shorthand "|
 (babel)             in language  on input line 483.
 Package babel Info: Redefining finnish shorthand "|
@@ -1104,9 +1104,9 @@ Package babel Info: Redefining finnish shorthand "|
 Package babel Info: Redefining finnish shorthand "|
 (babel)             in language  on input line 486.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 493.
+(babel)             in language  on input line 492.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 493.
+(babel)             in language  on input line 492.
  [18]
 Package babel Info: Redefining finnish shorthand "|
 (babel)             in language  on input line 505.
@@ -1156,11 +1156,11 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 552.
 Here is how much of TeX's memory you used:
  11834 strings out of 493673
  171830 string characters out of 3143952
- 325656 words of memory out of 3000000
+ 326656 words of memory out of 3000000
  14733 multiletter control sequences out of 15000+200000
  52893 words of font info for 116 fonts, out of 3000000 for 9000
  1026 hyphenation exceptions out of 8191
- 31i,13n,40p,1253b,2008s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 31i,13n,40p,1253b,1264s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/M
 iKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/d
 vips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy
@@ -1172,7 +1172,7 @@ c/lm/lmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:
 eX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
 1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt1
 0.pfb>
-Output written on tutkielma.pdf (25 pages, 400656 bytes).
+Output written on tutkielma.pdf (25 pages, 400858 bytes).
 PDF statistics:
  447 PDF objects out of 1000 (max. 8388607)
  84 named destinations out of 1000 (max. 500000)
