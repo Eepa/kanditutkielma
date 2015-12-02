@@ -1,10 +1,10 @@
 \select@language {finnish}
 \contentsline {section}{\numberline {1}Johdanto}{1}{section.1}
 \contentsline {section}{\numberline {2}Testaus olioj\IeC {\"a}rjestelmiss\IeC {\"a}}{2}{section.2}
-\contentsline {subsection}{\numberline {2.1}Rooli}{2}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.1}Testauksen rooli}{2}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Tasot}{3}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}Suunnittelu}{4}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}Rajoitukset}{5}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.3}Suunnittelu}{3}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Rajoitukset}{4}{subsection.2.4}
 \contentsline {section}{\numberline {3}Mutaatiotestaus}{6}{section.3}
 \contentsline {subsection}{\numberline {3.1}Historia ja teoreettinen perusta}{6}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}Perinteinen mutaatiotestausprosessi}{8}{subsection.3.2}
