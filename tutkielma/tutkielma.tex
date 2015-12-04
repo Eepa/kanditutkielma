@@ -262,7 +262,7 @@ Jos testien suorituksesta saatujen \textit{toteutuneiden tulosten} (\textit{actu
 Jotta testauksessa voidaan selvittää, toimiiko testattava ohjelma halutulla tavalla, testauksen tulosten vertailukohtana on käytettävä testattavan järjestelmän toiminnallisuudelle asetettuja vaatimuksia~\cite[s. 58]{Binder:1999}. Jos testejä kehitettäessä testauksen tulosten vertailukohtana käytetään virheellisiä tai puutteellisia vaatimuksia, saattavat kehitetyt testit olla harhaanjohtavia. Toiminnallisuudelle asetettujen vaatimusten laadun arvioimiseen liittyy kuitenkin haasteita, sillä testauksen avulla ei voi suoraan varmistaa vaatimusten oikeellisuutta~\cite[s. 58]{Binder:1999}.
 
 %Testauksen avulla ei myöskään voi paljastaa lähdekoodista puuttuvia osia, sillä olematonta koodia ei voi testata~\cite[s. 58]{Binder:1999}.
-
+\newpage
 \section{Mutaatiotestaus}
 
 Testaukseen sisältyvien rajoitusten lisäksi testaukseen liittyy myös epävarmuutta käytettävän testausjärjestelmän oikeellisuudesta ja oikeellisuuden varmistamisesta~\cite[s. 209]{Manna:Waldinger:1978}. Tämä herättää kysymyksen siitä, kuka voi ''valvoa valvojia'' eli kuinka varmistetaan ohjelmiston testien laadukkuus. Yksi menetelmä testien laadun selvittämiseen on \textit{mutaatiotestaus}. Mutaatiotestauksen avulla voidaan mitata, kuinka tehokkaasti ohjelmiston testeillä havaitaan ohjelmistossa esiintyviä vikoja~\cite[s. 649]{Jia:Harman:2011}.
@@ -298,6 +298,13 @@ Offuttin tutkimuksen mukaan kytkeytymisefektin paikkansapitävyydelle on näytt�
 
 Perinteisen mutaatiotestausprosessin syötteinä käytetään alkuperäistä ohjelmistoa ja ohjelmistoa testaavia testejä. Mutaatiotestausprosessin aikana olemassa olevien testien laatua kehitetään vaiheittain. Perinteisen mutaatiotestausprosessin työvaiheet on esitelty kuvassa \ref{figure:Mutaatiotestausprosessi}. Työvaiheet on merkitty kuvaan sinisillä laatikoilla. Työvaiheiden aikana käytettäviä resursseja, kuten ohjelmiston lähdekoodia ja testituloksia, kuvataan vihreillä ja keltaisilla laatikoilla.
 
+\begin{figure}[H]
+	\centering
+		\includegraphics[width=\textwidth]{mutaatiotestausprosessi3}
+	\caption{Perinteinen mutaatiotestausprosessi.}
+	\label{figure:Mutaatiotestausprosessi}
+\end{figure}
+
 Perinteisessä mutaatiotestausprosessissa ensimmäinen työvaihe on käsitellä ohjelmiston alkuperäistä lähdekoodia \textit{mutaatio-operaattoreilla}, jotka muuntavat koodia muodostaen siitä viallisia versioita~\cite[s. 869]{Ma:Harrold:Kwon:2006}. Näitä viallisia ohjelmakoodin versioita kutsutaan mutanteiksi. Mutaatio-operaattorit kuvaavat algoritmeja, joiden avulla lähdekoodia käsitellään koodin muuntamisen aikana~\cite[s. 35]{Offutt:Untch:2001}.
 
 Mutanttien generoinnin jälkeen ohjelmiston alkuperäiset testit suoritetaan muuntamattomalle lähdekoodille~\cite[s. 652]{Jia:Harman:2011}. Tavoitteena on varmistaa, että testit voidaan suorittaa alkuperäiselle ohjelmalle ilman virheitä. Jos testit eivät mene läpi eli ohjelmaa suoritettaessa havaitaan virheitä, ohjelmistossa olevat viat korjataan, ennen kuin mutaatiotestausta jatketaan. 
@@ -324,13 +331,6 @@ missä \textit{T} on tapettujen mutanttien määrä, \textit{K} on kaikkien muta
 
 Perinteinen mutaatiotestausprosessi päättyy, kun kaikki ei-ekvivalentit mutantit on tapettu. Tämä on merkitty kuvaan \ref{figure:Mutaatiotestausprosessi} violetilla laatikolla. Jos mutaatiopistemäärälle on asetettu raja-arvo, mutaatiotestausprosessi päättyy, kun raja-arvo saavutetaan.
 
-\begin{figure}[H]
-	\centering
-		\includegraphics[width=\textwidth]{mutaatiotestausprosessi3}
-	\caption{Perinteinen mutaatiotestausprosessi.}
-	\label{figure:Mutaatiotestausprosessi}
-\end{figure}
-
 \subsection{Uusi mutaatiotestausprosessi}
 
 Perinteiseen mutaatiotestausprosessiin sisältyy useita manuaalista työtä vaativia työvaiheita. Kuvassa \ref{figure:Mutaatiotestausprosessi} esitellyssä perinteisessä mutaatiotestausprosessissa manuaalista työtä vaativat työvaiheet ovat alkuperäisten testitulosten tarkastaminen, lähdekoodin vikojen korjaaminen, ekvivalenttien mutanttien merkitseminen ja uusien testien lisääminen tai olemassa olevien testien kehittäminen. 
@@ -349,14 +349,14 @@ Perinteistä mutaatiotestausprosessia voidaan automatisoinnin lisäksi nopeuttaa
 
 Jotta uutta mutaatiotestausprosessia voitaisiin hyödyntää käytännössä, olisi kehitettävä mutaatiotestausjärjestelmä, joka toteuttaa uuden prosessin automaattiset ja tehostetut työvaiheet~\cite[s. 41-42]{Offutt:Untch:2001}.
 
-\begin{figure}[H]
+\vspace{1\baselineskip}\vspace{-\parskip}\vspace{1\baselineskip}\vspace{-\parskip}\vspace{1\baselineskip}\vspace{-\parskip}\begin{figure}[H]
 	\centering
 		\includegraphics[width=\textwidth]{uusiprosessi}
 	\caption{Uusi mutaatiotestausprosessi~\cite[s. 41]{Offutt:Untch:2001}.}
 	\label{figure:UusiMutaatiotestausprosessi}
 \end{figure}
 
-
+\newpage
 \subsection{Mutaatio-operaattorit oliojärjestelmissä}
 
 %Kappaleen estittelyteksti tähän. \textbf{Kuinka pitkä tämän on oltava?} 
@@ -501,7 +501,7 @@ Uusien, mutantteja tappavien testien kehittäminen on myös yksi perinteisen mut
 
 %\subsection{Miltä tulevaisuus näyttää, tuleeko käyttö lisääntymään vai jääkö mutaatiotestaus unohduksiin/pienen piirin harrastukseksi?}
 
-
+\newpage
 \section{Yhteenveto}
 
 Olioperustaisen ohjelmoinnin mukana tulevien uusien haasteiden kohtaaminen vaatii muutoksia ohjelmistojen testausmenetelmiin. Sekä perinteisiä olemassa olevia että uusia testausmenetelmiä kehitetään, jotta olio-ohjelmia voidaan testata kattavasti ja laadukkaasti. 
