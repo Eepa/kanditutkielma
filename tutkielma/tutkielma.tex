@@ -110,9 +110,11 @@
 \author{Eveliina Pakarinen}
 \date{\today}
 \level{Tutkielma}
-\abstract{Olioperustaisen ohjelmoinnin kehityksen myötä testausmenetelmiä on sopeutettu uusiin vaatimuksiin, joita olio-ohjelmoinnin erityispiirteet ovat tuoneet mukanaan. Mutaatiotestaus on vikaperustainen testausmenetelmä, jota voidaan käyttää ohjelmiston olemassa olevien testien laadun selvittämiseen ja kehittämiseen. Mutaatiotestaus esiteltiin ensimmäistä kertaa jo 1970-luvulla.
+\abstract{Olioperustaisen ohjelmoinnin kehityksen myötä testausmenetelmiä on sopeutettu uusiin vaatimuksiin, joita olio-ohjelmoinnin erityispiirteet ovat tuoneet mukanaan. Mutaatiotestaus on vikaperustainen testausmenetelmä, jota voidaan käyttää ohjelmiston olemassa olevien testien laadun selvittämiseen ja kehittämiseen. 
 
-Perinteisesti mutaatiotestausta on käytetty testien laadun selvittämiseen proseduraalisessa ohjelmoinnissa. Olioperustaisten ohjelmien mutaatiotestaukseen on kehitetty luokkamutaatioksi kutsuttu mutaatiotestausmenetelmä. Mutaatiotestaukseen liittyy haasteita ja ongelmia, jotka estävät mutaatiotestauksen laajamittaisen käytön osana ohjelmistotestausta. Mutaatiotestauksen haasteiden ja ongelmien ratkaisemiseksi on kehitetty menetelmiä, joiden avulla mutaatiotestausprosessi voi olla mahdollista automatisoida.
+Mutaatiotestaus esiteltiin ensimmäistä kertaa jo 1970-luvulla. Perinteisesti mutaatiotestausta on käytetty proseduraalisessa ohjelmoinnissa testien laadun selvittämiseen. Olioperustaisten ohjelmien mutaatiotestaukseen on kehitetty luokkamutaatioksi kutsuttu mutaatiotestausmenetelmä. 
+
+Mutaatiotestaukseen liittyy haasteita ja ongelmia, jotka estävät mutaatiotestauksen laajamittaisen käytön osana ohjelmistotestausta. Mutaatiotestauksen haasteiden ja ongelmien ratkaisemiseksi on kehitetty menetelmiä, joiden avulla mutaatiotestausprosessia voidaan tehostaa ja joiden avulla prosessin työvaiheita voidaan automatisoida.
 \vspace{1\baselineskip}\vspace{-\parskip}\\ACM Computing Classification System (CCS):
 \\D.2.4 [Software/Program Verification]
 \\D.2.5 [Testing and Debugging]
@@ -183,11 +185,11 @@ Yksi vaihtoehto ohjelmiston testien laadun selvittämiseen ja kehittämiseen on 
 
 Mutaatiotestauksen periaatteena on simuloida ohjelmoijien tekemiä yleisiä ohjelmointivirheitä muokkaamalla ohjelmiston alkuperäistä lähdekoodia~\cite[s. 649]{Jia:Harman:2011}. Mutaatiotestauksessa lähdekoodista muodostetaan muunnettuja versioita eli mutantteja. 
 
-Perinteisesti mutaatiotestausta on käytetty testien laadun selvittämiseen proseduraalisella ohjelmoinnilla tuotetuille ohjelmille. Olioperustaisen ohjelmoinnin kehittyessä mutaatiotestausta on sopeutettu uusiin vaatimuksiin kehittämällä luokkamutaatioksi kutsuttu mutaatiotestausmenetelmä~\cite{Kim:Clark:McDermid:2000}. Luokkamutaation avulla mutaatiotestausta voidaan soveltaa olioperustaisia ohjelmia testaavien testien laadun varmistamiseen.
+Perinteisesti mutaatiotestausta on käytetty proseduraalisella ohjelmoinnilla tuotettujen ohjelmien testien laadun selvittämiseen. Olioperustaisen ohjelmoinnin kehittyessä mutaatiotestausta on sopeutettu uusiin vaatimuksiin kehittämällä luokkamutaatioksi kutsuttu mutaatiotestausmenetelmä~\cite{Kim:Clark:McDermid:2000}. Luokkamutaation avulla mutaatiotestausta voidaan soveltaa olioperustaisia ohjelmia testaavien testien laadun varmistamiseen.
 
 Vaikka mutaatiotestausta voidaan käyttää apuna ohjelmiston olemassa olevien testien kehittämisessä, liittyy mutaatiotestausmenetelmän käyttöön myös haasteita ja ongelmia, jotka estävät mutaatiotestauksen laaja-alaisen käytön~\cite[s. 652]{Jia:Harman:2011}. Mutaatiotestauksen suoritus vaatii paljon laskentatehoa, mikä on yksi ongelmista. Lisäksi perinteiseen mutaatiotestausprosessiin sisältyy paljon manuaalista työtä, mikä tekee prosessin suorituksesta työlästä. 
 
-Mutaatiotestausta on tutkittu paljon~\cite[s. 649]{Jia:Harman:2011}. Tutkimuksen avulla on etsitty keinoja ratkaista mutaatiotestaukseen liittyviä ongelmia, jotta mutaatiotestaus voidaan muuttaa käytännölliseksi testausmenetelmäksi~\cite[s. 649, 652-653]{Jia:Harman:2011}. Ongelmien ratkaisujen avulla perinteisen mutaatiotestausprosessin työvaiheita voidaan tehostaa ja osa manuaalisista työvaiheista voi olla mahdollista automatisoida~\cite[s. 41]{Offutt:Untch:2001}. Tällöin perinteisen mutaatiotestausprosessin tilalle muodostuu uusi tehostettu mutaatiotestausprosessi.
+Mutaatiotestausta on tutkittu paljon~\cite[s. 649]{Jia:Harman:2011}. Tutkimuksen avulla on etsitty keinoja ratkaista mutaatiotestaukseen liittyviä ongelmia, jotta mutaatiotestaus voidaan muuttaa käytännölliseksi testausmenetelmäksi~\cite[s. 649, 652-653]{Jia:Harman:2011}. Ongelmien ratkaisujen avulla perinteisen mutaatiotestausprosessin työvaiheita voidaan tehostaa ja osa manuaalisista työvaiheista on mahdollista automatisoida~\cite[s. 40-41]{Offutt:Untch:2001}. Sovellettaessa ongelmien ratkaisumenetelmiä perinteiseen mutaatiotestausprosessiin perinteisen prosessin tilalle muodostuu uusi tehostettu mutaatiotestausprosessi.
 
 %\textcolor{cyan}{Tutkimuskysymys: On tutkittu, että mutaatiotestauksesta on hyötyä testien laadun parantamisessa ja testikattavuuden tarkastelussa/kasvattamisessa. Miksi mutaatiotestausta ei kuitenkaan käytetä laajasti näiden asioiden tekemiseen?}
 %
@@ -279,7 +281,7 @@ DeMillon, Liptonin ja Saywardin artikkelissa pätevän ohjelmoijan hypoteesi ilm
 
 Kytkeytymisefektillä kuvataan, kuinka monimutkaiset viat kytkeytyvät yksinkertaisiin vikoihin~\cite[s. 35]{DeMillo:Lipton:Sayward:1978}. Kytkeytymisefektin mukaan testit, joilla pystytään havaitsemaan kaikki ohjelmassa olevat yksinkertaiset viat, ovat niin herkät, että niillä voidaan havaita myös monimutkaisia vikoja. 
 
-Jefferson Offutt määritteli artikkelissaan yksinkertaiset viat ja monimutkaiset viat seuraavasti~\cite[s. 6]{Offutt:1992:Coupling}:
+Jefferson Offutt määritteli artikkelissaan yksinkertaiset ja monimutkaiset viat seuraavasti~\cite[s. 6]{Offutt:1992:Coupling}:
 \begin{itemize}
   \item Lähdekoodissa olevan \textit{yksinkertaisen vian} voi korjata tekemällä yksittäisen muutoksen lähdekoodin lauseeseen.
   \item \textit{Monimutkaista vikaa} ei voi korjata tekemällä yksittäistä muutosta lähdekoodin lauseeseen.
@@ -341,15 +343,15 @@ Jotta perinteistä mutaatiotestausprosessia voidaan tehostaa, manuaaliset työva
 
 Uudessa mutaatiotestausprosessissa työvaiheiden suoritusjärjestys muuttuu~\cite[s. 40]{Offutt:Untch:2001}. Kuvassa \ref{figure:UusiMutaatiotestausprosessi} on esitelty uusi mutaatiotestausprosessi. Automatisoidut työvaiheet on merkitty kuvaan oransseilla laatikoilla ja manuaaliset työvaiheet sinisillä laatikoilla. Prosessissa käytettäviä syötteitä kuvataan vihreillä ja keltaisilla laatikoilla. 
 
-Uudessa prosessissa pääsilmukan työvaiheita ovat testien generointi, suoritus ja kehittäminen. Testejä kehitetään poistamalla tehottomat testit eli testit, jotka eivät tapa yhtään mutanttia. Lisäksi pääsilmukassa tarkastetaan, onko mutaatiopistemäärän raja-arvo saavutettu. Manuaalinen testitulosten tarkastusvaihe siirretään uudessa mutaatiotestausprosessissa pois mutaatiotestauksen pääsilmukasta suoritettavaksi pääsilmukasta poistuttaessa. Ekvivalenttien mutanttien tunnistaminen suoritetaan ennen pääsilmukkaan siirtymistä. 
+Uudessa prosessissa pääsilmukan työvaiheita ovat testien generointi, suoritus ja kehittäminen. Testejä kehitetään poistamalla tehottomat testit eli testit, jotka eivät tapa yhtään mutanttia~\cite[s. 40]{Offutt:Untch:2001}. Lisäksi pääsilmukassa tarkastetaan, onko mutaatiopistemäärän raja-arvo saavutettu. Manuaalinen testitulosten tarkastusvaihe siirretään uudessa mutaatiotestausprosessissa pois mutaatiotestauksen pääsilmukasta suoritettavaksi pääsilmukasta poistuttaessa. Ekvivalenttien mutanttien tunnistaminen suoritetaan ennen pääsilmukkaan siirtymistä. 
 
-Perinteisesti perinteinen mutaatiotestausprosessi päättyy, kun mutaatiopistemäärä saavuttaa arvon 1. Uudessa mutaatiotestausprosessissa riittävä mutaatiopistemäärä määritellään pistemäärälle asetettavan raja-arvon avulla. Uusi mutaatiotestausprosessi päättyy, kun asetettu raja-arvo on saavutettu ja alkuperäiselle lähdekoodille suoritettujen testien tulokset on tarkastettu.
+Perinteisesti perinteinen mutaatiotestausprosessi päättyy, kun mutaatiopistemäärä saavuttaa arvon 1. Uudessa mutaatiotestausprosessissa riittävä mutaatiopistemäärä määritellään pistemäärälle asetettavan raja-arvon avulla~\cite[s. 40]{Offutt:Untch:2001}. Uusi mutaatiotestausprosessi päättyy, kun asetettu raja-arvo on saavutettu ja alkuperäiselle lähdekoodille suoritettujen testien tulokset on tarkastettu.
 
 Perinteistä mutaatiotestausprosessia voidaan automatisoinnin lisäksi nopeuttaa mutaatiotestauksen laskentakustannusten pienentämiseen käytettävillä menetelmillä~\cite[s. 41]{Offutt:Untch:2001}. Mutaatiotestauksen suorituksen nopeuttaminen ja työvaiheiden automatisointi tekevät uudesta mutaatiotestausprosessista tehokkaamman verrattuna perinteiseen mutaatiotestausprosessiin. 
 
 Jotta uutta mutaatiotestausprosessia voitaisiin hyödyntää käytännössä, olisi kehitettävä mutaatiotestausjärjestelmä, jossa toteutetaan uuden prosessin automatisoidut ja tehostetut työvaiheet~\cite[s. 41-42]{Offutt:Untch:2001}.
 
-\begin{figure}[H]
+\begin{figure}[h]
 	\centering
 		\includegraphics[width=\textwidth]{uusiprosessi}
 	\caption{Uusi mutaatiotestausprosessi~\cite[s. 41]{Offutt:Untch:2001}.}
@@ -372,7 +374,7 @@ Kimin, Clarkin ja McDermidin kehittämät luokkamutaatio-operaattorit ovat toimi
 
 Taulukossa \ref{table:Mutaatio-operaattorit-taulukko} on listattu Man, Kwonin ja Offuttin kehittämät luok\-ka\-mu\-taa\-ti\-o-o\-pe\-raat\-to\-rit. Operaattorit on jaettu kuuteen ryhmään. Ryhmät perustuvat niihin olio-ohjelmointikielen piirteisiin, joihin ryhmän operaattorit vaikuttavat~\cite[s. 355]{Ma:Kwon:Offutt:2002}.
 
-Mutaatio-operaattorien avulla kuvataan algoritmeja, joilla lähdekoodia muokataan mutantteja muodostettaessa. Esimerkiksi JSC-operaattori lisää ilmentymämuuttujiin \textit{static}-määreen tehden niistä luokkamuuttujia tai vastaavasti poistaa luokkamuuttujista \textit{static}-määreen tehden niistä ilmentymämuuttujia. JSC-operaattorin ja myös muiden Man, Kwonin ja Offuttin kehittämien luokkamutaatio-operaattorien nimet ja kuvaukset voi nähdä taulukosta \ref{table:Mutaatio-operaattorit-taulukko}. Taulukosta nähdään myös, mihin ryhmiin luokkamutaatio-operaattorit kuuluvat. Tarkemmat tiedot operaattorien toiminnasta löytyvät Man, Kwonin ja Offuttin artikkelista ''\textit{Inter-Class Mutation Operators for Java}''~\cite{Ma:Kwon:Offutt:2002}. 
+Mutaatio-operaattorien avulla kuvataan algoritmeja, joilla lähdekoodia muokataan mutantteja muodostettaessa. Esimerkiksi JSC-operaattori lisää ilmentymämuuttujiin \textit{static}-määreen tehden niistä luokkamuuttujia tai vastaavasti poistaa luokkamuuttujista \textit{static}-määreen tehden niistä ilmentymämuuttujia~\cite[s. 358]{Ma:Kwon:Offutt:2002}. JSC-operaattorin ja myös muiden Man, Kwonin ja Offuttin kehittämien luokkamutaatio-operaattorien nimet ja kuvaukset voi nähdä taulukosta \ref{table:Mutaatio-operaattorit-taulukko}. Taulukosta nähdään myös, mihin ryhmiin luokkamutaatio-operaattorit kuuluvat. Tarkemmat tiedot operaattorien toiminnasta löytyvät Man, Kwonin ja Offuttin artikkelista ''\textit{Inter-Class Mutation Operators for Java}''~\cite{Ma:Kwon:Offutt:2002}. 
 
 \begin{table}[H]
 \begin{spacing}{1.0}
@@ -437,7 +439,7 @@ Vaikka kaikkia mutaatiotestauksen ongelmia ei ole mahdollista ratkaista kokonaan
 
 Ekvivalenttien mutanttien tunnistaminen on yksi mutaatiotestaukseen liittyvistä ongelma-alueista. Ekvivalentit mutantit ovat mutantteja, jotka ovat toiminnaltaan samanlaisia kuin alkuperäinen ohjelma, mutta syntaktisesti erilaisia alkuperäisen ohjelman kanssa~\cite[s. 652]{Jia:Harman:2011}. Ekvivalentteja mutantteja muodostuu, kun alkuperäistä lähdekoodia käsitellään mutaatio-operaattoreilla. 
 
-Esimerkki IHI-operaattorin tuottamasta ekvivalentista mutantista esitellään esimerkissä \ref{esim:IHIEkvivalenttiMutantti}. Taulukossa \ref{table:Mutaatio-operaattorit-taulukko} sivulla \pageref{table:Mutaatio-operaattorit-taulukko} esitelty mutaatio-operaattori IHI lisää aliluokkaan kentän, joka peittää yliluokalta perityn kentän~\cite[s. 80]{Offutt:Ma:Kwon:2006:MuClassLevel}. Jos peritty kenttä on yliluokassa määritelty yksityiseksi, kaikki IHI-operaattorilla tuotetut mutantit, joissa yksityiseksi määritelty kenttä peitetään, ovat ekvivalentteja mutantteja~\cite[s. 80]{Offutt:Ma:Kwon:2006:MuClassLevel}. Esimerkissä 1 IHI-operaattorilla on muodostettu mutantti, jossa \texttt{Kauppa}-luokan aliluokaan \texttt{Elainkauppa} on lisätty peittävä kenttä \texttt{osoite}. \texttt{Elainkauppa}-luokassa yliluokan \texttt{osoite}-muuttuja saadaan käyttöön yliluokan metodilla \texttt{getOsoite()}. Peittävän kentän \texttt{osoite} lisääminen ei siis muuta luokan \texttt{Elainkauppa} toimintaa, joten kyseessä on ekvivalentti mutantti. 
+Esimerkki IHI-operaattorin tuottamasta ekvivalentista mutantista esitellään esimerkissä \ref{esim:IHIEkvivalenttiMutantti}. Taulukossa \ref{table:Mutaatio-operaattorit-taulukko} sivulla \pageref{table:Mutaatio-operaattorit-taulukko} esitelty mutaatio-operaattori IHI lisää aliluokkaan kentän, joka peittää yliluokalta perityn kentän~\cite[s. 80]{Offutt:Ma:Kwon:2006:MuClassLevel}. Jos peritty kenttä on yliluokassa määritelty yksityiseksi, kaikki IHI-operaattorilla tuotetut mutantit, joissa yksityiseksi määritelty kenttä peitetään, ovat ekvivalentteja mutantteja~\cite[s. 80]{Offutt:Ma:Kwon:2006:MuClassLevel}. Esimerkissä 1 IHI-operaattorilla on muodostettu mutantti, jossa \texttt{Kauppa}-luokan aliluokaan \texttt{Elainkauppa} on lisätty peittävä kenttä \texttt{osoite}. \texttt{Elainkauppa}-luokassa yliluokan \texttt{osoite}-kenttä saadaan käyttöön yliluokan metodilla \texttt{getOsoite()}. Peittävän kentän \texttt{osoite} lisääminen ei siis muuta luokan \texttt{Elainkauppa} toimintaa, sillä \texttt{Elainkauppa}-luokassa ei käsitellä suoraan \texttt{osoite}-kenttää. Näin ollen esimerkissä \ref{esim:IHIEkvivalenttiMutantti} IHI-operaattorilla muodostettu mutantti on ekvivalentti mutantti. 
 
 \begin{esim}
 \vspace{1\baselineskip}\noindent
@@ -453,7 +455,7 @@ public class Kauppa {
 };
 
 public class Elainkauppa extends Kauppa {
-	private String osoite; //IHI-operaattorin lisaama muuttuja
+	private String osoite; //IHI-operaattorin lisaama peittava kentta
 	private String erikoisala = "kissanruuat";
 	public String toString(){
 		return "Liikkeen osoite on " + getOsoite() +
@@ -511,7 +513,7 @@ Mutaatiotestaus on vikaperustainen testausmenetelmä, joka tarjoaa ratkaisun tes
 
 Mutaatiotestauksen käyttö yleisesti osana testausprosessia on kuitenkin vähäistä mutaatiotestaukseen liittyvien haasteiden ja ratkaisemattomien ongelmien takia. Mutaatiotestausta on tutkittu paljon, ja tutkimuksen tavoitteena on ollut etsiä ratkaisuja mutaatiotestaukseen liittyviin ongelmiin. Tutkimuksesta saatujen tietojen pohjalta ongelmiin on kehitetty osittaisia ratkaisuja, joiden avulla mutaatiotestausprosessi on mahdollista automatisoida lähes kokonaan.
 
-Jotta mutaatiotestausmenetelmää voitaisiin tulevaisuudessa hyödyntää myös tutkimuskäytön ulkopuolella, mutaatiotestauksen käyttöönoton helpottamiseksi olisi kehitettävä automatisoituja mutaatiotestausjärjestelmiä, joissa hyödynnetään mutaatiotestauksen ongelmien ratkaisumenetelmiä. Automatisoitujen mutaatiotestausjärjestelmien avulla mutaatiotestausmenetelmän laaja-alainen käyttö osana ohjelmistokehitystä voisi tulevaisuudessa olla mahdollista.
+Jotta mutaatiotestausmenetelmää voitaisiin tulevaisuudessa hyödyntää aiempaa enemmän tutkimuskäytön ulkopuolella, mutaatiotestauksen käyttöönoton helpottamiseksi olisi kehitettävä automatisoituja mutaatiotestausjärjestelmiä, joissa hyödynnetään mutaatiotestauksen ongelmien ratkaisumenetelmiä. Automatisoitujen mutaatiotestausjärjestelmien avulla mutaatiotestausmenetelmän laaja-alainen käyttö osana ohjelmistokehitystä voisi tulevaisuudessa olla mahdollista.
 
 %Tällä (yksikkö)testauksen tasolla testien suunnittelussa voidaan käyttää ohjelman sisäiseen rakenteeseen perustuvaa suunnittelumallia, jota kutsutaan \textit{white box -testaukseksi} (\textit{white box testing}). Tässä mallissa ohjelmiston lähdekoodia käytetään apuna testien valmistamisessa~\cite[s. 52]{Binder:1999}.
 
