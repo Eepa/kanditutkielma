@@ -1,6 +1,6 @@
 # Mutaatiotestaus oliojärjestelmissä
 
-Kandidaatintutkielma, syksy 2015
+Kandidaatintutkielma, syksy 2015, Helsingin yliopisto - Tietojenkäsittelytieteen laitos
 
 ## Tiivistelmä
 
@@ -22,3 +22,7 @@ ACM Computing Classification System (CCS):
 D.2.4 [Software/Program Verification],
 D.2.5 [Testing and Debugging],
 D.3.3 [Language Constructs and Features]
+
+____________________________________________________________________________________________
+
+Tutkielman pohjana on käytetty Helsingin yliopiston Tietojenkäsittelytieteen laitoksen Latex-tutkielmapohjaa, joka löytyy osoitteesta: https://github.com/UniversityHelsinkiTKTL/tktltiki2
