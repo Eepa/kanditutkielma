@@ -23,6 +23,8 @@ D.2.4 [Software/Program Verification],
 D.2.5 [Testing and Debugging],
 D.3.3 [Language Constructs and Features]
 
+_____________________________________________________________________________________________
+
 ### Tutkielmapohja
 
 Tutkielman mallipohjana on käytetty Helsingin yliopiston Tietojenkäsittelytieteen laitoksen mallipohjaa, joka löytyy osoitteesta: https://github.com/UniversityHelsinkiTKTL/tktltiki2
