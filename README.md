@@ -19,6 +19,6 @@ ratkaisemiseksi on kehitetty menetelmiä, joiden avulla mutaatiotestausprosessia
 tehostaa ja joiden avulla prosessin työvaiheita voidaan automatisoida.
 
 ACM Computing Classification System (CCS):
-D.2.4 [Software/Program Verification]
-D.2.5 [Testing and Debugging]
+D.2.4 [Software/Program Verification],
+D.2.5 [Testing and Debugging],
 D.3.3 [Language Constructs and Features]
